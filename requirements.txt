@@ -1,0 +1,12 @@
+# Core (tested versions in brackets)
+pandas>=2.2          # [3.0.5]
+numpy>=1.26          # [2.5.3]
+scikit-learn>=1.4    # [1.9.1]
+shap>=0.45           # [0.52.0]  challenger TreeSHAP
+matplotlib>=3.8      # [3.11.2]  report figures
+pyyaml>=6.0          # [6.0.3]
+joblib>=1.3          # [1.6.0]
+# Development and notebook
+pytest>=8
+jupyter
+nbconvert

@@ -1,0 +1,59 @@
+# Early-Career Potential Model - configuration
+# Every business choice lives here, not in the code. Changing a value and re-running
+# `python run_pipeline.py all` regenerates every model, metric, brief and the dashboard.
+
+version: "1.0.0"
+random_seed: 42
+
+paths:
+  raw_dir: "../../Case Study/NBA Dataset"   # franchise NBA dataset (only needed for the ingest step)
+  processed_dir: "data/processed"            # ships with the repo, so modelling runs without raw data
+  models_dir: "models"
+  outputs_dir: "outputs"
+  dashboard: "dashboard/ecp_dashboard.html"
+
+data:
+  first_season: 1990          # earliest season ingested (season = start year, so 1990 = 1990-91)
+  min_minutes_for_rates: 100  # per-possession rates below this many minutes are treated as missing
+  exclude_if_bio_from_year_before: 1995   # careers that began before the data window (truncation)
+
+cohort:
+  first_debut: 1996           # first season with complete plus-minus coverage
+  last_labelled_debut: 2018   # last debut class whose career year 8 (2025-26) has been played
+
+# The outcome the model learns. This is a basketball decision, signed off by the steering committee.
+construct:
+  active: "rate"              # "rate" (recommended) or "volume" (the Assessment 2 prototype definition)
+  outcome_years: [4, 8]       # career years in which success is judged
+  min_high_impact_seasons: 2  # seasons needed in that window to count as a contributor
+  volume:
+    description: "Season total Game Score in the league's top 20% of all players who played"
+    top_share: 0.20
+  rate:
+    description: >-
+      A rotation season (at least 1,000 minutes, scaled for shortened seasons) whose Game Score per
+      100 possessions ranks in the top third of rotation players that season
+    min_minutes_82_games: 1000
+    top_share_of_qualified: 0.3333
+
+split:                        # forward-chaining by debut class: train on the past, test on the future
+  train: [1996, 2010]
+  validate: [2011, 2014]
+  test: [2015, 2018]
+
+horizons: [1, 2, 3]           # seasons of NBA evidence available at decision time
+
+decision:
+  cost_ratio: 3               # missing a future contributor judged 3x as costly as a wasted offer
+  evidence_min_minutes: 500   # below this, the brief says "insufficient evidence", not "unlikely"
+  shortlist_shares: [0.10, 0.20]
+
+evaluation:
+  bootstrap_resamples: 2000
+  uncertainty_models: 40      # bootstrap refits used for each player's uncertainty range
+  min_subgroup_size: 25       # subgroups smaller than this are reported but not judged
+
+monitoring:
+  # PSI alarm levels are learned from history (75th / 95th percentile of class-vs-history PSI),
+  # see ecp/monitoring.py. The textbook 0.10 / 0.25 cut-offs raise false alarms on ~100-player classes.
+  calibration_gap_act: 0.05   # |mean predicted - observed| that triggers recalibration

@@ -1,0 +1,14 @@
+dimension,group,n,contributors,auc,mean_pred,observed,calibration_gap,miss_rate,false_flag_rate,judged
+position,Center,70,20,0.92,0.328,0.286,0.042,0.05,0.26,True
+position,Forward,106,7,0.954,0.065,0.066,-0.001,0.143,0.04,True
+position,Guard,157,16,0.967,0.099,0.102,-0.003,0.188,0.071,True
+position,Wing (G/F),52,3,0.986,0.105,0.058,0.047,0.0,0.041,False
+draft_tier,2nd round / undrafted,264,12,0.962,0.052,0.045,0.007,0.25,0.036,True
+draft_tier,Late 1st (15-30),64,8,0.902,0.175,0.125,0.05,0.125,0.143,True
+draft_tier,Lottery (1-14),57,26,0.918,0.452,0.456,-0.004,0.038,0.387,True
+origin,International,90,15,0.956,0.18,0.167,0.013,0.067,0.093,True
+origin,USA,295,31,0.96,0.117,0.105,0.012,0.129,0.083,True
+height_band,"6'5""-6'8""",168,12,0.964,0.085,0.071,0.014,0.083,0.045,True
+height_band,"6'9""-7'0""",98,19,0.939,0.229,0.194,0.035,0.053,0.165,True
+height_band,"7'1""+",9,2,1.0,0.245,0.222,0.022,0.0,0.143,False
+height_band,"<=6'4""",110,13,0.96,0.108,0.118,-0.01,0.231,0.082,True

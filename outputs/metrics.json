@@ -1,0 +1,2067 @@
+{
+  "version": "1.0.0",
+  "construct": "rate",
+  "selection": {
+    "champion": {
+      "model": "Logistic regression",
+      "calibration": "sigmoid"
+    },
+    "challenger": {
+      "model": "Random forest",
+      "calibration": "none"
+    },
+    "summary": [
+      {
+        "model": "Logistic regression",
+        "calibration": "sigmoid",
+        "val_brier": 0.075,
+        "val_auc": 0.9197,
+        "val_cal_gap": -0.0106
+      },
+      {
+        "model": "Logistic regression",
+        "calibration": "isotonic",
+        "val_brier": 0.0755,
+        "val_auc": 0.917,
+        "val_cal_gap": -0.0126
+      },
+      {
+        "model": "Logistic regression",
+        "calibration": "none",
+        "val_brier": 0.0763,
+        "val_auc": 0.9197,
+        "val_cal_gap": -0.0118
+      },
+      {
+        "model": "Random forest",
+        "calibration": "none",
+        "val_brier": 0.077,
+        "val_auc": 0.8949,
+        "val_cal_gap": -0.013
+      },
+      {
+        "model": "Gradient boosting",
+        "calibration": "sigmoid",
+        "val_brier": 0.0775,
+        "val_auc": 0.8991,
+        "val_cal_gap": 0.0028
+      },
+      {
+        "model": "Gradient boosting",
+        "calibration": "isotonic",
+        "val_brier": 0.0779,
+        "val_auc": 0.8943,
+        "val_cal_gap": 0.004
+      },
+      {
+        "model": "Random forest",
+        "calibration": "isotonic",
+        "val_brier": 0.0789,
+        "val_auc": 0.8875,
+        "val_cal_gap": -0.0155
+      },
+      {
+        "model": "Random forest",
+        "calibration": "sigmoid",
+        "val_brier": 0.0798,
+        "val_auc": 0.8949,
+        "val_cal_gap": -0.0121
+      },
+      {
+        "model": "Gradient boosting",
+        "calibration": "none",
+        "val_brier": 0.0801,
+        "val_auc": 0.8991,
+        "val_cal_gap": -0.0093
+      }
+    ]
+  },
+  "backtest": {
+    "construct": "rate",
+    "train_classes": 1996,
+    "test_classes": [
+      2015,
+      2018
+    ],
+    "n_train": 1333,
+    "n_test": 385,
+    "base_rate_train": 0.1523,
+    "base_rate_test": 0.1195,
+    "positives_test": 46,
+    "decision_threshold": 0.25,
+    "horizons": {
+      "1": {
+        "champion": {
+          "auc": {
+            "est": 0.895,
+            "lo": 0.8383,
+            "hi": 0.9441
+          },
+          "pr_auc": {
+            "est": 0.643,
+            "lo": 0.4951,
+            "hi": 0.7783
+          },
+          "brier": {
+            "est": 0.0663,
+            "lo": 0.0493,
+            "hi": 0.0853
+          },
+          "ece": {
+            "est": 0.0209,
+            "lo": 0.0192,
+            "hi": 0.0547
+          },
+          "mean_pred": 0.132,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46,
+          "auc_gain_vs_reference": {
+            "est": 0.0609,
+            "lo": 0.0207,
+            "hi": 0.1048,
+            "share_of_resamples_positive": 0.9975
+          }
+        },
+        "challenger": {
+          "auc": {
+            "est": 0.8959,
+            "lo": 0.8467,
+            "hi": 0.9416
+          },
+          "pr_auc": {
+            "est": 0.6497,
+            "lo": 0.5027,
+            "hi": 0.7859
+          },
+          "brier": {
+            "est": 0.0647,
+            "lo": 0.0482,
+            "hi": 0.0832
+          },
+          "ece": {
+            "est": 0.0296,
+            "lo": 0.0218,
+            "hi": 0.0596
+          },
+          "mean_pred": 0.1281,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46,
+          "auc_gain_vs_reference": {
+            "est": 0.0618,
+            "lo": 0.0207,
+            "hi": 0.1084,
+            "share_of_resamples_positive": 0.998
+          }
+        },
+        "draft_baseline": {
+          "auc": {
+            "est": 0.8342,
+            "lo": 0.7694,
+            "hi": 0.8935
+          },
+          "pr_auc": {
+            "est": 0.4358,
+            "lo": 0.3081,
+            "hi": 0.5913
+          },
+          "brier": {
+            "est": 0.084,
+            "lo": 0.0664,
+            "hi": 0.104
+          },
+          "ece": {
+            "est": 0.0229,
+            "lo": 0.0219,
+            "hi": 0.0617
+          },
+          "mean_pred": 0.1201,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46
+        },
+        "extension_population": {
+          "n": 232,
+          "positives": 44,
+          "champion": {
+            "auc": 0.8557785299806576,
+            "pr_auc": 0.6654099101727731,
+            "brier": 0.1011228716662728,
+            "ece": 0.02784639794220267,
+            "mean_pred": 0.19771634507851885,
+            "observed": 0.1896551724137931
+          },
+          "draft": {
+            "auc": 0.7767770793036751,
+            "pr_auc": 0.45953741645123214,
+            "brier": 0.1290353654481147,
+            "ece": 0.049289559968342916,
+            "mean_pred": 0.1728741494434808,
+            "observed": 0.1896551724137931
+          }
+        },
+        "six_season_survivors": {
+          "n": 154,
+          "positives": 46,
+          "champion_auc": 0.8076,
+          "draft_auc": 0.7125
+        },
+        "cost_thresholds": [
+          {
+            "cost_ratio": "1:1",
+            "threshold": 0.5,
+            "flagged": 33,
+            "caught": 24,
+            "missed": 22,
+            "false_flags": 9,
+            "recall": 0.522,
+            "precision": 0.727,
+            "weighted_cost": 31
+          },
+          {
+            "cost_ratio": "2:1",
+            "threshold": 0.333,
+            "flagged": 47,
+            "caught": 27,
+            "missed": 19,
+            "false_flags": 20,
+            "recall": 0.587,
+            "precision": 0.574,
+            "weighted_cost": 58
+          },
+          {
+            "cost_ratio": "3:1",
+            "threshold": 0.25,
+            "flagged": 62,
+            "caught": 31,
+            "missed": 15,
+            "false_flags": 31,
+            "recall": 0.674,
+            "precision": 0.5,
+            "weighted_cost": 76
+          },
+          {
+            "cost_ratio": "5:1",
+            "threshold": 0.167,
+            "flagged": 85,
+            "caught": 36,
+            "missed": 10,
+            "false_flags": 49,
+            "recall": 0.783,
+            "precision": 0.424,
+            "weighted_cost": 99
+          }
+        ],
+        "cost_thresholds_draft": [
+          {
+            "cost_ratio": "1:1",
+            "threshold": 0.5,
+            "flagged": 4,
+            "caught": 2,
+            "missed": 44,
+            "false_flags": 2,
+            "recall": 0.043,
+            "precision": 0.5,
+            "weighted_cost": 46
+          },
+          {
+            "cost_ratio": "2:1",
+            "threshold": 0.333,
+            "flagged": 50,
+            "caught": 23,
+            "missed": 23,
+            "false_flags": 27,
+            "recall": 0.5,
+            "precision": 0.46,
+            "weighted_cost": 73
+          },
+          {
+            "cost_ratio": "3:1",
+            "threshold": 0.25,
+            "flagged": 73,
+            "caught": 27,
+            "missed": 19,
+            "false_flags": 46,
+            "recall": 0.587,
+            "precision": 0.37,
+            "weighted_cost": 103
+          },
+          {
+            "cost_ratio": "5:1",
+            "threshold": 0.167,
+            "flagged": 103,
+            "caught": 32,
+            "missed": 14,
+            "false_flags": 71,
+            "recall": 0.696,
+            "precision": 0.311,
+            "weighted_cost": 141
+          }
+        ],
+        "shortlists": {
+          "top_10pct": {
+            "model": {
+              "share": 0.1,
+              "size": 38,
+              "contributors": 25,
+              "hit_rate": 0.658,
+              "missed": 21,
+              "total_contributors": 46
+            },
+            "draft_order": {
+              "share": 0.1,
+              "size": 38,
+              "contributors": 19,
+              "hit_rate": 0.5,
+              "missed": 27,
+              "total_contributors": 46
+            }
+          },
+          "top_20pct": {
+            "model": {
+              "share": 0.2,
+              "size": 77,
+              "contributors": 34,
+              "hit_rate": 0.442,
+              "missed": 12,
+              "total_contributors": 46
+            },
+            "draft_order": {
+              "share": 0.2,
+              "size": 77,
+              "contributors": 28,
+              "hit_rate": 0.364,
+              "missed": 18,
+              "total_contributors": 46
+            }
+          }
+        },
+        "calibration": [
+          {
+            "bin": "(-0.001, 0.05]",
+            "n": 219,
+            "mean_pred": 0.017,
+            "observed": 0.0183
+          },
+          {
+            "bin": "(0.05, 0.1]",
+            "n": 39,
+            "mean_pred": 0.0746,
+            "observed": 0.0513
+          },
+          {
+            "bin": "(0.1, 0.2]",
+            "n": 54,
+            "mean_pred": 0.142,
+            "observed": 0.1111
+          },
+          {
+            "bin": "(0.2, 0.3]",
+            "n": 20,
+            "mean_pred": 0.2502,
+            "observed": 0.3
+          },
+          {
+            "bin": "(0.3, 0.5]",
+            "n": 20,
+            "mean_pred": 0.3705,
+            "observed": 0.2
+          },
+          {
+            "bin": "(0.5, 0.7]",
+            "n": 13,
+            "mean_pred": 0.5795,
+            "observed": 0.6923
+          },
+          {
+            "bin": "(0.7, 1.0]",
+            "n": 20,
+            "mean_pred": 0.828,
+            "observed": 0.75
+          }
+        ],
+        "by_cohort": [
+          {
+            "debut": 2015,
+            "n": 73,
+            "contributors": 12,
+            "auc": 0.85,
+            "mean_pred": 0.158,
+            "observed": 0.164
+          },
+          {
+            "debut": 2016,
+            "n": 87,
+            "contributors": 12,
+            "auc": 0.84,
+            "mean_pred": 0.119,
+            "observed": 0.138
+          },
+          {
+            "debut": 2017,
+            "n": 120,
+            "contributors": 9,
+            "auc": 0.884,
+            "mean_pred": 0.123,
+            "observed": 0.075
+          },
+          {
+            "debut": 2018,
+            "n": 105,
+            "contributors": 13,
+            "auc": 0.971,
+            "mean_pred": 0.135,
+            "observed": 0.124
+          }
+        ],
+        "champion_challenger_correlation": 0.963,
+        "insufficient_evidence": {
+          "players": 235,
+          "contributors": 8,
+          "mean_pred": 0.044
+        }
+      },
+      "2": {
+        "champion": {
+          "auc": {
+            "est": 0.9467,
+            "lo": 0.9194,
+            "hi": 0.9708
+          },
+          "pr_auc": {
+            "est": 0.7395,
+            "lo": 0.608,
+            "hi": 0.8502
+          },
+          "brier": {
+            "est": 0.0547,
+            "lo": 0.0404,
+            "hi": 0.071
+          },
+          "ece": {
+            "est": 0.017,
+            "lo": 0.014,
+            "hi": 0.048
+          },
+          "mean_pred": 0.1316,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46,
+          "auc_gain_vs_reference": {
+            "est": 0.1125,
+            "lo": 0.0669,
+            "hi": 0.1623,
+            "share_of_resamples_positive": 1.0
+          }
+        },
+        "challenger": {
+          "auc": {
+            "est": 0.9428,
+            "lo": 0.9146,
+            "hi": 0.9663
+          },
+          "pr_auc": {
+            "est": 0.6969,
+            "lo": 0.5549,
+            "hi": 0.8355
+          },
+          "brier": {
+            "est": 0.0558,
+            "lo": 0.0416,
+            "hi": 0.0718
+          },
+          "ece": {
+            "est": 0.0161,
+            "lo": 0.0131,
+            "hi": 0.045
+          },
+          "mean_pred": 0.1259,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46,
+          "auc_gain_vs_reference": {
+            "est": 0.1086,
+            "lo": 0.0602,
+            "hi": 0.1605,
+            "share_of_resamples_positive": 1.0
+          }
+        },
+        "draft_baseline": {
+          "auc": {
+            "est": 0.8342,
+            "lo": 0.7694,
+            "hi": 0.8935
+          },
+          "pr_auc": {
+            "est": 0.4358,
+            "lo": 0.3081,
+            "hi": 0.5913
+          },
+          "brier": {
+            "est": 0.084,
+            "lo": 0.0664,
+            "hi": 0.104
+          },
+          "ece": {
+            "est": 0.0229,
+            "lo": 0.0219,
+            "hi": 0.0617
+          },
+          "mean_pred": 0.1201,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46
+        },
+        "extension_population": {
+          "n": 232,
+          "positives": 44,
+          "champion": {
+            "auc": 0.9185203094777563,
+            "pr_auc": 0.7451951133202961,
+            "brier": 0.08557992664369335,
+            "ece": 0.038137667013622395,
+            "mean_pred": 0.2072291632820647,
+            "observed": 0.1896551724137931
+          },
+          "draft": {
+            "auc": 0.7767770793036751,
+            "pr_auc": 0.45953741645123214,
+            "brier": 0.1290353654481147,
+            "ece": 0.049289559968342916,
+            "mean_pred": 0.1728741494434808,
+            "observed": 0.1896551724137931
+          }
+        },
+        "six_season_survivors": {
+          "n": 154,
+          "positives": 46,
+          "champion_auc": 0.871,
+          "draft_auc": 0.7125
+        },
+        "cost_thresholds": [
+          {
+            "cost_ratio": "1:1",
+            "threshold": 0.5,
+            "flagged": 38,
+            "caught": 27,
+            "missed": 19,
+            "false_flags": 11,
+            "recall": 0.587,
+            "precision": 0.711,
+            "weighted_cost": 30
+          },
+          {
+            "cost_ratio": "2:1",
+            "threshold": 0.333,
+            "flagged": 57,
+            "caught": 33,
+            "missed": 13,
+            "false_flags": 24,
+            "recall": 0.717,
+            "precision": 0.579,
+            "weighted_cost": 50
+          },
+          {
+            "cost_ratio": "3:1",
+            "threshold": 0.25,
+            "flagged": 70,
+            "caught": 36,
+            "missed": 10,
+            "false_flags": 34,
+            "recall": 0.783,
+            "precision": 0.514,
+            "weighted_cost": 64
+          },
+          {
+            "cost_ratio": "5:1",
+            "threshold": 0.167,
+            "flagged": 87,
+            "caught": 43,
+            "missed": 3,
+            "false_flags": 44,
+            "recall": 0.935,
+            "precision": 0.494,
+            "weighted_cost": 59
+          }
+        ],
+        "cost_thresholds_draft": [
+          {
+            "cost_ratio": "1:1",
+            "threshold": 0.5,
+            "flagged": 4,
+            "caught": 2,
+            "missed": 44,
+            "false_flags": 2,
+            "recall": 0.043,
+            "precision": 0.5,
+            "weighted_cost": 46
+          },
+          {
+            "cost_ratio": "2:1",
+            "threshold": 0.333,
+            "flagged": 50,
+            "caught": 23,
+            "missed": 23,
+            "false_flags": 27,
+            "recall": 0.5,
+            "precision": 0.46,
+            "weighted_cost": 73
+          },
+          {
+            "cost_ratio": "3:1",
+            "threshold": 0.25,
+            "flagged": 73,
+            "caught": 27,
+            "missed": 19,
+            "false_flags": 46,
+            "recall": 0.587,
+            "precision": 0.37,
+            "weighted_cost": 103
+          },
+          {
+            "cost_ratio": "5:1",
+            "threshold": 0.167,
+            "flagged": 103,
+            "caught": 32,
+            "missed": 14,
+            "false_flags": 71,
+            "recall": 0.696,
+            "precision": 0.311,
+            "weighted_cost": 141
+          }
+        ],
+        "shortlists": {
+          "top_10pct": {
+            "model": {
+              "share": 0.1,
+              "size": 38,
+              "contributors": 27,
+              "hit_rate": 0.711,
+              "missed": 19,
+              "total_contributors": 46
+            },
+            "draft_order": {
+              "share": 0.1,
+              "size": 38,
+              "contributors": 19,
+              "hit_rate": 0.5,
+              "missed": 27,
+              "total_contributors": 46
+            }
+          },
+          "top_20pct": {
+            "model": {
+              "share": 0.2,
+              "size": 77,
+              "contributors": 39,
+              "hit_rate": 0.506,
+              "missed": 7,
+              "total_contributors": 46
+            },
+            "draft_order": {
+              "share": 0.2,
+              "size": 77,
+              "contributors": 28,
+              "hit_rate": 0.364,
+              "missed": 18,
+              "total_contributors": 46
+            }
+          }
+        },
+        "calibration": [
+          {
+            "bin": "(-0.001, 0.05]",
+            "n": 248,
+            "mean_pred": 0.0102,
+            "observed": 0.0081
+          },
+          {
+            "bin": "(0.05, 0.1]",
+            "n": 29,
+            "mean_pred": 0.074,
+            "observed": 0.0
+          },
+          {
+            "bin": "(0.1, 0.2]",
+            "n": 28,
+            "mean_pred": 0.1415,
+            "observed": 0.1429
+          },
+          {
+            "bin": "(0.2, 0.3]",
+            "n": 19,
+            "mean_pred": 0.2552,
+            "observed": 0.3684
+          },
+          {
+            "bin": "(0.3, 0.5]",
+            "n": 23,
+            "mean_pred": 0.3846,
+            "observed": 0.2609
+          },
+          {
+            "bin": "(0.5, 0.7]",
+            "n": 13,
+            "mean_pred": 0.5676,
+            "observed": 0.4615
+          },
+          {
+            "bin": "(0.7, 1.0]",
+            "n": 25,
+            "mean_pred": 0.839,
+            "observed": 0.84
+          }
+        ],
+        "by_cohort": [
+          {
+            "debut": 2015,
+            "n": 73,
+            "contributors": 12,
+            "auc": 0.908,
+            "mean_pred": 0.162,
+            "observed": 0.164
+          },
+          {
+            "debut": 2016,
+            "n": 87,
+            "contributors": 12,
+            "auc": 0.95,
+            "mean_pred": 0.13,
+            "observed": 0.138
+          },
+          {
+            "debut": 2017,
+            "n": 120,
+            "contributors": 9,
+            "auc": 0.946,
+            "mean_pred": 0.113,
+            "observed": 0.075
+          },
+          {
+            "debut": 2018,
+            "n": 105,
+            "contributors": 13,
+            "auc": 0.972,
+            "mean_pred": 0.132,
+            "observed": 0.124
+          }
+        ],
+        "champion_challenger_correlation": 0.96,
+        "insufficient_evidence": {
+          "players": 168,
+          "contributors": 3,
+          "mean_pred": 0.012
+        }
+      },
+      "3": {
+        "champion": {
+          "auc": {
+            "est": 0.9595,
+            "lo": 0.9367,
+            "hi": 0.9781
+          },
+          "pr_auc": {
+            "est": 0.7594,
+            "lo": 0.6286,
+            "hi": 0.8746
+          },
+          "brier": {
+            "est": 0.0502,
+            "lo": 0.0363,
+            "hi": 0.0655
+          },
+          "ece": {
+            "est": 0.014,
+            "lo": 0.0138,
+            "hi": 0.0452
+          },
+          "mean_pred": 0.1319,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46,
+          "auc_gain_vs_reference": {
+            "est": 0.1253,
+            "lo": 0.075,
+            "hi": 0.1794,
+            "share_of_resamples_positive": 1.0
+          }
+        },
+        "challenger": {
+          "auc": {
+            "est": 0.954,
+            "lo": 0.9252,
+            "hi": 0.9774
+          },
+          "pr_auc": {
+            "est": 0.7631,
+            "lo": 0.6267,
+            "hi": 0.8833
+          },
+          "brier": {
+            "est": 0.0498,
+            "lo": 0.0368,
+            "hi": 0.0642
+          },
+          "ece": {
+            "est": 0.0226,
+            "lo": 0.0138,
+            "hi": 0.0462
+          },
+          "mean_pred": 0.1256,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46,
+          "auc_gain_vs_reference": {
+            "est": 0.1199,
+            "lo": 0.0695,
+            "hi": 0.1753,
+            "share_of_resamples_positive": 1.0
+          }
+        },
+        "draft_baseline": {
+          "auc": {
+            "est": 0.8342,
+            "lo": 0.7694,
+            "hi": 0.8935
+          },
+          "pr_auc": {
+            "est": 0.4358,
+            "lo": 0.3081,
+            "hi": 0.5913
+          },
+          "brier": {
+            "est": 0.084,
+            "lo": 0.0664,
+            "hi": 0.104
+          },
+          "ece": {
+            "est": 0.0229,
+            "lo": 0.0219,
+            "hi": 0.0617
+          },
+          "mean_pred": 0.1201,
+          "observed": 0.1195,
+          "n": 385,
+          "positives": 46
+        },
+        "extension_population": {
+          "n": 232,
+          "positives": 44,
+          "champion": {
+            "auc": 0.936774661508704,
+            "pr_auc": 0.7686779152224225,
+            "brier": 0.07776061968066648,
+            "ece": 0.03396226585141948,
+            "mean_pred": 0.21220622158498345,
+            "observed": 0.1896551724137931
+          },
+          "draft": {
+            "auc": 0.7767770793036751,
+            "pr_auc": 0.45953741645123214,
+            "brier": 0.1290353654481147,
+            "ece": 0.049289559968342916,
+            "mean_pred": 0.1728741494434808,
+            "observed": 0.1896551724137931
+          }
+        },
+        "six_season_survivors": {
+          "n": 154,
+          "positives": 46,
+          "champion_auc": 0.8877,
+          "draft_auc": 0.7125
+        },
+        "cost_thresholds": [
+          {
+            "cost_ratio": "1:1",
+            "threshold": 0.5,
+            "flagged": 38,
+            "caught": 29,
+            "missed": 17,
+            "false_flags": 9,
+            "recall": 0.63,
+            "precision": 0.763,
+            "weighted_cost": 26
+          },
+          {
+            "cost_ratio": "2:1",
+            "threshold": 0.333,
+            "flagged": 60,
+            "caught": 37,
+            "missed": 9,
+            "false_flags": 23,
+            "recall": 0.804,
+            "precision": 0.617,
+            "weighted_cost": 41
+          },
+          {
+            "cost_ratio": "3:1",
+            "threshold": 0.25,
+            "flagged": 70,
+            "caught": 41,
+            "missed": 5,
+            "false_flags": 29,
+            "recall": 0.891,
+            "precision": 0.586,
+            "weighted_cost": 44
+          },
+          {
+            "cost_ratio": "5:1",
+            "threshold": 0.167,
+            "flagged": 83,
+            "caught": 43,
+            "missed": 3,
+            "false_flags": 40,
+            "recall": 0.935,
+            "precision": 0.518,
+            "weighted_cost": 55
+          }
+        ],
+        "cost_thresholds_draft": [
+          {
+            "cost_ratio": "1:1",
+            "threshold": 0.5,
+            "flagged": 4,
+            "caught": 2,
+            "missed": 44,
+            "false_flags": 2,
+            "recall": 0.043,
+            "precision": 0.5,
+            "weighted_cost": 46
+          },
+          {
+            "cost_ratio": "2:1",
+            "threshold": 0.333,
+            "flagged": 50,
+            "caught": 23,
+            "missed": 23,
+            "false_flags": 27,
+            "recall": 0.5,
+            "precision": 0.46,
+            "weighted_cost": 73
+          },
+          {
+            "cost_ratio": "3:1",
+            "threshold": 0.25,
+            "flagged": 73,
+            "caught": 27,
+            "missed": 19,
+            "false_flags": 46,
+            "recall": 0.587,
+            "precision": 0.37,
+            "weighted_cost": 103
+          },
+          {
+            "cost_ratio": "5:1",
+            "threshold": 0.167,
+            "flagged": 103,
+            "caught": 32,
+            "missed": 14,
+            "false_flags": 71,
+            "recall": 0.696,
+            "precision": 0.311,
+            "weighted_cost": 141
+          }
+        ],
+        "shortlists": {
+          "top_10pct": {
+            "model": {
+              "share": 0.1,
+              "size": 38,
+              "contributors": 27,
+              "hit_rate": 0.711,
+              "missed": 19,
+              "total_contributors": 46
+            },
+            "draft_order": {
+              "share": 0.1,
+              "size": 38,
+              "contributors": 19,
+              "hit_rate": 0.5,
+              "missed": 27,
+              "total_contributors": 46
+            }
+          },
+          "top_20pct": {
+            "model": {
+              "share": 0.2,
+              "size": 77,
+              "contributors": 42,
+              "hit_rate": 0.545,
+              "missed": 4,
+              "total_contributors": 46
+            },
+            "draft_order": {
+              "share": 0.2,
+              "size": 77,
+              "contributors": 28,
+              "hit_rate": 0.364,
+              "missed": 18,
+              "total_contributors": 46
+            }
+          }
+        },
+        "calibration": [
+          {
+            "bin": "(-0.001, 0.05]",
+            "n": 254,
+            "mean_pred": 0.0093,
+            "observed": 0.0039
+          },
+          {
+            "bin": "(0.05, 0.1]",
+            "n": 22,
+            "mean_pred": 0.0671,
+            "observed": 0.0455
+          },
+          {
+            "bin": "(0.1, 0.2]",
+            "n": 38,
+            "mean_pred": 0.1513,
+            "observed": 0.0789
+          },
+          {
+            "bin": "(0.2, 0.3]",
+            "n": 7,
+            "mean_pred": 0.2746,
+            "observed": 0.4286
+          },
+          {
+            "bin": "(0.3, 0.5]",
+            "n": 26,
+            "mean_pred": 0.3821,
+            "observed": 0.3462
+          },
+          {
+            "bin": "(0.5, 0.7]",
+            "n": 14,
+            "mean_pred": 0.5958,
+            "observed": 0.5714
+          },
+          {
+            "bin": "(0.7, 1.0]",
+            "n": 24,
+            "mean_pred": 0.8751,
+            "observed": 0.875
+          }
+        ],
+        "by_cohort": [
+          {
+            "debut": 2015,
+            "n": 73,
+            "contributors": 12,
+            "auc": 0.923,
+            "mean_pred": 0.181,
+            "observed": 0.164
+          },
+          {
+            "debut": 2016,
+            "n": 87,
+            "contributors": 12,
+            "auc": 0.964,
+            "mean_pred": 0.118,
+            "observed": 0.138
+          },
+          {
+            "debut": 2017,
+            "n": 120,
+            "contributors": 9,
+            "auc": 0.972,
+            "mean_pred": 0.114,
+            "observed": 0.075
+          },
+          {
+            "debut": 2018,
+            "n": 105,
+            "contributors": 13,
+            "auc": 0.968,
+            "mean_pred": 0.13,
+            "observed": 0.124
+          }
+        ],
+        "champion_challenger_correlation": 0.958,
+        "insufficient_evidence": {
+          "players": 143,
+          "contributors": 1,
+          "mean_pred": 0.005
+        }
+      }
+    },
+    "net_benefit_at_threshold": {
+      "Model": 8.14,
+      "Draft order": 3.03,
+      "Flag everyone": -17.4
+    },
+    "subgroup_audit_h3": [
+      {
+        "dimension": "position",
+        "group": "Center",
+        "n": 70,
+        "contributors": 20,
+        "auc": 0.92,
+        "mean_pred": 0.328,
+        "observed": 0.286,
+        "calibration_gap": 0.042,
+        "miss_rate": 0.05,
+        "false_flag_rate": 0.26,
+        "judged": true
+      },
+      {
+        "dimension": "position",
+        "group": "Forward",
+        "n": 106,
+        "contributors": 7,
+        "auc": 0.954,
+        "mean_pred": 0.065,
+        "observed": 0.066,
+        "calibration_gap": -0.001,
+        "miss_rate": 0.143,
+        "false_flag_rate": 0.04,
+        "judged": true
+      },
+      {
+        "dimension": "position",
+        "group": "Guard",
+        "n": 157,
+        "contributors": 16,
+        "auc": 0.967,
+        "mean_pred": 0.099,
+        "observed": 0.102,
+        "calibration_gap": -0.003,
+        "miss_rate": 0.188,
+        "false_flag_rate": 0.071,
+        "judged": true
+      },
+      {
+        "dimension": "position",
+        "group": "Wing (G/F)",
+        "n": 52,
+        "contributors": 3,
+        "auc": 0.986,
+        "mean_pred": 0.105,
+        "observed": 0.058,
+        "calibration_gap": 0.047,
+        "miss_rate": 0.0,
+        "false_flag_rate": 0.041,
+        "judged": false
+      },
+      {
+        "dimension": "draft_tier",
+        "group": "2nd round / undrafted",
+        "n": 264,
+        "contributors": 12,
+        "auc": 0.962,
+        "mean_pred": 0.052,
+        "observed": 0.045,
+        "calibration_gap": 0.007,
+        "miss_rate": 0.25,
+        "false_flag_rate": 0.036,
+        "judged": true
+      },
+      {
+        "dimension": "draft_tier",
+        "group": "Late 1st (15-30)",
+        "n": 64,
+        "contributors": 8,
+        "auc": 0.902,
+        "mean_pred": 0.175,
+        "observed": 0.125,
+        "calibration_gap": 0.05,
+        "miss_rate": 0.125,
+        "false_flag_rate": 0.143,
+        "judged": true
+      },
+      {
+        "dimension": "draft_tier",
+        "group": "Lottery (1-14)",
+        "n": 57,
+        "contributors": 26,
+        "auc": 0.918,
+        "mean_pred": 0.452,
+        "observed": 0.456,
+        "calibration_gap": -0.004,
+        "miss_rate": 0.038,
+        "false_flag_rate": 0.387,
+        "judged": true
+      },
+      {
+        "dimension": "origin",
+        "group": "International",
+        "n": 90,
+        "contributors": 15,
+        "auc": 0.956,
+        "mean_pred": 0.18,
+        "observed": 0.167,
+        "calibration_gap": 0.013,
+        "miss_rate": 0.067,
+        "false_flag_rate": 0.093,
+        "judged": true
+      },
+      {
+        "dimension": "origin",
+        "group": "USA",
+        "n": 295,
+        "contributors": 31,
+        "auc": 0.96,
+        "mean_pred": 0.117,
+        "observed": 0.105,
+        "calibration_gap": 0.012,
+        "miss_rate": 0.129,
+        "false_flag_rate": 0.083,
+        "judged": true
+      },
+      {
+        "dimension": "height_band",
+        "group": "6'5\"-6'8\"",
+        "n": 168,
+        "contributors": 12,
+        "auc": 0.964,
+        "mean_pred": 0.085,
+        "observed": 0.071,
+        "calibration_gap": 0.014,
+        "miss_rate": 0.083,
+        "false_flag_rate": 0.045,
+        "judged": true
+      },
+      {
+        "dimension": "height_band",
+        "group": "6'9\"-7'0\"",
+        "n": 98,
+        "contributors": 19,
+        "auc": 0.939,
+        "mean_pred": 0.229,
+        "observed": 0.194,
+        "calibration_gap": 0.035,
+        "miss_rate": 0.053,
+        "false_flag_rate": 0.165,
+        "judged": true
+      },
+      {
+        "dimension": "height_band",
+        "group": "7'1\"+",
+        "n": 9,
+        "contributors": 2,
+        "auc": 1.0,
+        "mean_pred": 0.245,
+        "observed": 0.222,
+        "calibration_gap": 0.022,
+        "miss_rate": 0.0,
+        "false_flag_rate": 0.143,
+        "judged": false
+      },
+      {
+        "dimension": "height_band",
+        "group": "<=6'4\"",
+        "n": 110,
+        "contributors": 13,
+        "auc": 0.96,
+        "mean_pred": 0.108,
+        "observed": 0.118,
+        "calibration_gap": -0.01,
+        "miss_rate": 0.231,
+        "false_flag_rate": 0.082,
+        "judged": true
+      }
+    ],
+    "late_pick_contributors": {
+      "count": 12,
+      "flagged_at_threshold": 9,
+      "players": [
+        {
+          "name": "Nikola Jokic",
+          "pick": 41,
+          "debut": 2015,
+          "p": 0.98
+        },
+        {
+          "name": "Montrezl Harrell",
+          "pick": 32,
+          "debut": 2015,
+          "p": 0.79
+        },
+        {
+          "name": "Mitchell Robinson",
+          "pick": 36,
+          "debut": 2018,
+          "p": 0.77
+        },
+        {
+          "name": "Ivica Zubac",
+          "pick": 32,
+          "debut": 2016,
+          "p": 0.597
+        },
+        {
+          "name": "Richaun Holmes",
+          "pick": 37,
+          "debut": 2015,
+          "p": 0.427
+        },
+        {
+          "name": "Jalen Brunson",
+          "pick": 33,
+          "debut": 2018,
+          "p": 0.424
+        },
+        {
+          "name": "Malcolm Brogdon",
+          "pick": 36,
+          "debut": 2016,
+          "p": 0.311
+        },
+        {
+          "name": "Chris Boucher",
+          "pick": 61,
+          "debut": 2017,
+          "p": 0.29
+        },
+        {
+          "name": "Isaiah Hartenstein",
+          "pick": 43,
+          "debut": 2018,
+          "p": 0.274
+        },
+        {
+          "name": "Fred VanVleet",
+          "pick": 61,
+          "debut": 2016,
+          "p": 0.188
+        },
+        {
+          "name": "Norman Powell",
+          "pick": 46,
+          "debut": 2015,
+          "p": 0.051
+        },
+        {
+          "name": "Christian Wood",
+          "pick": 61,
+          "debut": 2015,
+          "p": 0.045
+        }
+      ],
+      "late_pick_non_contributors_mean_p": 0.034
+    },
+    "lottery_low_scores": [
+      {
+        "name": "Jerome Robinson",
+        "pick": 13,
+        "debut": 2018,
+        "p": 0.004
+      },
+      {
+        "name": "Dragan Bender",
+        "pick": 4,
+        "debut": 2016,
+        "p": 0.015
+      },
+      {
+        "name": "Frank Ntilikina",
+        "pick": 8,
+        "debut": 2017,
+        "p": 0.023
+      },
+      {
+        "name": "Kevin Knox II",
+        "pick": 9,
+        "debut": 2018,
+        "p": 0.028
+      },
+      {
+        "name": "Denzel Valentine",
+        "pick": 14,
+        "debut": 2016,
+        "p": 0.037
+      },
+      {
+        "name": "Stanley Johnson",
+        "pick": 8,
+        "debut": 2015,
+        "p": 0.042
+      }
+    ],
+    "missed_contributors": [
+      {
+        "name": "Christian Wood",
+        "pick": 61,
+        "debut": 2015,
+        "p": 0.045,
+        "minutes": 238
+      },
+      {
+        "name": "Norman Powell",
+        "pick": 46,
+        "debut": 2015,
+        "p": 0.051,
+        "minutes": 3061
+      },
+      {
+        "name": "Moritz Wagner",
+        "pick": 25,
+        "debut": 2018,
+        "p": 0.117,
+        "minutes": 1937
+      },
+      {
+        "name": "Malik Monk",
+        "pick": 11,
+        "debut": 2017,
+        "p": 0.179,
+        "minutes": 3183
+      },
+      {
+        "name": "Fred VanVleet",
+        "pick": 61,
+        "debut": 2016,
+        "p": 0.188,
+        "minutes": 3493
+      }
+    ],
+    "construct_comparison": {
+      "volume": {
+        "base_rate_all": 0.1659,
+        "base_rate_test": 0.1351,
+        "model": {
+          "auc": 0.954,
+          "pr_auc": 0.7663,
+          "brier": 0.0571,
+          "ece": 0.0234,
+          "mean_pred": 0.1473,
+          "observed": 0.1351
+        },
+        "draft_auc": 0.8455
+      },
+      "rate": {
+        "base_rate_all": 0.1449,
+        "base_rate_test": 0.1195,
+        "model": {
+          "auc": 0.9595,
+          "pr_auc": 0.7594,
+          "brier": 0.0502,
+          "ece": 0.014,
+          "mean_pred": 0.1319,
+          "observed": 0.1195
+        },
+        "draft_auc": 0.8342
+      },
+      "agreement": {
+        "both": 217,
+        "volume_only": 68,
+        "rate_only": 32,
+        "neither": 1401
+      },
+      "examples_volume_only": [
+        "Gary Trent Jr.",
+        "Anfernee Simons",
+        "Donte DiVincenzo",
+        "Mikal Bridges",
+        "OG Anunoby"
+      ],
+      "examples_rate_only": [
+        "Marvin Bagley III",
+        "Mitchell Robinson",
+        "Moritz Wagner",
+        "Richaun Holmes",
+        "Norman Powell"
+      ]
+    }
+  },
+  "drivers": {
+    "champion_mean_abs_logodds": {
+      "age_debut": 0.6714,
+      "games": 0.4543,
+      "best_rate_pct": 0.3831,
+      "best_gmsc_pct": 0.3747,
+      "gmsc_100": 0.3591,
+      "weight": 0.2596,
+      "last_gmsc_pct": 0.242,
+      "ft_rate_vs_league": 0.2403,
+      "dreb_100": 0.2364,
+      "blk_100": 0.211,
+      "pts_100": 0.2051,
+      "last_rate_pct": 0.1767,
+      "ast_100": 0.1646,
+      "is_center": 0.1602,
+      "undrafted": 0.1587,
+      "stl_100": 0.1529,
+      "oreb_100": 0.1509,
+      "mpg_trend": 0.1492,
+      "fga_100": 0.134,
+      "gmsc_pct_trend": 0.1279,
+      "pm_100": 0.1146,
+      "is_guard": 0.0998,
+      "three_rate_vs_league": 0.0938,
+      "tov_100": 0.0923,
+      "minutes": 0.074,
+      "mpg": 0.0712,
+      "draft_pick": 0.0675,
+      "seasons_played": 0.0545,
+      "ts_vs_league": 0.0545,
+      "pf_100": 0.0511,
+      "height": 0.0405,
+      "is_forward": 0.0033
+    },
+    "challenger_mean_abs_shap": {
+      "gmsc_100": 0.0342,
+      "best_gmsc_pct": 0.0333,
+      "last_rate_pct": 0.0267,
+      "best_rate_pct": 0.0258,
+      "last_gmsc_pct": 0.0236,
+      "age_debut": 0.0163,
+      "minutes": 0.0153,
+      "games": 0.0136,
+      "mpg": 0.0119,
+      "pts_100": 0.0091,
+      "draft_pick": 0.0084,
+      "ft_rate_vs_league": 0.0044,
+      "ts_vs_league": 0.0042,
+      "mpg_trend": 0.0036,
+      "tov_100": 0.0034,
+      "blk_100": 0.0033,
+      "gmsc_pct_trend": 0.003,
+      "fga_100": 0.0029,
+      "ast_100": 0.0029,
+      "seasons_played": 0.0023,
+      "dreb_100": 0.0022,
+      "pm_100": 0.0022,
+      "stl_100": 0.0019,
+      "oreb_100": 0.0018,
+      "three_rate_vs_league": 0.0017,
+      "height": 0.0013,
+      "weight": 0.0012,
+      "pf_100": 0.0011,
+      "undrafted": 0.001,
+      "is_center": 0.0003,
+      "is_guard": 0.0002,
+      "is_forward": 0.0002
+    }
+  },
+  "monitoring": {
+    "psi_levels": {
+      "mpg": {
+        "amber": 0.23,
+        "red": 0.255
+      },
+      "games": {
+        "amber": 0.265,
+        "red": 1.506
+      },
+      "gmsc_100": {
+        "amber": 0.281,
+        "red": 0.811
+      },
+      "pts_100": {
+        "amber": 0.303,
+        "red": 0.814
+      },
+      "ast_100": {
+        "amber": 0.25,
+        "red": 0.309
+      },
+      "ts_vs_league": {
+        "amber": 0.269,
+        "red": 0.341
+      },
+      "three_rate_vs_league": {
+        "amber": 1.748,
+        "red": 2.247
+      },
+      "age_debut": {
+        "amber": 0.25,
+        "red": 0.314
+      },
+      "height": {
+        "amber": 0.208,
+        "red": 0.28
+      },
+      "best_rate_pct": {
+        "amber": 0.308,
+        "red": 0.923
+      }
+    },
+    "start_flag_share_by_season": {
+      "1990": 0.0,
+      "1991": 0.0,
+      "1992": 0.0,
+      "1993": 0.0,
+      "1994": 0.0,
+      "1995": 0.0,
+      "1996": 0.874,
+      "1997": 0.881,
+      "1998": 0.891,
+      "1999": 0.892,
+      "2000": 0.439,
+      "2001": 0.894,
+      "2002": 0.9,
+      "2003": 0.901,
+      "2004": 0.901,
+      "2005": 0.9,
+      "2006": 0.896,
+      "2007": 0.898,
+      "2008": 0.909,
+      "2009": 0.904,
+      "2010": 0.917,
+      "2011": 0.911,
+      "2012": 0.907,
+      "2013": 0.916,
+      "2014": 0.906,
+      "2015": 0.903,
+      "2016": 0.899,
+      "2017": 0.475,
+      "2018": 0.474,
+      "2019": 0.477,
+      "2020": 0.473,
+      "2021": 0.0,
+      "2022": 0.479,
+      "2023": 0.471,
+      "2024": 0.468,
+      "2025": 0.462
+    },
+    "start_flag_unreliable_seasons": [
+      1990,
+      1991,
+      1992,
+      1993,
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2021
+    ],
+    "checks": [
+      {
+        "check": "Field integrity: games-started flag plausible in every season",
+        "value": "27 of 36 seasons implausible",
+        "status": "RED",
+        "action": "Field excluded from the model; raise a data-quality ticket with the data provider"
+      },
+      {
+        "check": "Data drift on the four most influential monitored features (age at debut, games played, best season rank (per possession), Game Score per 100), 2025 class vs history",
+        "value": "1 of 4 outside historical range",
+        "status": "AMBER",
+        "action": "Check calibration on the newest labelled classes; retrain off-season if RED"
+      },
+      {
+        "check": "Data drift on any monitored feature, 2025 class vs history",
+        "value": "2 red, 2 amber of 10",
+        "status": "RED",
+        "action": "Investigate the feature at the next monthly review; note in the model card"
+      },
+      {
+        "check": "Calibration gap on newest labelled classes (2015-18)",
+        "value": 0.012,
+        "status": "GREEN",
+        "action": "Recalibrate if RED; report at Model Review Board if AMBER"
+      },
+      {
+        "check": "Contributor base rate, last 4 labelled classes vs training",
+        "value": -0.024,
+        "status": "AMBER",
+        "action": "Review construct thresholds with steering if RED"
+      },
+      {
+        "check": "Champion-challenger disagreement on live watchlist (share >= 0.15 apart)",
+        "value": 0.056,
+        "status": "GREEN",
+        "action": "Analyst reviews disagreeing players before briefs go out"
+      }
+    ],
+    "data_drift_by_class": [
+      {
+        "debut": 2019,
+        "n": 118,
+        "worst_feature": "ast_100",
+        "worst_psi": 0.379,
+        "worst_red_level": 0.309,
+        "features_red": 1,
+        "features_amber": 1,
+        "psi_mpg": 0.045,
+        "psi_games": 1.019,
+        "psi_gmsc_100": 0.13,
+        "psi_pts_100": 0.125,
+        "psi_ast_100": 0.379,
+        "psi_ts_vs_league": 0.181,
+        "psi_three_rate_vs_league": 0.423,
+        "psi_age_debut": 0.106,
+        "psi_height": 0.16,
+        "psi_best_rate_pct": 0.072
+      },
+      {
+        "debut": 2020,
+        "n": 94,
+        "worst_feature": "height",
+        "worst_psi": 0.275,
+        "worst_red_level": 0.28,
+        "features_red": 0,
+        "features_amber": 3,
+        "psi_mpg": 0.111,
+        "psi_games": 0.831,
+        "psi_gmsc_100": 0.072,
+        "psi_pts_100": 0.219,
+        "psi_ast_100": 0.113,
+        "psi_ts_vs_league": 0.126,
+        "psi_three_rate_vs_league": 0.238,
+        "psi_age_debut": 0.287,
+        "psi_height": 0.275,
+        "psi_best_rate_pct": 0.142
+      },
+      {
+        "debut": 2021,
+        "n": 124,
+        "worst_feature": "ast_100",
+        "worst_psi": 0.863,
+        "worst_red_level": 0.309,
+        "features_red": 1,
+        "features_amber": 2,
+        "psi_mpg": 0.234,
+        "psi_games": 0.327,
+        "psi_gmsc_100": 0.101,
+        "psi_pts_100": 0.103,
+        "psi_ast_100": 0.863,
+        "psi_ts_vs_league": 0.05,
+        "psi_three_rate_vs_league": 0.394,
+        "psi_age_debut": 0.122,
+        "psi_height": 0.205,
+        "psi_best_rate_pct": 0.1
+      },
+      {
+        "debut": 2022,
+        "n": 85,
+        "worst_feature": "ast_100",
+        "worst_psi": 0.364,
+        "worst_red_level": 0.309,
+        "features_red": 3,
+        "features_amber": 2,
+        "psi_mpg": 0.101,
+        "psi_games": 0.104,
+        "psi_gmsc_100": 0.106,
+        "psi_pts_100": 0.352,
+        "psi_ast_100": 0.364,
+        "psi_ts_vs_league": 0.195,
+        "psi_three_rate_vs_league": 0.306,
+        "psi_age_debut": 0.356,
+        "psi_height": 0.307,
+        "psi_best_rate_pct": 0.35
+      },
+      {
+        "debut": 2023,
+        "n": 102,
+        "worst_feature": "age_debut",
+        "worst_psi": 0.465,
+        "worst_red_level": 0.314,
+        "features_red": 1,
+        "features_amber": 2,
+        "psi_mpg": 0.158,
+        "psi_games": 0.311,
+        "psi_gmsc_100": 0.211,
+        "psi_pts_100": 0.174,
+        "psi_ast_100": 0.083,
+        "psi_ts_vs_league": 0.06,
+        "psi_three_rate_vs_league": 1.073,
+        "psi_age_debut": 0.465,
+        "psi_height": 0.217,
+        "psi_best_rate_pct": 0.115
+      },
+      {
+        "debut": 2024,
+        "n": 104,
+        "worst_feature": "ts_vs_league",
+        "worst_psi": 0.807,
+        "worst_red_level": 0.341,
+        "features_red": 1,
+        "features_amber": 2,
+        "psi_mpg": 0.131,
+        "psi_games": 0.144,
+        "psi_gmsc_100": 0.207,
+        "psi_pts_100": 0.28,
+        "psi_ast_100": 0.273,
+        "psi_ts_vs_league": 0.807,
+        "psi_three_rate_vs_league": 0.948,
+        "psi_age_debut": 0.24,
+        "psi_height": 0.11,
+        "psi_best_rate_pct": 0.92
+      },
+      {
+        "debut": 2025,
+        "n": 103,
+        "worst_feature": "mpg",
+        "worst_psi": 0.312,
+        "worst_red_level": 0.255,
+        "features_red": 2,
+        "features_amber": 2,
+        "psi_mpg": 0.312,
+        "psi_games": 0.259,
+        "psi_gmsc_100": 0.141,
+        "psi_pts_100": 0.133,
+        "psi_ast_100": 0.339,
+        "psi_ts_vs_league": 0.087,
+        "psi_three_rate_vs_league": 0.469,
+        "psi_age_debut": 0.273,
+        "psi_height": 0.261,
+        "psi_best_rate_pct": 0.121
+      }
+    ],
+    "base_rate_by_class": {
+      "1996": 0.174,
+      "1997": 0.119,
+      "1998": 0.235,
+      "1999": 0.183,
+      "2000": 0.075,
+      "2001": 0.188,
+      "2002": 0.141,
+      "2003": 0.149,
+      "2004": 0.159,
+      "2005": 0.143,
+      "2006": 0.088,
+      "2007": 0.172,
+      "2008": 0.194,
+      "2009": 0.175,
+      "2010": 0.164,
+      "2011": 0.148,
+      "2012": 0.141,
+      "2013": 0.141,
+      "2014": 0.134,
+      "2015": 0.164,
+      "2016": 0.138,
+      "2017": 0.075,
+      "2018": 0.124
+    },
+    "league_by_season": [
+      {
+        "season": 1990,
+        "players": 387,
+        "three_pa_share": 0.0819,
+        "pace": 100.3537
+      },
+      {
+        "season": 1991,
+        "players": 385,
+        "three_pa_share": 0.0874,
+        "pace": 99.0998
+      },
+      {
+        "season": 1992,
+        "players": 389,
+        "three_pa_share": 0.1042,
+        "pace": 99.0722
+      },
+      {
+        "season": 1993,
+        "players": 402,
+        "three_pa_share": 0.1172,
+        "pace": 97.3038
+      },
+      {
+        "season": 1994,
+        "players": 407,
+        "three_pa_share": 0.1878,
+        "pace": 95.0114
+      },
+      {
+        "season": 1995,
+        "players": 429,
+        "three_pa_share": 0.2001,
+        "pace": 93.7977
+      },
+      {
+        "season": 1996,
+        "players": 440,
+        "three_pa_share": 0.2118,
+        "pace": 92.7362
+      },
+      {
+        "season": 1997,
+        "players": 439,
+        "three_pa_share": 0.1595,
+        "pace": 92.9885
+      },
+      {
+        "season": 1998,
+        "players": 440,
+        "three_pa_share": 0.1683,
+        "pace": 91.5816
+      },
+      {
+        "season": 1999,
+        "players": 438,
+        "three_pa_share": 0.1671,
+        "pace": 95.6752
+      },
+      {
+        "season": 2000,
+        "players": 440,
+        "three_pa_share": 0.1701,
+        "pace": 93.8075
+      },
+      {
+        "season": 2001,
+        "players": 440,
+        "three_pa_share": 0.1815,
+        "pace": 93.333
+      },
+      {
+        "season": 2002,
+        "players": 428,
+        "three_pa_share": 0.1817,
+        "pace": 93.6311
+      },
+      {
+        "season": 2003,
+        "players": 442,
+        "three_pa_share": 0.187,
+        "pace": 92.6354
+      },
+      {
+        "season": 2004,
+        "players": 464,
+        "three_pa_share": 0.1961,
+        "pace": 93.564
+      },
+      {
+        "season": 2005,
+        "players": 457,
+        "three_pa_share": 0.2023,
+        "pace": 92.9901
+      },
+      {
+        "season": 2006,
+        "players": 457,
+        "three_pa_share": 0.2125,
+        "pace": 94.3364
+      },
+      {
+        "season": 2007,
+        "players": 451,
+        "three_pa_share": 0.2222,
+        "pace": 94.7997
+      },
+      {
+        "season": 2008,
+        "players": 445,
+        "three_pa_share": 0.224,
+        "pace": 94.1168
+      },
+      {
+        "season": 2009,
+        "players": 441,
+        "three_pa_share": 0.222,
+        "pace": 95.1045
+      },
+      {
+        "season": 2010,
+        "players": 452,
+        "three_pa_share": 0.2218,
+        "pace": 94.5332
+      },
+      {
+        "season": 2011,
+        "players": 478,
+        "three_pa_share": 0.2257,
+        "pace": 93.7559
+      },
+      {
+        "season": 2012,
+        "players": 468,
+        "three_pa_share": 0.2434,
+        "pace": 94.4362
+      },
+      {
+        "season": 2013,
+        "players": 482,
+        "three_pa_share": 0.2595,
+        "pace": 96.3277
+      },
+      {
+        "season": 2014,
+        "players": 492,
+        "three_pa_share": 0.2682,
+        "pace": 96.3017
+      },
+      {
+        "season": 2015,
+        "players": 476,
+        "three_pa_share": 0.2847,
+        "pace": 98.0796
+      },
+      {
+        "season": 2016,
+        "players": 485,
+        "three_pa_share": 0.3161,
+        "pace": 98.7271
+      },
+      {
+        "season": 2017,
+        "players": 539,
+        "three_pa_share": 0.337,
+        "pace": 99.5662
+      },
+      {
+        "season": 2018,
+        "players": 526,
+        "three_pa_share": 0.3588,
+        "pace": 102.3958
+      },
+      {
+        "season": 2019,
+        "players": 528,
+        "three_pa_share": 0.3841,
+        "pace": 102.6951
+      },
+      {
+        "season": 2020,
+        "players": 540,
+        "three_pa_share": 0.3918,
+        "pace": 101.4192
+      },
+      {
+        "season": 2021,
+        "players": 602,
+        "three_pa_share": 0.3993,
+        "pace": 100.5755
+      },
+      {
+        "season": 2022,
+        "players": 539,
+        "three_pa_share": 0.3875,
+        "pace": 101.5483
+      },
+      {
+        "season": 2023,
+        "players": 570,
+        "three_pa_share": 0.3949,
+        "pace": 100.9383
+      },
+      {
+        "season": 2024,
+        "players": 569,
+        "three_pa_share": 0.421,
+        "pace": 100.6125
+      },
+      {
+        "season": 2025,
+        "players": 582,
+        "three_pa_share": 0.4151,
+        "pace": 101.3075
+      }
+    ]
+  },
+  "latest_season": 2025
+}

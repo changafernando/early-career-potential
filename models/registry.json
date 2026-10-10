@@ -1,0 +1,159 @@
+{
+  "version": "1.0.0",
+  "created": "2026-10-09",
+  "construct": "rate",
+  "construct_description": "A rotation season (at least 1,000 minutes, scaled for shortened seasons) whose Game Score per 100 possessions ranks in the top third of rotation players that season",
+  "training_classes": [
+    1996,
+    2018
+  ],
+  "n_training_players": 1718,
+  "base_rate": 0.1449,
+  "champion": {
+    "model": "Logistic regression",
+    "calibration": "sigmoid"
+  },
+  "challenger": {
+    "model": "Random forest",
+    "calibration": "none"
+  },
+  "data_hash": {
+    "player_team_seasons.csv.gz": "0ab8537ef118",
+    "players.csv": "775ed31a2cf4",
+    "team_seasons.csv": "7884a2ad8050"
+  },
+  "decision_threshold": 0.25,
+  "status": "Candidate - awaiting Model Review Board",
+  "models": {
+    "h1": {
+      "champion": "champion_h1.joblib",
+      "challenger": "challenger_h1.joblib",
+      "uncertainty_ensemble": "uncertainty_h1.joblib",
+      "features": [
+        "games",
+        "minutes",
+        "mpg",
+        "pts_100",
+        "ast_100",
+        "oreb_100",
+        "dreb_100",
+        "stl_100",
+        "blk_100",
+        "tov_100",
+        "fga_100",
+        "pf_100",
+        "pm_100",
+        "gmsc_100",
+        "ts_vs_league",
+        "three_rate_vs_league",
+        "ft_rate_vs_league",
+        "seasons_played",
+        "best_gmsc_pct",
+        "last_gmsc_pct",
+        "best_rate_pct",
+        "last_rate_pct",
+        "age_debut",
+        "height",
+        "weight",
+        "draft_pick",
+        "undrafted",
+        "is_guard",
+        "is_forward",
+        "is_center"
+      ],
+      "sha256": {
+        "champion": "15174da9f122",
+        "challenger": "beac28bc95f3",
+        "uncertainty": "1dcdf562eb9f"
+      }
+    },
+    "h2": {
+      "champion": "champion_h2.joblib",
+      "challenger": "challenger_h2.joblib",
+      "uncertainty_ensemble": "uncertainty_h2.joblib",
+      "features": [
+        "games",
+        "minutes",
+        "mpg",
+        "pts_100",
+        "ast_100",
+        "oreb_100",
+        "dreb_100",
+        "stl_100",
+        "blk_100",
+        "tov_100",
+        "fga_100",
+        "pf_100",
+        "pm_100",
+        "gmsc_100",
+        "ts_vs_league",
+        "three_rate_vs_league",
+        "ft_rate_vs_league",
+        "seasons_played",
+        "best_gmsc_pct",
+        "last_gmsc_pct",
+        "best_rate_pct",
+        "last_rate_pct",
+        "gmsc_pct_trend",
+        "mpg_trend",
+        "age_debut",
+        "height",
+        "weight",
+        "draft_pick",
+        "undrafted",
+        "is_guard",
+        "is_forward",
+        "is_center"
+      ],
+      "sha256": {
+        "champion": "1cf01dcb7b6e",
+        "challenger": "45612e8834f4",
+        "uncertainty": "235d51f96bdb"
+      }
+    },
+    "h3": {
+      "champion": "champion_h3.joblib",
+      "challenger": "challenger_h3.joblib",
+      "uncertainty_ensemble": "uncertainty_h3.joblib",
+      "features": [
+        "games",
+        "minutes",
+        "mpg",
+        "pts_100",
+        "ast_100",
+        "oreb_100",
+        "dreb_100",
+        "stl_100",
+        "blk_100",
+        "tov_100",
+        "fga_100",
+        "pf_100",
+        "pm_100",
+        "gmsc_100",
+        "ts_vs_league",
+        "three_rate_vs_league",
+        "ft_rate_vs_league",
+        "seasons_played",
+        "best_gmsc_pct",
+        "last_gmsc_pct",
+        "best_rate_pct",
+        "last_rate_pct",
+        "gmsc_pct_trend",
+        "mpg_trend",
+        "age_debut",
+        "height",
+        "weight",
+        "draft_pick",
+        "undrafted",
+        "is_guard",
+        "is_forward",
+        "is_center"
+      ],
+      "sha256": {
+        "champion": "bd988e92c6b4",
+        "challenger": "fbb80c0b8bb9",
+        "uncertainty": "a92711a50ace"
+      }
+    }
+  }
+}

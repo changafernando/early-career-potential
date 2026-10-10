@@ -1,0 +1,36 @@
+{
+  "game_types_seen (gameId prefix|gameType)": {
+    "001|Preseason": 57118,
+    "002|(blank)": 50,
+    "002|NBA Emirates Cup": 1759,
+    "002|Regular Season": 1502634,
+    "003|All-Star Game": 1511,
+    "004|Playoffs": 102249,
+    "005|Play-in Tournament": 998,
+    "006|Emirates NBA Cup": 30,
+    "006|NBA Cup": 28,
+    "006|Regular Season": 27,
+    "006|in-season-knockout": 5,
+    "001|Pre Season": 3513
+  },
+  "data_quality": {
+    "rows_read": 1669922,
+    "regular_season_rows": 1504443,
+    "cup_final_rows_excluded": 90,
+    "rows_before_first_season": 485431,
+    "rows_missing_minutes": 146318,
+    "rows_missing_minutes_with_points": 0,
+    "rows_team_id_restored": 45935,
+    "rows_team_id_unresolved": 0
+  },
+  "player_team_seasons": 19407,
+  "players_with_minutes": 3205,
+  "seasons": [
+    1990,
+    2025
+  ],
+  "team_seasons": 1056,
+  "player_rows_without_team_match": 0,
+  "players_in_bio_file": 6692,
+  "bio_missing_height_share": 0.237
+}
