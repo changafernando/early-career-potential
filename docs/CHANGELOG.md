@@ -6,7 +6,10 @@
   with their effects combined, instead of listing one fact as two drivers. Driver order is now stable, so
   `score` no longer rewrites unchanged outputs.
 * `models/registry.json` records the scikit-learn, numpy, pandas and joblib versions used for training, and `score`
-  warns when the current environment differs. The current registry predates this: run `all` to record them.
+  warns before loading the models when the current environment differs. Models retrained with Python 3.11 and
+  scikit-learn 1.9.1, so the registry now records them.
+* Tests: an end-to-end `ingest` test on a tiny raw sample (bubble game, 2021-22 blank game type and team ID,
+  playoff and NBA Cup final rows, did-not-play row), and a smoke test that runs `score` on a temporary copy.
 
 ## v1.0.0 (Assessment 3): production-ready artefact
 

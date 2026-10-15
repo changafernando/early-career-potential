@@ -314,6 +314,12 @@ def load_registered(cfg: dict) -> tuple[dict, dict]:
     """
     mdir = cfg["paths"]["models_dir"]
     reg = json.loads((mdir / "registry.json").read_text())
+    trained_with, here = reg.get("library_versions"), library_versions()
+    if trained_with is None:
+        print("note: the registry does not record library versions; run `python run_pipeline.py all` to record them")
+    elif trained_with != here:
+        print(f"warning: models were trained with {trained_with} but this environment has {here}. "
+              "Saved models are tied to these versions: run `python run_pipeline.py all` to retrain locally.", flush=True)
     M = {}
     for h in cfg["horizons"]:
         e = reg["models"][f"h{h}"]

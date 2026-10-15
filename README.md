@@ -22,7 +22,7 @@ make the decisions.
 | Results | `outputs/` | `metrics.json` (incl. business case and release gates), model-selection and model-comparison tables, backtest predictions, fairness audit, drift report, figures |
 | Walkthrough notebook | `notebooks/walkthrough.ipynb` (+ `.html`) | The build and evaluation story, step by step, with outputs |
 | Documentation | `docs/` | Model card, runbook, data dictionary, user guide, evaluation protocol, changelog |
-| Tests | `tests/` | 21 unit and integration tests (leakage, construct logic, thresholds, output rules) |
+| Tests | `tests/` | 23 unit and integration tests (leakage, construct logic, thresholds, output rules) |
 
 ## Quick start
 
@@ -30,9 +30,9 @@ Requires Python 3.10 or later.
 
 ```bash
 pip install -r requirements.txt
-python run_pipeline.py all        # about 3 minutes on a laptop: select, backtest, train, score, monitor, build dashboard
+python run_pipeline.py all        # about 1 minute on a laptop: select, backtest, train, score, monitor, build dashboard
 open dashboard/ecp_dashboard.html # or double-click it; it works offline in any modern browser
-python -m pytest -q               # 21 tests
+python -m pytest -q               # 23 tests
 ```
 
 The processed data ships in `data/processed/`, so the raw dataset is **not** needed to run the model.
@@ -48,9 +48,9 @@ python run_pipeline.py ingest     # reads PlayerStatistics.csv, TeamStatistics.c
 |---|---|---|---|
 | `python run_pipeline.py ingest` | After each data refresh | Raw CSVs to `data/processed/` and an ingest data-quality report | ~10 s |
 | `python run_pipeline.py score` | Nightly or monthly | Re-scores active young players with the **registered** models, re-runs monitoring and rebuilds briefs and dashboard. No retraining | ~3 s |
-| `python run_pipeline.py all` | Off-season retrain, or after a config change | Full rebuild: selection, backtest, training, registry, scoring, monitoring, figures, dashboard | ~3 min |
+| `python run_pipeline.py all` | Off-season retrain, or after a config change | Full rebuild: selection, backtest, training, registry, scoring, monitoring, figures, dashboard | ~1 min |
 | `python run_pipeline.py report` | Presentation tweaks | Rebuilds figures, briefs and dashboard from saved outputs | ~2 s |
-| `python run_pipeline.py all --fast` | Quick check | As `all` with fewer bootstrap resamples | ~2 min |
+| `python run_pipeline.py all --fast` | Quick check | As `all` with fewer bootstrap resamples | ~40 s |
 
 ## Results snapshot (untouched 2015-18 debut classes, 385 players, 46 contributors)
 
@@ -167,5 +167,6 @@ early-career-potential/
 └── tests/                  pytest suite
 ```
 
-Tested with Python 3.13, pandas 3.0, scikit-learn 1.9, numpy 2.5, shap 0.52 and matplotlib 3.11. Saved `.joblib`
-models are tied to the scikit-learn version. If yours differs, run `python run_pipeline.py all` to retrain locally.
+Tested with Python 3.11, pandas 3.0, scikit-learn 1.9, numpy 2.4, shap 0.51 and matplotlib 3.11. Saved `.joblib`
+models are tied to the scikit-learn version, which `models/registry.json` records; `score` warns when yours differs.
+If it does, run `python run_pipeline.py all` to retrain locally.
