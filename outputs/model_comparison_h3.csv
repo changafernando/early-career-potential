@@ -1,5 +1,5 @@
 model,calibration,role,val_brier,val_auc,test_auc,test_brier,test_ece,test_calibration_gap,fit_seconds,explanation,parameters,parameter_unit,file_kb
-Logistic regression,sigmoid,Champion,0.075,0.92,0.959,0.0502,0.014,0.012,0.1,Exact additive contributions (readable coefficients),54,coefficients,3.1
-Random forest,none,Challenger,0.077,0.895,0.954,0.0498,0.023,0.006,0.8,"TreeSHAP over 400 trees (exact, but spread over thousands of splits)",34200,tree nodes,697.2
-Gradient boosting,sigmoid,Not selected,0.0775,0.899,0.953,0.0482,0.016,0.013,6.7,TreeSHAP over 250 sequential trees,3516,tree nodes,97.2
+Logistic regression,sigmoid,Champion,0.075,0.92,0.959,0.0502,0.014,0.012,0.0,Exact additive contributions (readable coefficients),54,coefficients,3.1
+Random forest,none,Challenger,0.0771,0.895,0.954,0.0497,0.023,0.006,0.2,"TreeSHAP over 400 trees (exact, but spread over thousands of splits)",34200,tree nodes,697.2
+Gradient boosting,sigmoid,Not selected,0.0775,0.899,0.953,0.0482,0.017,0.013,3.4,TreeSHAP over 250 sequential trees,3520,tree nodes,97.3
 Draft order only,none,Baseline,,,0.834,0.084,0.023,0.001,,Draft slot only,3,coefficients,

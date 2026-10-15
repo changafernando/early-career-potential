@@ -35,8 +35,8 @@
       {
         "model": "Random forest",
         "calibration": "none",
-        "val_brier": 0.077,
-        "val_auc": 0.8949,
+        "val_brier": 0.0771,
+        "val_auc": 0.8951,
         "val_cal_gap": -0.013
       },
       {
@@ -44,28 +44,28 @@
         "calibration": "sigmoid",
         "val_brier": 0.0775,
         "val_auc": 0.8991,
-        "val_cal_gap": 0.0028
+        "val_cal_gap": 0.0027
       },
       {
         "model": "Gradient boosting",
         "calibration": "isotonic",
         "val_brier": 0.0779,
-        "val_auc": 0.8943,
+        "val_auc": 0.8945,
         "val_cal_gap": 0.004
       },
       {
         "model": "Random forest",
         "calibration": "isotonic",
-        "val_brier": 0.0789,
-        "val_auc": 0.8875,
-        "val_cal_gap": -0.0155
+        "val_brier": 0.0788,
+        "val_auc": 0.8881,
+        "val_cal_gap": -0.0156
       },
       {
         "model": "Random forest",
         "calibration": "sigmoid",
         "val_brier": 0.0798,
-        "val_auc": 0.8949,
-        "val_cal_gap": -0.0121
+        "val_auc": 0.8951,
+        "val_cal_gap": -0.0122
       },
       {
         "model": "Gradient boosting",
@@ -125,33 +125,33 @@
         },
         "challenger": {
           "auc": {
-            "est": 0.895922,
-            "lo": 0.846729,
-            "hi": 0.941598
+            "est": 0.895793,
+            "lo": 0.84688,
+            "hi": 0.941703
           },
           "pr_auc": {
-            "est": 0.649725,
-            "lo": 0.502742,
-            "hi": 0.785935
+            "est": 0.643883,
+            "lo": 0.493388,
+            "hi": 0.786074
           },
           "brier": {
-            "est": 0.064744,
-            "lo": 0.048189,
-            "hi": 0.083195
+            "est": 0.064737,
+            "lo": 0.048095,
+            "hi": 0.083217
           },
           "ece": {
-            "est": 0.029558,
-            "lo": 0.021754,
-            "hi": 0.059618
+            "est": 0.02954,
+            "lo": 0.021134,
+            "hi": 0.05974
           },
-          "mean_pred": 0.128087,
+          "mean_pred": 0.128179,
           "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.061755,
-            "lo": 0.020677,
-            "hi": 0.108352,
+            "est": 0.061626,
+            "lo": 0.0201,
+            "hi": 0.108422,
             "share_of_resamples_positive": 0.998
           }
         },
@@ -173,8 +173,8 @@
           },
           "ece": {
             "est": 0.022885,
-            "lo": 0.021941,
-            "hi": 0.061728
+            "lo": 0.02166,
+            "hi": 0.061823
           },
           "mean_pred": 0.12007,
           "observed": 0.119481,
@@ -187,17 +187,17 @@
           "champion": {
             "auc": 0.8557785299806576,
             "pr_auc": 0.6654099101727731,
-            "brier": 0.1011228716662728,
-            "ece": 0.02784639794220267,
-            "mean_pred": 0.19771634507851885,
+            "brier": 0.10112287166627278,
+            "ece": 0.02784639794220243,
+            "mean_pred": 0.19771634507851873,
             "observed": 0.1896551724137931
           },
           "draft": {
             "auc": 0.7767770793036751,
             "pr_auc": 0.45953741645123214,
             "brier": 0.1290353654481147,
-            "ece": 0.049289559968342916,
-            "mean_pred": 0.1728741494434808,
+            "ece": 0.056276682837969404,
+            "mean_pred": 0.17287414944348098,
             "observed": 0.1896551724137931
           }
         },
@@ -457,33 +457,33 @@
         },
         "challenger": {
           "auc": {
-            "est": 0.942799,
-            "lo": 0.914633,
-            "hi": 0.966275
+            "est": 0.942991,
+            "lo": 0.914871,
+            "hi": 0.966312
           },
           "pr_auc": {
-            "est": 0.696858,
-            "lo": 0.554933,
-            "hi": 0.835512
+            "est": 0.69701,
+            "lo": 0.555583,
+            "hi": 0.835876
           },
           "brier": {
-            "est": 0.055834,
-            "lo": 0.041596,
-            "hi": 0.071769
+            "est": 0.055807,
+            "lo": 0.041574,
+            "hi": 0.071726
           },
           "ece": {
-            "est": 0.01606,
-            "lo": 0.013135,
-            "hi": 0.045019
+            "est": 0.016043,
+            "lo": 0.013472,
+            "hi": 0.045004
           },
-          "mean_pred": 0.125922,
+          "mean_pred": 0.125879,
           "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.108632,
-            "lo": 0.060239,
-            "hi": 0.160456,
+            "est": 0.108824,
+            "lo": 0.060178,
+            "hi": 0.160733,
             "share_of_resamples_positive": 1.0
           }
         },
@@ -505,8 +505,8 @@
           },
           "ece": {
             "est": 0.022885,
-            "lo": 0.021941,
-            "hi": 0.061728
+            "lo": 0.02166,
+            "hi": 0.061823
           },
           "mean_pred": 0.12007,
           "observed": 0.119481,
@@ -519,17 +519,17 @@
           "champion": {
             "auc": 0.9185203094777563,
             "pr_auc": 0.7451951133202961,
-            "brier": 0.08557992664369335,
-            "ece": 0.038137667013622395,
-            "mean_pred": 0.2072291632820647,
+            "brier": 0.08557992664369339,
+            "ece": 0.03813766701362316,
+            "mean_pred": 0.2072291632820657,
             "observed": 0.1896551724137931
           },
           "draft": {
             "auc": 0.7767770793036751,
             "pr_auc": 0.45953741645123214,
             "brier": 0.1290353654481147,
-            "ece": 0.049289559968342916,
-            "mean_pred": 0.1728741494434808,
+            "ece": 0.056276682837969404,
+            "mean_pred": 0.17287414944348098,
             "observed": 0.1896551724137931
           }
         },
@@ -789,33 +789,33 @@
         },
         "challenger": {
           "auc": {
-            "est": 0.954021,
-            "lo": 0.925154,
-            "hi": 0.977405
+            "est": 0.953893,
+            "lo": 0.92513,
+            "hi": 0.977247
           },
           "pr_auc": {
-            "est": 0.763074,
-            "lo": 0.626669,
-            "hi": 0.88327
+            "est": 0.762562,
+            "lo": 0.626084,
+            "hi": 0.88265
           },
           "brier": {
-            "est": 0.049756,
-            "lo": 0.036796,
-            "hi": 0.064226
+            "est": 0.049736,
+            "lo": 0.036788,
+            "hi": 0.064199
           },
           "ece": {
-            "est": 0.022571,
-            "lo": 0.013792,
-            "hi": 0.046176
+            "est": 0.022567,
+            "lo": 0.01362,
+            "hi": 0.046059
           },
-          "mean_pred": 0.125645,
+          "mean_pred": 0.125632,
           "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.119854,
-            "lo": 0.069474,
-            "hi": 0.17533,
+            "est": 0.119726,
+            "lo": 0.068997,
+            "hi": 0.175085,
             "share_of_resamples_positive": 1.0
           }
         },
@@ -837,8 +837,8 @@
           },
           "ece": {
             "est": 0.022885,
-            "lo": 0.021941,
-            "hi": 0.061728
+            "lo": 0.02166,
+            "hi": 0.061823
           },
           "mean_pred": 0.12007,
           "observed": 0.119481,
@@ -851,17 +851,17 @@
           "champion": {
             "auc": 0.936774661508704,
             "pr_auc": 0.7686779152224225,
-            "brier": 0.07776061968066648,
-            "ece": 0.03396226585141948,
-            "mean_pred": 0.21220622158498345,
+            "brier": 0.07776061968066629,
+            "ece": 0.033962265851419655,
+            "mean_pred": 0.21220622158498403,
             "observed": 0.1896551724137931
           },
           "draft": {
             "auc": 0.7767770793036751,
             "pr_auc": 0.45953741645123214,
             "brier": 0.1290353654481147,
-            "ece": 0.049289559968342916,
-            "mean_pred": 0.1728741494434808,
+            "ece": 0.056276682837969404,
+            "mean_pred": 0.17287414944348098,
             "observed": 0.1896551724137931
           }
         },
@@ -1455,14 +1455,14 @@
         "Anfernee Simons",
         "Donte DiVincenzo",
         "Mikal Bridges",
-        "OG Anunoby"
+        "Josh Hart"
       ],
       "examples_rate_only": [
-        "Marvin Bagley III",
-        "Mitchell Robinson",
         "Moritz Wagner",
-        "Richaun Holmes",
-        "Norman Powell"
+        "Mitchell Robinson",
+        "Marvin Bagley III",
+        "Norman Powell",
+        "Richaun Holmes"
       ]
     }
   },
@@ -1502,17 +1502,17 @@
       "is_forward": 0.0033
     },
     "challenger_mean_abs_shap": {
-      "gmsc_100": 0.0342,
+      "gmsc_100": 0.0344,
       "best_gmsc_pct": 0.0333,
-      "last_rate_pct": 0.0267,
-      "best_rate_pct": 0.0258,
-      "last_gmsc_pct": 0.0236,
+      "last_rate_pct": 0.0266,
+      "best_rate_pct": 0.0257,
+      "last_gmsc_pct": 0.0235,
       "age_debut": 0.0163,
       "minutes": 0.0153,
-      "games": 0.0136,
+      "games": 0.0137,
       "mpg": 0.0119,
       "pts_100": 0.0091,
-      "draft_pick": 0.0084,
+      "draft_pick": 0.0083,
       "ft_rate_vs_league": 0.0044,
       "ts_vs_league": 0.0042,
       "mpg_trend": 0.0036,
@@ -1520,7 +1520,7 @@
       "blk_100": 0.0033,
       "gmsc_pct_trend": 0.003,
       "fga_100": 0.0029,
-      "ast_100": 0.0029,
+      "ast_100": 0.0028,
       "seasons_played": 0.0023,
       "dreb_100": 0.0022,
       "pm_100": 0.0022,
@@ -1679,7 +1679,7 @@
       },
       {
         "check": "Champion-challenger disagreement on live watchlist (share >= 0.15 apart)",
-        "value": 0.056,
+        "value": 0.052,
         "status": "GREEN",
         "action": "Analyst reviews disagreeing players before briefs go out"
       }
@@ -2074,7 +2074,7 @@
       "test_brier": 0.0502,
       "test_ece": 0.014,
       "test_calibration_gap": 0.012,
-      "fit_seconds": 0.1,
+      "fit_seconds": 0.0,
       "explanation": "Exact additive contributions (readable coefficients)",
       "parameters": 54,
       "parameter_unit": "coefficients",
@@ -2084,13 +2084,13 @@
       "model": "Random forest",
       "calibration": "none",
       "role": "Challenger",
-      "val_brier": 0.077,
+      "val_brier": 0.0771,
       "val_auc": 0.895,
       "test_auc": 0.954,
-      "test_brier": 0.0498,
+      "test_brier": 0.0497,
       "test_ece": 0.023,
       "test_calibration_gap": 0.006,
-      "fit_seconds": 0.8,
+      "fit_seconds": 0.2,
       "explanation": "TreeSHAP over 400 trees (exact, but spread over thousands of splits)",
       "parameters": 34200,
       "parameter_unit": "tree nodes",
@@ -2104,13 +2104,13 @@
       "val_auc": 0.899,
       "test_auc": 0.953,
       "test_brier": 0.0482,
-      "test_ece": 0.016,
+      "test_ece": 0.017,
       "test_calibration_gap": 0.013,
-      "fit_seconds": 6.7,
+      "fit_seconds": 3.4,
       "explanation": "TreeSHAP over 250 sequential trees",
-      "parameters": 3516,
+      "parameters": 3520,
       "parameter_unit": "tree nodes",
-      "file_kb": 97.2
+      "file_kb": 97.3
     },
     {
       "model": "Draft order only",
@@ -2161,7 +2161,7 @@
     {
       "gate": "Champion and challenger agree",
       "rule": "share of live players >= 0.15 apart <= 0.2",
-      "value": "5.6%",
+      "value": "5.2%",
       "status": "PASS",
       "if_failed": "Analyst reviews every disagreeing player; investigate before release"
     }

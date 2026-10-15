@@ -1,8 +1,8 @@
 personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_disagree,status,class_rank,class_size,games,minutes,mpg,outcome
 1626157,Karl-Anthony Towns,2015,3,Center,Pick 1,0.988,0.978,0.992,0.961,False,Flag for review,1,73,246,8456,34.4,1
 203999,Nikola Jokic,2015,3,Center,Pick 41,0.98,0.965,0.987,0.924,False,Flag for review,2,73,227,6104,26.9,1
-204001,Kristaps Porzingis,2015,3,Center,Pick 4,0.895,0.832,0.938,0.845,False,Flag for review,3,73,186,5674,30.5,1
-1626167,Myles Turner,2015,3,Center,Pick 11,0.824,0.746,0.894,0.748,False,Flag for review,4,73,206,5639,27.4,1
+204001,Kristaps Porzingis,2015,3,Center,Pick 4,0.895,0.832,0.938,0.844,False,Flag for review,3,73,186,5674,30.5,1
+1626167,Myles Turner,2015,3,Center,Pick 11,0.824,0.746,0.894,0.747,False,Flag for review,4,73,206,5639,27.4,1
 1626149,Montrezl Harrell,2015,3,Center,Pick 32,0.79,0.62,0.874,0.564,True,Flag for review,5,73,173,2645,15.3,1
 1626164,Devin Booker,2015,3,Guard,Pick 13,0.748,0.658,0.845,0.739,False,Flag for review,6,73,208,6602,31.7,1
 1626178,Rondae Hollis-Jefferson,2015,3,Forward,Pick 23,0.678,0.569,0.782,0.592,False,Flag for review,7,73,175,4209,24.1,0
@@ -11,14 +11,14 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1626171,Bobby Portis,2015,3,Forward,Pick 22,0.59,0.449,0.693,0.664,False,Flag for review,10,73,199,3649,18.3,1
 1626168,Trey Lyles,2015,3,Forward,Pick 12,0.503,0.308,0.641,0.382,False,Flag for review,11,73,224,3816,17.0,0
 1626246,Boban Marjanovic,2015,3,Center,Undrafted,0.484,0.235,0.758,0.257,True,Flag for review,12,73,122,1083,8.9,0
-1626204,Larry Nance Jr.,2015,3,Center,Pick 27,0.451,0.305,0.608,0.432,False,Flag for review,13,73,192,4034,21.0,0
+1626204,Larry Nance Jr.,2015,3,Center,Pick 27,0.451,0.305,0.608,0.433,False,Flag for review,13,73,192,4034,21.0,0
 1626158,Richaun Holmes,2015,3,Center,Pick 37,0.427,0.316,0.598,0.224,True,Flag for review,14,73,156,2569,16.5,1
 1626145,Tyus Jones,2015,3,Guard,Pick 24,0.34,0.207,0.479,0.161,True,Flag for review,15,73,174,2731,15.7,0
 1626179,Terry Rozier,2015,3,Guard,Pick 16,0.34,0.256,0.518,0.389,False,Flag for review,15,73,191,3553,18.6,1
 1626153,Delon Wright,2015,3,Guard,Pick 20,0.322,0.209,0.472,0.217,False,Flag for review,17,73,122,2047,16.8,0
 1626143,Jahlil Okafor,2015,3,Center,Pick 3,0.31,0.211,0.463,0.385,False,Flag for review,18,73,131,3007,23.0,0
 1626163,Frank Kaminsky,2015,3,Center,Pick 9,0.289,0.207,0.403,0.171,False,Flag for review,19,73,235,5380,22.9,0
-1626170,Jerian Grant,2015,3,Guard,Pick 19,0.176,0.129,0.265,0.208,False,Below threshold,20,73,212,3879,18.3,0
+1626170,Jerian Grant,2015,3,Guard,Pick 19,0.176,0.129,0.265,0.21,False,Below threshold,20,73,212,3879,18.3,0
 1626162,Kelly Oubre Jr.,2015,3,Wing (G/F),Pick 15,0.163,0.103,0.224,0.152,False,Below threshold,21,73,218,4394,20.2,0
 1626172,Kevon Looney,2015,3,Forward,Pick 30,0.16,0.089,0.257,0.134,False,Below threshold,22,73,124,1314,10.6,0
 1626210,Alan Williams,2015,3,Center,Undrafted,0.157,0.088,0.429,0.152,False,Below threshold,23,73,60,817,13.6,0
@@ -27,7 +27,7 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1626209,Mario Hezonja,2015,3,Wing (G/F),Pick 5,0.153,0.115,0.233,0.096,False,Below threshold,25,73,217,3925,18.1,0
 204456,T.J. McConnell,2015,3,Guard,Undrafted,0.15,0.087,0.306,0.174,False,Below threshold,27,73,238,5332,22.4,0
 1626147,Justin Anderson,2015,3,Wing (G/F),Pick 21,0.1,0.047,0.152,0.069,False,Below threshold,28,73,166,2308,13.9,0
-203186,Willie Reed,2015,3,Center,Undrafted,0.072,0.046,0.116,0.196,False,Below threshold,29,73,150,1808,12.1,0
+203186,Willie Reed,2015,3,Center,Undrafted,0.072,0.046,0.116,0.195,False,Below threshold,29,73,150,1808,12.1,0
 1626166,Cameron Payne,2015,3,Guard,Pick 14,0.069,0.046,0.138,0.048,False,Below threshold,30,73,111,1684,15.2,0
 1626159,Justise Winslow,2015,3,Wing (G/F),Pick 10,0.066,0.043,0.107,0.072,False,Below threshold,31,73,164,4456,27.2,0
 1626181,Norman Powell,2015,3,Guard,Pick 46,0.051,0.024,0.072,0.017,False,Below threshold,32,73,193,3061,15.9,1
@@ -84,23 +84,23 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 203967,Dario Saric,2016,3,Center,Pick 12,0.405,0.313,0.54,0.383,False,Flag for review,10,87,239,6348,26.6,0
 1627751,Jakob Poeltl,2016,3,Center,Pick 9,0.386,0.253,0.525,0.41,False,Flag for review,11,87,211,3319,15.7,1
 1627742,Brandon Ingram,2016,3,Forward,Pick 2,0.376,0.303,0.518,0.332,False,Flag for review,12,87,190,5922,31.2,1
-1627759,Jaylen Brown,2016,3,Wing (G/F),Pick 3,0.362,0.237,0.477,0.361,False,Flag for review,13,87,222,5292,23.8,1
+1627759,Jaylen Brown,2016,3,Wing (G/F),Pick 3,0.362,0.237,0.477,0.36,False,Flag for review,13,87,222,5292,23.8,1
 1627763,Malcolm Brogdon,2016,3,Guard,Pick 36,0.311,0.204,0.438,0.565,True,Flag for review,14,87,187,5154,27.6,1
 1627736,Malik Beasley,2016,3,Guard,Pick 19,0.271,0.187,0.372,0.282,False,Flag for review,15,87,159,2550,16.0,0
 1627747,Caris LeVert,2016,3,Guard,Pick 20,0.265,0.208,0.384,0.27,False,Flag for review,16,87,168,4079,24.3,1
 1627832,Fred VanVleet,2016,3,Guard,Undrafted,0.188,0.13,0.319,0.224,False,Below threshold,17,87,173,3493,20.2,1
 1627746,Skal Labissiere,2016,3,Center,Pick 28,0.177,0.091,0.288,0.109,False,Below threshold,18,87,113,1969,17.4,0
 1627738,Deyonta Davis,2016,3,Center,Pick 31,0.176,0.081,0.306,0.122,False,Below threshold,19,87,100,1250,12.5,0
-1627739,Kris Dunn,2016,3,Guard,Pick 5,0.151,0.106,0.263,0.142,False,Below threshold,20,87,176,4165,23.7,0
-1627752,Taurean Prince,2016,3,Forward,Pick 12,0.146,0.095,0.219,0.19,False,Below threshold,21,87,196,4903,25.0,0
+1627739,Kris Dunn,2016,3,Guard,Pick 5,0.151,0.106,0.263,0.141,False,Below threshold,20,87,176,4165,23.7,0
+1627752,Taurean Prince,2016,3,Forward,Pick 12,0.146,0.095,0.219,0.189,False,Below threshold,21,87,196,4903,25.0,0
 1627748,Thon Maker,2016,3,Center,Pick 10,0.124,0.077,0.193,0.081,False,Below threshold,22,87,193,2677,13.9,0
-203107,Tomas Satoransky,2016,3,Guard,Pick 32,0.107,0.057,0.175,0.256,False,Below threshold,23,87,209,4426,21.2,0
+203107,Tomas Satoransky,2016,3,Guard,Pick 32,0.107,0.057,0.175,0.254,False,Below threshold,23,87,209,4426,21.2,0
 1627755,Tyler Ulis,2016,3,Guard,Pick 34,0.098,0.052,0.148,0.03,False,Below threshold,24,87,130,2715,20.9,0
 1627740,Henry Ellenson,2016,3,Center,Pick 18,0.097,0.035,0.155,0.088,False,Below threshold,25,87,73,705,9.7,0
 202722,Davis Bertans,2016,3,Forward,Pick 42,0.091,0.064,0.152,0.049,False,Below threshold,26,87,213,3421,16.1,0
 1627737,Marquese Chriss,2016,3,Forward,Pick 8,0.077,0.032,0.115,0.09,False,Below threshold,27,87,197,3676,18.7,0
 1627823,Juancho Hernangomez,2016,3,Forward,Pick 15,0.061,0.044,0.088,0.028,False,Below threshold,28,87,153,2397,15.7,0
-1627761,DeAndre' Bembry,2016,3,Wing (G/F),Pick 21,0.05,0.026,0.066,0.069,False,Below threshold,29,87,144,2691,18.7,0
+1627761,DeAndre' Bembry,2016,3,Wing (G/F),Pick 21,0.05,0.026,0.066,0.07,False,Below threshold,29,87,144,2691,18.7,0
 1627884,Derrick Jones Jr.,2016,3,Forward,Undrafted,0.05,0.032,0.095,0.07,False,Below threshold,29,87,110,1891,17.2,0
 1627834,Georgios Papagiannis,2016,3,Center,Pick 13,0.048,0.031,0.089,0.052,False,Insufficient evidence,31,87,39,458,11.7,0
 1627812,Yogi Ferrell,2016,3,Guard,Undrafted,0.045,0.031,0.07,0.045,False,Below threshold,32,87,199,4445,22.3,0
@@ -109,9 +109,9 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1627848,Shawn Long,2016,3,Forward,Undrafted,0.037,0.0,0.146,0.053,False,Insufficient evidence,34,87,17,226,13.3,0
 1627774,Jake Layman,2016,3,Forward,Pick 47,0.036,0.028,0.061,0.021,False,Below threshold,36,87,138,1666,12.1,0
 1627745,Damian Jones,2016,3,Center,Pick 30,0.033,0.024,0.057,0.087,False,Below threshold,37,87,49,560,11.4,0
-1626150,Andrew Harrison,2016,3,Guard,Pick 44,0.031,0.014,0.049,0.022,False,Below threshold,38,87,144,2916,20.2,0
+1626150,Andrew Harrison,2016,3,Guard,Pick 44,0.031,0.014,0.049,0.021,False,Below threshold,38,87,144,2916,20.2,0
 1626188,Quinn Cook,2016,3,Guard,Undrafted,0.03,0.021,0.05,0.043,False,Below threshold,39,87,117,1930,16.5,0
-1627854,Bryn Forbes,2016,3,Guard,Undrafted,0.023,0.013,0.036,0.13,False,Below threshold,40,87,190,4001,21.1,0
+1627854,Bryn Forbes,2016,3,Guard,Undrafted,0.023,0.013,0.036,0.129,False,Below threshold,40,87,190,4001,21.1,0
 1627777,Georges Niang,2016,3,Forward,Pick 50,0.021,0.011,0.034,0.031,False,Below threshold,41,87,86,593,6.9,0
 1627819,Isaiah Taylor,2016,3,Guard,Undrafted,0.017,0.01,0.028,0.007,False,Below threshold,42,87,70,1181,16.9,0
 1628021,David Nwaba,2016,3,Wing (G/F),Undrafted,0.017,0.01,0.027,0.02,False,Below threshold,42,87,141,2956,21.0,0
@@ -122,7 +122,7 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1626184,Chasson Randle,2016,3,Guard,Undrafted,0.008,0.005,0.011,0.017,False,Below threshold,48,87,75,1002,13.4,0
 1627775,Patrick McCaw,2016,3,Guard,Pick 38,0.008,0.006,0.011,0.008,False,Below threshold,48,87,152,2348,15.4,0
 1627789,Timothe Luwawu-Cabarrot,2016,3,Wing (G/F),Pick 24,0.007,0.005,0.012,0.006,False,Below threshold,50,87,167,2584,15.5,0
-1627827,Dorian Finney-Smith,2016,3,Forward,Undrafted,0.007,0.003,0.012,0.013,False,Below threshold,50,87,181,3986,22.0,0
+1627827,Dorian Finney-Smith,2016,3,Forward,Undrafted,0.007,0.003,0.012,0.014,False,Below threshold,50,87,181,3986,22.0,0
 1627852,Nicolas Brussino,2016,3,Forward,Undrafted,0.007,0.003,0.011,0.0,False,Below threshold,50,87,49,505,10.3,0
 1627735,Wade Baldwin IV,2016,3,Guard,Pick 17,0.006,0.003,0.009,0.016,False,Below threshold,53,87,55,552,10.0,0
 1627782,Wayne Selden,2016,3,Guard,Undrafted,0.005,0.003,0.008,0.013,False,Below threshold,54,87,123,2306,18.7,0
@@ -130,7 +130,7 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 203518,Alex Abrines,2016,3,Guard,Pick 32,0.004,0.003,0.009,0.003,False,Below threshold,56,87,172,2692,15.7,0
 1626254,Maurice Ndour,2016,3,Forward,Undrafted,0.004,0.003,0.006,0.001,False,Insufficient evidence,56,87,30,314,10.5,0
 1627757,Stephen Zimmerman,2016,3,Center,Pick 41,0.004,0.003,0.006,0.004,False,Insufficient evidence,56,87,19,98,5.2,0
-1627773,AJ Hammons,2016,3,Center,Pick 46,0.004,0.002,0.013,0.012,False,Insufficient evidence,56,87,20,154,7.7,0
+1627773,AJ Hammons,2016,3,Center,Pick 46,0.004,0.002,0.013,0.011,False,Insufficient evidence,56,87,20,154,7.7,0
 1627778,Chinanu Onuaku,2016,3,Center,Pick 37,0.004,0.003,0.006,0.008,False,Insufficient evidence,56,87,6,71,11.8,0
 1627815,Sheldon Mac,2016,3,Wing (G/F),Undrafted,0.004,0.003,0.007,0.001,False,Insufficient evidence,56,87,26,271,10.4,0
 1627850,Marshall Plumlee,2016,3,Center,Undrafted,0.004,0.002,0.007,0.013,False,Insufficient evidence,56,87,25,207,8.3,0
@@ -169,28 +169,28 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1628378,Donovan Mitchell,2017,3,Guard,Pick 13,0.845,0.759,0.899,0.837,False,Flag for review,8,120,225,7490,33.3,1
 1628374,Lauri Markkanen,2017,3,Center,Pick 7,0.692,0.609,0.815,0.511,True,Flag for review,9,120,170,5104,30.0,1
 1628396,Tony Bradley,2017,3,Center,Pick 28,0.478,0.336,0.733,0.292,True,Flag for review,10,120,70,693,9.9,0
-1628365,Markelle Fultz,2017,3,Guard,Pick 1,0.384,0.223,0.589,0.448,False,Flag for review,11,120,105,2625,25.0,0
+1628365,Markelle Fultz,2017,3,Guard,Pick 1,0.384,0.223,0.589,0.446,False,Flag for review,11,120,105,2625,25.0,0
 1628366,Lonzo Ball,2017,3,Guard,Pick 2,0.381,0.235,0.565,0.461,False,Flag for review,12,120,162,5152,31.8,0
-1628401,Derrick White,2017,3,Guard,Pick 29,0.379,0.264,0.496,0.36,False,Flag for review,13,120,149,3470,23.3,0
+1628401,Derrick White,2017,3,Guard,Pick 29,0.379,0.264,0.496,0.361,False,Flag for review,13,120,149,3470,23.3,0
 1628371,Jonathan Isaac,2017,3,Forward,Pick 6,0.364,0.265,0.506,0.224,False,Flag for review,14,120,136,3444,25.3,0
 1628420,Monte Morris,2017,3,Guard,Pick 51,0.351,0.217,0.52,0.391,False,Flag for review,15,120,157,3554,22.6,0
-1628449,Chris Boucher,2017,3,Forward,Undrafted,0.29,0.149,0.524,0.24,False,Flag for review,16,120,90,939,10.4,1
-1628398,Kyle Kuzma,2017,3,Forward,Pick 27,0.235,0.125,0.316,0.279,False,Below threshold,17,120,208,6135,29.5,0
+1628449,Chris Boucher,2017,3,Forward,Undrafted,0.29,0.149,0.524,0.242,False,Flag for review,16,120,90,939,10.4,1
+1628398,Kyle Kuzma,2017,3,Forward,Pick 27,0.235,0.125,0.316,0.278,False,Below threshold,17,120,208,6135,29.5,0
 1628367,Josh Jackson,2017,3,Wing (G/F),Pick 4,0.181,0.109,0.355,0.196,False,Below threshold,18,120,178,4237,23.8,0
 1627790,Ante Zizic,2017,3,Center,Pick 23,0.179,0.106,0.256,0.141,False,Below threshold,19,120,109,1457,13.4,0
 1628370,Malik Monk,2017,3,Guard,Pick 11,0.179,0.14,0.295,0.107,False,Below threshold,19,120,191,3183,16.7,1
 1628397,Ivan Rabb,2017,3,Forward,Pick 35,0.157,0.077,0.264,0.126,False,Below threshold,21,120,83,1194,14.4,0
 1628395,Jordan Bell,2017,3,Forward,Pick 38,0.148,0.046,0.295,0.104,False,Below threshold,22,120,150,1774,11.8,0
 203992,Bogdan Bogdanovic,2017,3,Guard,Pick 27,0.145,0.073,0.22,0.326,True,Below threshold,23,120,209,5782,27.7,0
-1628384,OG Anunoby,2017,3,Wing (G/F),Pick 23,0.143,0.1,0.206,0.269,False,Below threshold,24,120,210,4788,22.8,0
+1628384,OG Anunoby,2017,3,Wing (G/F),Pick 23,0.143,0.1,0.206,0.268,False,Below threshold,24,120,210,4788,22.8,0
 1628379,Luke Kennard,2017,3,Guard,Pick 12,0.139,0.098,0.215,0.136,False,Below threshold,25,120,164,3741,22.8,0
 1628372,Dennis Smith Jr.,2017,3,Guard,Pick 9,0.138,0.052,0.241,0.164,False,Below threshold,26,120,156,4018,25.8,0
-1628464,Daniel Theis,2017,3,Center,Undrafted,0.138,0.072,0.227,0.269,False,Below threshold,26,120,193,3308,17.1,0
+1628464,Daniel Theis,2017,3,Center,Undrafted,0.138,0.072,0.227,0.27,False,Below threshold,26,120,193,3308,17.1,0
 1627788,Furkan Korkmaz,2017,3,Wing (G/F),Pick 26,0.129,0.094,0.211,0.091,False,Below threshold,28,120,133,2245,16.9,0
 1627885,Shaquille Harrison,2017,3,Guard,Undrafted,0.102,0.044,0.184,0.097,False,Below threshold,29,120,134,2229,16.6,0
 1628388,T.J. Leaf,2017,3,Forward,Pick 18,0.079,0.032,0.149,0.116,False,Below threshold,30,120,137,1133,8.3,0
-1628404,Josh Hart,2017,3,Guard,Pick 30,0.073,0.036,0.11,0.078,False,Below threshold,31,120,195,4836,24.8,0
-1628415,Dillon Brooks,2017,3,Wing (G/F),Pick 45,0.063,0.028,0.107,0.169,False,Below threshold,32,120,173,4709,27.2,0
+1628404,Josh Hart,2017,3,Guard,Pick 30,0.073,0.036,0.11,0.079,False,Below threshold,31,120,195,4836,24.8,0
+1628415,Dillon Brooks,2017,3,Wing (G/F),Pick 45,0.063,0.028,0.107,0.168,False,Below threshold,32,120,173,4709,27.2,0
 1628421,Devin Robinson,2017,3,Forward,Undrafted,0.061,0.01,0.129,0.054,False,Insufficient evidence,33,120,8,105,13.1,0
 1626224,Cedi Osman,2017,3,Forward,Pick 31,0.055,0.027,0.071,0.057,False,Below threshold,34,120,197,4936,25.1,0
 1628412,Frank Mason III,2017,3,Guard,Pick 34,0.051,0.015,0.096,0.039,False,Below threshold,35,120,98,1490,15.2,0
@@ -200,10 +200,10 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1628416,Tyler Dorsey,2017,3,Guard,Pick 41,0.035,0.022,0.062,0.007,False,Below threshold,39,120,102,1616,15.8,0
 203920,Khem Birch,2017,3,Center,Undrafted,0.031,0.018,0.062,0.093,False,Below threshold,40,120,138,2076,15.0,0
 1626177,Dakari Johnson,2017,3,Center,Pick 48,0.03,0.008,0.069,0.07,False,Insufficient evidence,41,120,27,146,5.4,0
-1627814,Damion Lee,2017,3,Wing (G/F),Undrafted,0.029,0.015,0.043,0.053,False,Below threshold,42,120,95,2158,22.7,0
+1627814,Damion Lee,2017,3,Wing (G/F),Undrafted,0.029,0.015,0.043,0.054,False,Below threshold,42,120,95,2158,22.7,0
 1628408,PJ Dozier,2017,3,Wing (G/F),Undrafted,0.024,0.012,0.042,0.019,False,Insufficient evidence,43,120,33,447,13.5,0
 1628443,Kadeem Allen,2017,3,Guard,Pick 53,0.024,0.012,0.039,0.035,False,Below threshold,43,120,40,618,15.4,0
-1628467,Maxi Kleber,2017,3,Forward,Undrafted,0.024,0.011,0.041,0.12,False,Below threshold,43,120,215,4493,20.9,0
+1628467,Maxi Kleber,2017,3,Forward,Undrafted,0.024,0.011,0.041,0.121,False,Below threshold,43,120,215,4493,20.9,0
 1628373,Frank Ntilikina,2017,3,Guard,Pick 8,0.023,0.014,0.032,0.05,False,Below threshold,46,120,176,3705,21.1,0
 1628469,Antonio Blakeney,2017,3,Guard,Undrafted,0.023,0.015,0.044,0.025,False,Below threshold,46,120,74,1103,14.9,0
 1627936,Alex Caruso,2017,3,Guard,Undrafted,0.022,0.014,0.03,0.024,False,Below threshold,48,120,125,2211,17.7,0
@@ -287,23 +287,23 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1629011,Mitchell Robinson,2018,3,Center,Pick 36,0.77,0.636,0.881,0.48,True,Flag for review,6,105,158,3548,22.5,1
 1629012,Collin Sexton,2018,3,Guard,Pick 8,0.709,0.552,0.81,0.728,False,Flag for review,7,105,207,6757,32.6,1
 1628991,Jaren Jackson Jr.,2018,3,Center,Pick 4,0.632,0.389,0.804,0.475,True,Flag for review,8,105,126,3328,26.4,1
-1628964,Mo Bamba,2018,3,Center,Pick 6,0.563,0.363,0.721,0.349,True,Flag for review,9,105,155,2295,14.8,0
-1628963,Marvin Bagley III,2018,3,Forward,Pick 2,0.562,0.425,0.712,0.448,False,Flag for review,10,105,118,2961,25.1,1
+1628964,Mo Bamba,2018,3,Center,Pick 6,0.563,0.363,0.721,0.35,True,Flag for review,9,105,155,2295,14.8,0
+1628963,Marvin Bagley III,2018,3,Forward,Pick 2,0.562,0.425,0.712,0.449,False,Flag for review,10,105,118,2961,25.1,1
 1628976,Wendell Carter Jr.,2018,3,Center,Pick 7,0.508,0.409,0.641,0.474,False,Flag for review,11,105,141,3665,26.0,1
-1629020,Jarred Vanderbilt,2018,3,Forward,Pick 41,0.434,0.294,0.606,0.247,True,Flag for review,12,105,87,1209,13.9,0
+1629020,Jarred Vanderbilt,2018,3,Forward,Pick 41,0.434,0.294,0.606,0.246,True,Flag for review,12,105,87,1209,13.9,0
 1628973,Jalen Brunson,2018,3,Guard,Pick 33,0.424,0.327,0.563,0.518,False,Flag for review,13,105,197,4216,21.4,1
-1628970,Miles Bridges,2018,3,Forward,Pick 12,0.36,0.299,0.465,0.301,False,Flag for review,14,105,211,5516,26.1,1
+1628970,Miles Bridges,2018,3,Forward,Pick 12,0.36,0.299,0.465,0.302,False,Flag for review,14,105,211,5516,26.1,1
 1628969,Mikal Bridges,2018,3,Wing (G/F),Pick 10,0.354,0.257,0.452,0.429,False,Flag for review,15,105,226,6690,29.6,0
-1628984,Devonte' Graham,2018,3,Guard,Pick 34,0.339,0.265,0.447,0.485,False,Flag for review,16,105,163,4469,27.4,0
+1628984,Devonte' Graham,2018,3,Guard,Pick 34,0.339,0.265,0.447,0.484,False,Flag for review,16,105,163,4469,27.4,0
 1629001,De'Anthony Melton,2018,3,Guard,Pick 46,0.331,0.184,0.459,0.171,True,Flag for review,17,105,162,3116,19.2,0
-1629234,Drew Eubanks,2018,3,Center,Undrafted,0.298,0.166,0.437,0.182,False,Flag for review,18,105,98,1090,11.1,0
+1629234,Drew Eubanks,2018,3,Center,Undrafted,0.298,0.166,0.437,0.18,False,Flag for review,18,105,98,1090,11.1,0
 1628392,Isaiah Hartenstein,2018,3,Center,Pick 43,0.274,0.176,0.498,0.204,False,Flag for review,19,105,96,996,10.4,1
 1628385,Harry Giles III,2018,3,Center,Pick 20,0.189,0.109,0.296,0.168,False,Below threshold,20,105,141,1763,12.5,0
-1628978,Donte DiVincenzo,2018,3,Guard,Pick 17,0.188,0.128,0.278,0.181,False,Below threshold,21,105,159,3668,23.1,0
+1628978,Donte DiVincenzo,2018,3,Guard,Pick 17,0.188,0.128,0.278,0.18,False,Below threshold,21,105,159,3668,23.1,0
 1629003,Shake Milton,2018,3,Guard,Pick 54,0.178,0.11,0.262,0.22,False,Below threshold,22,105,121,2474,20.4,0
 1628977,Hamidou Diallo,2018,3,Guard,Pick 45,0.17,0.121,0.231,0.169,False,Below threshold,23,105,145,2570,17.7,0
 1628989,Kevin Huerter,2018,3,Wing (G/F),Pick 19,0.17,0.108,0.214,0.252,False,Below threshold,23,105,200,5838,29.2,0
-1628971,Bruce Brown,2018,3,Wing (G/F),Pick 42,0.142,0.091,0.218,0.21,False,Below threshold,25,105,197,4433,22.5,0
+1628971,Bruce Brown,2018,3,Wing (G/F),Pick 42,0.142,0.091,0.218,0.211,False,Below threshold,25,105,197,4433,22.5,0
 1628972,Troy Brown Jr.,2018,3,Wing (G/F),Pick 15,0.14,0.082,0.203,0.11,False,Below threshold,26,105,154,2961,19.2,0
 1629018,Gary Trent Jr.,2018,3,Guard,Pick 37,0.122,0.075,0.186,0.169,False,Below threshold,27,105,134,3179,23.7,0
 1629002,Chimezie Metu,2018,3,Center,Pick 49,0.119,0.084,0.189,0.071,False,Below threshold,28,105,75,698,9.3,0

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "created": "2026-10-14",
+  "created": "2026-10-16",
   "construct": "rate",
   "construct_description": "A rotation season (at least 1,000 minutes, scaled for shortened seasons) whose Game Score per 100 possessions ranks in the top third of rotation players that season",
   "training_classes": [
@@ -21,6 +21,12 @@
     "player_team_seasons.csv.gz": "0ab8537ef118",
     "players.csv": "775ed31a2cf4",
     "team_seasons.csv": "7884a2ad8050"
+  },
+  "library_versions": {
+    "scikit-learn": "1.9.1",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
   },
   "decision_threshold": 0.25,
   "status": "Candidate - awaiting Model Review Board",
@@ -62,9 +68,9 @@
         "is_center"
       ],
       "sha256": {
-        "champion": "15174da9f122",
-        "challenger": "beac28bc95f3",
-        "uncertainty": "1dcdf562eb9f"
+        "champion": "df0256e1e034",
+        "challenger": "1b777d20f160",
+        "uncertainty": "d46e317632b4"
       }
     },
     "h2": {
@@ -106,9 +112,9 @@
         "is_center"
       ],
       "sha256": {
-        "champion": "1cf01dcb7b6e",
-        "challenger": "45612e8834f4",
-        "uncertainty": "235d51f96bdb"
+        "champion": "ab456284355e",
+        "challenger": "d211eada5adf",
+        "uncertainty": "4d0caa4b55fb"
       }
     },
     "h3": {
@@ -150,9 +156,9 @@
         "is_center"
       ],
       "sha256": {
-        "champion": "bd988e92c6b4",
-        "challenger": "fbb80c0b8bb9",
-        "uncertainty": "a92711a50ace"
+        "champion": "cf506cfcac3b",
+        "challenger": "ce54a04393cf",
+        "uncertainty": "b53ba0e4cc18"
       }
     }
   }

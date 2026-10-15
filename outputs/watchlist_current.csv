@@ -1,55 +1,55 @@
 personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_disagree,status,class_rank,class_size,games,minutes,mpg
 1641705,Victor Wembanyama,2023,3,Center,Pick 1,0.998,0.994,0.999,0.947,False,Flag for review,1,64,181,5442,30.1
-1631096,Chet Holmgren,2023,3,Center,Pick 2,0.962,0.94,0.979,0.938,False,Flag for review,2,64,183,5231,28.6
-1641708,Amen Thompson,2023,3,Wing (G/F),Pick 4,0.87,0.815,0.933,0.829,False,Flag for review,3,64,209,6476,31.0
-1641718,Keyonte George,2023,3,Guard,Pick 16,0.829,0.737,0.884,0.826,False,Flag for review,4,64,195,5828,29.9
-1641706,Brandon Miller,2023,3,Forward,Pick 2,0.678,0.513,0.771,0.667,False,Flag for review,5,64,166,5216,31.4
-1641764,Brandin Podziemski,2023,3,Guard,Pick 19,0.548,0.495,0.658,0.481,False,Flag for review,6,64,219,5950,27.2
-1641709,Ausar Thompson,2023,3,Wing (G/F),Pick 5,0.484,0.366,0.63,0.425,False,Flag for review,7,64,195,4746,24.3
-1641713,GG Jackson,2023,3,Forward,Pick 45,0.474,0.29,0.585,0.245,True,Flag for review,8,64,131,2832,21.6
-1641774,Tristan Vukcevic,2023,3,Forward,Pick 42,0.419,0.309,0.613,0.262,True,Flag for review,9,64,93,1298,14.0
-1641715,Cam Whitmore,2023,3,Forward,Pick 20,0.392,0.21,0.518,0.268,False,Flag for review,10,64,118,2001,17.0
+1631096,Chet Holmgren,2023,3,Center,Pick 2,0.962,0.94,0.979,0.937,False,Flag for review,2,64,183,5231,28.6
+1641708,Amen Thompson,2023,3,Wing (G/F),Pick 4,0.87,0.815,0.933,0.831,False,Flag for review,3,64,209,6476,31.0
+1641718,Keyonte George,2023,3,Guard,Pick 16,0.829,0.737,0.884,0.828,False,Flag for review,4,64,195,5828,29.9
+1641706,Brandon Miller,2023,3,Forward,Pick 2,0.678,0.513,0.771,0.666,False,Flag for review,5,64,166,5216,31.4
+1641764,Brandin Podziemski,2023,3,Guard,Pick 19,0.548,0.495,0.658,0.479,False,Flag for review,6,64,219,5950,27.2
+1641709,Ausar Thompson,2023,3,Wing (G/F),Pick 5,0.484,0.366,0.63,0.424,False,Flag for review,7,64,195,4746,24.3
+1641713,GG Jackson,2023,3,Forward,Pick 45,0.474,0.29,0.585,0.248,True,Flag for review,8,64,131,2832,21.6
+1641774,Tristan Vukcevic,2023,3,Forward,Pick 42,0.419,0.309,0.613,0.26,True,Flag for review,9,64,93,1298,14.0
+1641715,Cam Whitmore,2023,3,Forward,Pick 20,0.392,0.21,0.518,0.266,False,Flag for review,10,64,118,2001,17.0
 1641710,Anthony Black,2023,3,Guard,Pick 6,0.383,0.282,0.463,0.257,False,Flag for review,11,64,208,4881,23.5
-1641726,Dereck Lively II,2023,3,Center,Pick 12,0.332,0.173,0.566,0.328,False,Flag for review,12,64,98,2210,22.6
-1641729,Brice Sensabaugh,2023,3,Forward,Pick 28,0.308,0.202,0.451,0.383,False,Flag for review,13,64,177,3711,21.0
-1631170,Jaime Jaquez Jr.,2023,3,Guard,Pick 18,0.299,0.232,0.385,0.379,False,Flag for review,14,64,216,5536,25.6
-1641730,Noah Clowney,2023,3,Center,Pick 21,0.25,0.147,0.421,0.084,True,Flag for review,15,64,135,3158,23.4
-1631218,Trayce Jackson-Davis,2023,3,Forward,Pick 57,0.241,0.144,0.363,0.257,False,Below threshold,16,64,181,2531,14.0
-1631159,Leonard Miller,2023,3,Forward,Pick 33,0.215,0.161,0.307,0.156,False,Below threshold,17,64,75,780,10.4
+1641726,Dereck Lively II,2023,3,Center,Pick 12,0.332,0.173,0.566,0.33,False,Flag for review,12,64,98,2210,22.6
+1641729,Brice Sensabaugh,2023,3,Forward,Pick 28,0.308,0.202,0.451,0.385,False,Flag for review,13,64,177,3711,21.0
+1631170,Jaime Jaquez Jr.,2023,3,Guard,Pick 18,0.299,0.232,0.385,0.377,False,Flag for review,14,64,216,5536,25.6
+1641730,Noah Clowney,2023,3,Center,Pick 21,0.25,0.147,0.421,0.083,True,Flag for review,15,64,135,3158,23.4
+1631218,Trayce Jackson-Davis,2023,3,Forward,Pick 57,0.241,0.144,0.363,0.255,False,Below threshold,16,64,181,2531,14.0
+1631159,Leonard Miller,2023,3,Forward,Pick 33,0.215,0.161,0.307,0.157,False,Below threshold,17,64,75,780,10.4
 1630611,Gui Santos,2023,3,Forward,Pick 55,0.199,0.118,0.282,0.106,False,Below threshold,18,64,147,2311,15.7
-1630703,Scoot Henderson,2023,3,Guard,Pick 3,0.193,0.14,0.277,0.153,False,Below threshold,19,64,158,4225,26.7
-1641731,Bilal Coulibaly,2023,3,Guard,Pick 7,0.181,0.106,0.251,0.136,False,Below threshold,20,64,178,5079,28.5
-1641765,Olivier-Maxence Prosper,2023,3,Forward,Pick 24,0.177,0.124,0.307,0.138,False,Below threshold,21,64,141,1865,13.2
-1631221,Collin Gillespie,2023,3,Guard,Undrafted,0.167,0.126,0.276,0.319,True,Below threshold,22,64,135,2934,21.7
-1641717,Cason Wallace,2023,3,Guard,Pick 10,0.164,0.092,0.26,0.132,False,Below threshold,23,64,227,5543,24.4
+1630703,Scoot Henderson,2023,3,Guard,Pick 3,0.193,0.14,0.277,0.152,False,Below threshold,19,64,158,4225,26.7
+1641731,Bilal Coulibaly,2023,3,Guard,Pick 7,0.181,0.106,0.251,0.135,False,Below threshold,20,64,178,5079,28.5
+1641765,Olivier-Maxence Prosper,2023,3,Forward,Pick 24,0.177,0.124,0.307,0.136,False,Below threshold,21,64,141,1865,13.2
+1631221,Collin Gillespie,2023,3,Guard,Undrafted,0.167,0.126,0.276,0.316,False,Below threshold,22,64,135,2934,21.7
+1641717,Cason Wallace,2023,3,Guard,Pick 10,0.164,0.092,0.26,0.13,False,Below threshold,23,64,227,5543,24.4
 1641716,Jarace Walker,2023,3,Forward,Pick 8,0.163,0.095,0.22,0.099,False,Below threshold,24,64,182,3437,18.9
 1641757,Jordan Miller,2023,3,Guard,Pick 48,0.09,0.053,0.119,0.098,False,Below threshold,25,64,104,1751,16.8
 1631131,Oscar Tshiebwe,2023,3,Center,Undrafted,0.081,0.056,0.143,0.19,False,Below threshold,26,64,48,716,14.9
 1641854,Craig Porter Jr.,2023,3,Guard,Undrafted,0.071,0.039,0.101,0.107,False,Below threshold,27,64,165,2258,13.7
 1631243,Mouhamed Gueye,2023,3,Forward,Pick 39,0.053,0.032,0.08,0.021,False,Below threshold,28,64,115,1738,15.1
-1641711,Gradey Dick,2023,3,Wing (G/F),Pick 13,0.051,0.035,0.074,0.023,False,Below threshold,29,64,190,3870,20.4
-1631124,Julian Strawther,2023,3,Guard,Pick 29,0.046,0.031,0.067,0.012,False,Below threshold,30,64,169,2736,16.2
+1641711,Gradey Dick,2023,3,Wing (G/F),Pick 13,0.051,0.035,0.074,0.022,False,Below threshold,29,64,190,3870,20.4
+1631124,Julian Strawther,2023,3,Guard,Pick 29,0.046,0.031,0.067,0.013,False,Below threshold,30,64,169,2736,16.2
 1631204,Marcus Sasser,2023,3,Guard,Pick 25,0.043,0.028,0.055,0.033,False,Below threshold,31,64,166,2564,15.4
-1641739,Toumani Camara,2023,3,Forward,Pick 52,0.043,0.027,0.063,0.155,False,Below threshold,31,64,230,6947,30.2
+1641739,Toumani Camara,2023,3,Forward,Pick 52,0.043,0.027,0.063,0.154,False,Below threshold,31,64,230,6947,30.2
 1641775,Jordan Walsh,2023,3,Guard,Pick 38,0.039,0.023,0.067,0.024,False,Below threshold,33,64,129,1671,13.0
 1641707,Taylor Hendricks,2023,3,Forward,Pick 9,0.035,0.023,0.065,0.024,False,Below threshold,34,64,102,2018,19.8
 1641733,Nick Smith Jr.,2023,3,Guard,Pick 27,0.019,0.007,0.027,0.032,False,Below threshold,35,64,138,2385,17.3
 1641722,Jordan Hawkins,2023,3,Guard,Pick 14,0.017,0.009,0.029,0.016,False,Below threshold,36,64,172,3118,18.1
 1641723,Kobe Bufkin,2023,3,Guard,Pick 15,0.013,0.008,0.027,0.017,False,Insufficient evidence,37,64,43,424,9.9
 1641724,Jett Howard,2023,3,Guard,Pick 11,0.012,0.007,0.018,0.013,False,Below threshold,38,64,133,1432,10.8
-1641727,Dariq Whitehead,2023,3,Wing (G/F),Pick 22,0.012,0.005,0.021,0.062,False,Insufficient evidence,38,64,28,446,16.0
-1641763,Julian Phillips,2023,3,Forward,Pick 35,0.012,0.006,0.025,0.024,False,Below threshold,38,64,164,1824,11.1
+1641727,Dariq Whitehead,2023,3,Wing (G/F),Pick 22,0.012,0.005,0.021,0.061,False,Insufficient evidence,38,64,28,446,16.0
+1641763,Julian Phillips,2023,3,Forward,Pick 35,0.012,0.006,0.025,0.025,False,Below threshold,38,64,164,1824,11.1
 1630592,Jalen Wilson,2023,3,Forward,Pick 51,0.01,0.006,0.017,0.012,False,Below threshold,41,64,175,3506,20.0
 1641753,Chris Livingston,2023,3,Forward,Pick 58,0.009,0.004,0.019,0.033,False,Insufficient evidence,42,64,40,199,5.0
 1641767,Ben Sheppard,2023,3,Guard,Pick 26,0.009,0.006,0.014,0.012,False,Below threshold,42,64,183,3378,18.5
 1641771,Jalen Slawson,2023,3,Forward,Pick 54,0.009,0.006,0.014,0.014,False,Insufficient evidence,42,64,22,338,15.4
 1630604,E.J. Liddell,2023,3,Forward,Pick 41,0.008,0.005,0.012,0.003,False,Insufficient evidence,45,64,46,412,9.0
-1641712,Rayan Rupert,2023,3,Wing (G/F),Pick 43,0.006,0.004,0.01,0.015,False,Below threshold,46,64,155,2123,13.7
+1641712,Rayan Rupert,2023,3,Wing (G/F),Pick 43,0.006,0.004,0.01,0.016,False,Below threshold,46,64,155,2123,13.7
 1631321,Sidy Cissoko,2023,3,Guard,Pick 44,0.005,0.003,0.008,0.011,False,Below threshold,47,64,108,1666,15.4
 1641871,Duop Reath,2023,3,Center,Undrafted,0.005,0.003,0.009,0.042,False,Below threshold,47,64,146,1895,13.0
 1629618,Jalen Pickett,2023,3,Guard,Pick 32,0.004,0.003,0.006,0.004,False,Below threshold,49,64,122,1561,12.8
 1630311,Pat Spencer,2023,3,Guard,Undrafted,0.004,0.002,0.006,0.041,False,Below threshold,49,64,111,1482,13.4
-1631200,Kris Murray,2023,3,Forward,Pick 23,0.004,0.002,0.006,0.008,False,Below threshold,49,64,188,3671,19.5
+1631200,Kris Murray,2023,3,Forward,Pick 23,0.004,0.002,0.006,0.007,False,Below threshold,49,64,188,3671,19.5
 1641732,Colby Jones,2023,3,Guard,Pick 34,0.004,0.002,0.006,0.004,False,Below threshold,49,64,67,663,9.9
 1641738,Kobe Brown,2023,3,Forward,Pick 30,0.003,0.002,0.005,0.006,False,Below threshold,53,64,141,1579,11.2
 1641787,Tosan Evbuomwan,2023,3,Forward,Undrafted,0.003,0.002,0.005,0.003,False,Below threshold,53,64,50,1025,20.5
@@ -65,66 +65,66 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1641998,Trey Jemison III,2023,3,Center,Undrafted,0.0,0.0,0.001,0.011,False,Below threshold,63,64,74,1024,13.8
 1642264,Stephon Castle,2024,2,Guard,Pick 4,0.882,0.84,0.924,0.916,False,Flag for review,1,81,147,4106,27.9
 1642270,Donovan Clingan,2024,2,Center,Pick 7,0.863,0.795,0.917,0.818,False,Flag for review,2,81,144,3388,23.5
-1642276,Kel'el Ware,2024,2,Center,Pick 15,0.847,0.786,0.93,0.742,False,Flag for review,3,81,141,3099,22.0
-1642259,Alex Sarr,2024,2,Center,Pick 2,0.844,0.73,0.908,0.705,False,Flag for review,4,81,114,3073,27.0
-1642263,Reed Sheppard,2024,2,Guard,Pick 3,0.76,0.662,0.836,0.589,True,Flag for review,5,81,134,2775,20.7
-1641824,Matas Buzelis,2024,2,Forward,Pick 11,0.731,0.646,0.831,0.517,True,Flag for review,6,81,157,3726,23.7
+1642276,Kel'el Ware,2024,2,Center,Pick 15,0.847,0.786,0.93,0.744,False,Flag for review,3,81,141,3099,22.0
+1642259,Alex Sarr,2024,2,Center,Pick 2,0.844,0.73,0.908,0.707,False,Flag for review,4,81,114,3073,27.0
+1642263,Reed Sheppard,2024,2,Guard,Pick 3,0.76,0.662,0.836,0.592,True,Flag for review,5,81,134,2775,20.7
+1641824,Matas Buzelis,2024,2,Forward,Pick 11,0.731,0.646,0.831,0.523,True,Flag for review,6,81,157,3726,23.7
 1642271,Kyle Filipowski,2024,2,Center,Pick 32,0.612,0.485,0.74,0.72,False,Flag for review,7,81,148,3273,22.1
 1642349,Ajay Mitchell,2024,2,Guard,Pick 38,0.504,0.381,0.655,0.507,False,Flag for review,8,81,93,2051,22.1
 1642268,Isaiah Collier,2024,2,Guard,Pick 29,0.501,0.382,0.666,0.512,False,Flag for review,9,81,129,3303,25.6
-1641744,Zach Edey,2024,2,Center,Pick 9,0.417,0.297,0.692,0.423,False,Flag for review,10,81,77,1682,21.8
+1641744,Zach Edey,2024,2,Center,Pick 9,0.417,0.297,0.692,0.419,False,Flag for review,10,81,77,1682,21.8
 1641842,Ronald Holland II,2024,2,Forward,Pick 5,0.311,0.152,0.416,0.183,False,Flag for review,11,81,159,2785,17.5
-1642274,Yves Missi,2024,2,Center,Pick 21,0.299,0.166,0.426,0.294,False,Flag for review,12,81,138,3195,23.2
-1642285,Cam Spencer,2024,2,Guard,Pick 53,0.299,0.21,0.478,0.504,True,Flag for review,12,81,97,1948,20.1
+1642274,Yves Missi,2024,2,Center,Pick 21,0.299,0.166,0.426,0.295,False,Flag for review,12,81,138,3195,23.2
+1642285,Cam Spencer,2024,2,Guard,Pick 53,0.299,0.21,0.478,0.506,True,Flag for review,12,81,97,1948,20.1
 1642273,Kyshawn George,2024,2,Forward,Pick 24,0.284,0.194,0.421,0.225,False,Flag for review,14,81,116,3171,27.3
-1642281,Jaylon Tyson,2024,2,Wing (G/F),Pick 20,0.27,0.225,0.349,0.317,False,Flag for review,15,81,113,2207,19.5
+1642281,Jaylon Tyson,2024,2,Wing (G/F),Pick 20,0.27,0.225,0.349,0.312,False,Flag for review,15,81,113,2207,19.5
 1642258,Zaccharie Risacher,2024,2,Forward,Pick 1,0.264,0.156,0.386,0.201,False,Flag for review,16,81,142,3319,23.4
-1642269,Devin Carter,2024,2,Guard,Pick 13,0.173,0.109,0.218,0.134,False,Below threshold,17,81,74,1079,14.6
-1642450,Daniss Jenkins,2024,2,Guard,Undrafted,0.164,0.101,0.26,0.208,False,Below threshold,18,81,79,1464,18.5
-1642272,Jared McCain,2024,2,Guard,Pick 16,0.148,0.078,0.26,0.184,False,Below threshold,19,81,90,1732,19.2
-1642267,Bub Carrington,2024,2,Guard,Pick 14,0.141,0.113,0.24,0.198,False,Below threshold,20,81,163,4671,28.7
-1642266,Ja'Kobe Walter,2024,2,Guard,Pick 19,0.131,0.072,0.203,0.056,False,Below threshold,21,81,124,2551,20.6
+1642269,Devin Carter,2024,2,Guard,Pick 13,0.173,0.109,0.218,0.133,False,Below threshold,17,81,74,1079,14.6
+1642450,Daniss Jenkins,2024,2,Guard,Undrafted,0.164,0.101,0.26,0.209,False,Below threshold,18,81,79,1464,18.5
+1642272,Jared McCain,2024,2,Guard,Pick 16,0.148,0.078,0.26,0.182,False,Below threshold,19,81,90,1732,19.2
+1642267,Bub Carrington,2024,2,Guard,Pick 14,0.141,0.113,0.24,0.201,False,Below threshold,20,81,163,4671,28.7
+1642266,Ja'Kobe Walter,2024,2,Guard,Pick 19,0.131,0.072,0.203,0.057,False,Below threshold,21,81,124,2551,20.6
 1642377,Jaylen Wells,2024,2,Forward,Pick 39,0.127,0.098,0.206,0.097,False,Below threshold,22,81,148,3835,25.9
-1641796,Pelle Larsson,2024,2,Guard,Pick 44,0.111,0.063,0.145,0.172,False,Below threshold,23,81,125,2606,20.9
+1641796,Pelle Larsson,2024,2,Guard,Pick 44,0.111,0.063,0.145,0.17,False,Below threshold,23,81,125,2606,20.9
 1641737,Adem Bona,2024,2,Forward,Pick 41,0.11,0.044,0.19,0.173,False,Below threshold,24,81,129,2111,16.4
 1642275,Tidjane Salaun,2024,2,Forward,Pick 6,0.11,0.064,0.193,0.078,False,Below threshold,24,81,96,1784,18.6
-1642345,Oso Ighodaro,2024,2,Forward,Pick 40,0.097,0.042,0.136,0.237,False,Below threshold,26,81,143,2827,19.8
-1642347,Jamal Shead,2024,2,Guard,Pick 45,0.091,0.062,0.119,0.084,False,Below threshold,27,81,157,3290,21.0
-1631255,Karlo Matkovic,2024,2,Center,Pick 52,0.09,0.056,0.144,0.113,False,Below threshold,28,81,103,1665,16.2
-1642382,Branden Carlson,2024,2,Center,Undrafted,0.082,0.055,0.136,0.163,False,Below threshold,29,81,74,719,9.7
-1642265,Rob Dillingham,2024,2,Guard,Pick 8,0.075,0.034,0.123,0.083,False,Below threshold,30,81,114,1462,12.8
-1642278,Tyler Kolek,2024,2,Guard,Pick 34,0.069,0.046,0.101,0.062,False,Below threshold,31,81,103,1003,9.7
-1642366,Quinten Post,2024,2,Center,Pick 52,0.069,0.041,0.116,0.09,False,Below threshold,31,81,109,1822,16.7
-1641783,Tristan da Silva,2024,2,Forward,Pick 18,0.058,0.047,0.081,0.061,False,Below threshold,33,81,151,3498,23.2
-1642352,Keshad Johnson,2024,2,Forward,Undrafted,0.056,0.027,0.104,0.085,False,Insufficient evidence,34,81,48,366,7.6
+1642345,Oso Ighodaro,2024,2,Forward,Pick 40,0.097,0.042,0.136,0.234,False,Below threshold,26,81,143,2827,19.8
+1642347,Jamal Shead,2024,2,Guard,Pick 45,0.091,0.062,0.119,0.083,False,Below threshold,27,81,157,3290,21.0
+1631255,Karlo Matkovic,2024,2,Center,Pick 52,0.09,0.056,0.144,0.111,False,Below threshold,28,81,103,1665,16.2
+1642382,Branden Carlson,2024,2,Center,Undrafted,0.082,0.055,0.136,0.156,False,Below threshold,29,81,74,719,9.7
+1642265,Rob Dillingham,2024,2,Guard,Pick 8,0.075,0.034,0.123,0.084,False,Below threshold,30,81,114,1462,12.8
+1642278,Tyler Kolek,2024,2,Guard,Pick 34,0.069,0.046,0.101,0.063,False,Below threshold,31,81,103,1003,9.7
+1642366,Quinten Post,2024,2,Center,Pick 52,0.069,0.041,0.116,0.091,False,Below threshold,31,81,109,1822,16.7
+1641783,Tristan da Silva,2024,2,Forward,Pick 18,0.058,0.047,0.081,0.06,False,Below threshold,33,81,151,3498,23.2
+1642352,Keshad Johnson,2024,2,Forward,Undrafted,0.056,0.027,0.104,0.084,False,Insufficient evidence,34,81,48,366,7.6
 1642346,Ryan Dunn,2024,2,Forward,Pick 28,0.052,0.038,0.08,0.013,False,Below threshold,35,81,144,2735,19.0
 1642359,Pacome Dadiet,2024,2,Forward,Pick 25,0.048,0.017,0.084,0.019,False,Insufficient evidence,36,81,47,238,5.1
-1642367,Jonathan Mogbo,2024,2,Forward,Pick 31,0.042,0.023,0.067,0.051,False,Below threshold,37,81,103,1513,14.7
+1642367,Jonathan Mogbo,2024,2,Forward,Pick 31,0.042,0.023,0.067,0.05,False,Below threshold,37,81,103,1513,14.7
 1642353,Cam Christie,2024,2,Guard,Pick 46,0.039,0.022,0.067,0.032,False,Below threshold,38,81,67,517,7.7
 1641890,Tyler Smith,2024,2,Forward,Pick 33,0.037,0.023,0.059,0.024,False,Insufficient evidence,39,81,35,279,8.0
-1642262,Cody Williams,2024,2,Forward,Pick 10,0.037,0.019,0.056,0.068,False,Below threshold,39,81,116,2640,22.8
-1642530,Yuki Kawamura,2024,2,Guard,Undrafted,0.03,0.014,0.053,0.013,False,Insufficient evidence,41,81,40,293,7.3
+1642262,Cody Williams,2024,2,Forward,Pick 10,0.037,0.019,0.056,0.069,False,Below threshold,39,81,116,2640,22.8
+1642530,Yuki Kawamura,2024,2,Guard,Undrafted,0.03,0.014,0.053,0.014,False,Insufficient evidence,41,81,40,293,7.3
 1642277,Johnny Furphy,2024,2,Guard,Pick 35,0.029,0.015,0.038,0.018,False,Below threshold,42,81,85,1004,11.8
 1642348,Justin Edwards,2024,2,Forward,Undrafted,0.026,0.012,0.046,0.035,False,Below threshold,43,81,108,2112,19.6
-1641790,PJ Hall,2024,2,Center,Undrafted,0.025,0.009,0.045,0.079,False,Insufficient evidence,44,81,38,272,7.2
+1641790,PJ Hall,2024,2,Center,Undrafted,0.025,0.009,0.045,0.074,False,Insufficient evidence,44,81,38,272,7.2
 1642261,Dalton Knecht,2024,2,Forward,Pick 17,0.024,0.012,0.041,0.051,False,Below threshold,45,81,130,1987,15.3
 1631248,Baylor Scheierman,2024,2,Guard,Pick 30,0.02,0.015,0.033,0.056,False,Below threshold,46,81,108,1791,16.6
-1641772,Nae'Qwan Tomlin,2024,2,Forward,Undrafted,0.018,0.008,0.027,0.053,False,Below threshold,47,81,69,1051,15.2
+1641772,Nae'Qwan Tomlin,2024,2,Forward,Undrafted,0.018,0.008,0.027,0.052,False,Below threshold,47,81,69,1051,15.2
 1641752,Bobi Klintman,2024,2,Forward,Pick 37,0.017,0.012,0.029,0.005,False,Insufficient evidence,48,81,20,109,5.5
 1641794,Dillon Jones,2024,2,Forward,Pick 26,0.015,0.01,0.029,0.002,False,Below threshold,49,81,61,576,9.5
-1642355,Bronny James,2024,2,Guard,Pick 55,0.015,0.01,0.021,0.01,False,Below threshold,49,81,68,538,7.9
+1642355,Bronny James,2024,2,Guard,Pick 55,0.015,0.01,0.021,0.011,False,Below threshold,49,81,68,538,7.9
 1641740,Jaylen Clark,2024,2,Guard,Pick 53,0.014,0.01,0.025,0.011,False,Below threshold,51,81,108,1387,12.8
-1642449,Tolu Smith,2024,2,Forward,Undrafted,0.013,0.004,0.035,0.044,False,Insufficient evidence,52,81,16,157,9.8
+1642449,Tolu Smith,2024,2,Forward,Undrafted,0.013,0.004,0.035,0.043,False,Insufficient evidence,52,81,16,157,9.8
 1630574,Ariel Hukporti,2024,2,Center,Pick 58,0.012,0.006,0.02,0.033,False,Below threshold,53,81,79,700,8.9
 1641810,Antonio Reeves,2024,2,Guard,Pick 47,0.011,0.006,0.021,0.006,False,Below threshold,54,81,53,680,12.8
 1642484,RayJ Dennis,2024,2,Guard,Undrafted,0.011,0.005,0.02,0.005,False,Insufficient evidence,54,81,28,269,9.6
-1642358,AJ Johnson,2024,2,Guard,Pick 23,0.01,0.005,0.02,0.024,False,Below threshold,56,81,76,1048,13.8
+1642358,AJ Johnson,2024,2,Guard,Pick 23,0.01,0.005,0.02,0.025,False,Below threshold,56,81,76,1048,13.8
 1630545,Terrence Shannon Jr.,2024,2,Wing (G/F),Pick 27,0.009,0.006,0.016,0.002,False,Below threshold,57,81,75,863,11.5
-1631247,Luke Travers,2024,2,Forward,Pick 56,0.009,0.003,0.024,0.005,False,Insufficient evidence,57,81,24,186,7.8
+1631247,Luke Travers,2024,2,Forward,Pick 56,0.009,0.003,0.024,0.004,False,Insufficient evidence,57,81,24,186,7.8
 1641725,Trey Alexander,2024,2,Guard,Undrafted,0.009,0.005,0.015,0.007,False,Insufficient evidence,57,81,33,221,6.7
-1642384,Isaiah Crawford,2024,2,Forward,Undrafted,0.009,0.003,0.016,0.013,False,Insufficient evidence,57,81,29,131,4.5
+1642384,Isaiah Crawford,2024,2,Forward,Undrafted,0.009,0.003,0.016,0.011,False,Insufficient evidence,57,81,29,131,4.5
 1642354,KJ Simpson,2024,2,Guard,Pick 42,0.008,0.006,0.014,0.01,False,Below threshold,61,81,56,1090,19.5
-1641755,Kevin McCullar Jr.,2024,2,Guard,Pick 56,0.007,0.004,0.014,0.007,False,Insufficient evidence,62,81,25,178,7.2
+1641755,Kevin McCullar Jr.,2024,2,Guard,Pick 56,0.007,0.004,0.014,0.006,False,Insufficient evidence,62,81,25,178,7.2
 1642403,Isaac Jones,2024,2,Forward,Undrafted,0.007,0.004,0.014,0.022,False,Insufficient evidence,62,81,47,329,7.0
 1642402,Enrique Freeman,2024,2,Forward,Pick 50,0.006,0.005,0.011,0.002,False,Insufficient evidence,64,81,26,213,8.2
 1642419,Jamison Battle,2024,2,Forward,Undrafted,0.005,0.003,0.009,0.015,False,Below threshold,65,81,120,1535,12.8
@@ -132,7 +132,7 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1630811,Keaton Wallace,2024,2,Guard,Undrafted,0.004,0.002,0.006,0.002,False,Below threshold,66,81,83,999,12.0
 1631166,Drew Timme,2024,2,Forward,Undrafted,0.004,0.002,0.008,0.005,False,Insufficient evidence,66,81,36,481,13.4
 1641989,Elijah Harkless,2024,2,Guard,Undrafted,0.004,0.003,0.007,0.005,False,Below threshold,66,81,36,675,18.8
-1642461,Spencer Jones,2024,2,Forward,Undrafted,0.004,0.002,0.006,0.034,False,Below threshold,66,81,84,1524,18.1
+1642461,Spencer Jones,2024,2,Forward,Undrafted,0.004,0.002,0.006,0.035,False,Below threshold,66,81,84,1524,18.1
 1642280,Trentyn Flowers,2024,2,Forward,Undrafted,0.002,0.001,0.003,0.002,False,Insufficient evidence,71,81,8,30,3.8
 1642502,Malevy Leons,2024,2,Forward,Undrafted,0.002,0.001,0.004,0.014,False,Insufficient evidence,71,81,31,290,9.4
 1631127,Harrison Ingram,2024,2,Forward,Pick 48,0.001,0.001,0.002,0.0,False,Insufficient evidence,73,81,12,58,4.9
@@ -144,68 +144,68 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1641801,Emanuel Miller,2024,2,Forward,Undrafted,0.0,0.0,0.001,0.0,False,Insufficient evidence,79,81,11,55,5.0
 1642368,N'Faly Dante,2024,2,Center,Undrafted,0.0,0.0,0.001,0.0,False,Insufficient evidence,79,81,8,64,8.1
 1642434,Riley Minix,2024,2,Forward,Undrafted,0.0,0.0,0.001,0.001,False,Insufficient evidence,79,81,10,62,6.2
-1642843,Cooper Flagg,2025,1,Forward,Pick 1,0.908,0.864,0.937,0.864,False,Flag for review,1,103,70,2328,33.3
-1642852,Derik Queen,2025,1,Center,Pick 13,0.829,0.769,0.878,0.76,False,Flag for review,2,103,81,2006,24.8
-1642851,Kon Knueppel,2025,1,Wing (G/F),Pick 4,0.814,0.765,0.872,0.833,False,Flag for review,3,103,81,2534,31.3
-1642847,Jeremiah Fears,2025,1,Guard,Pick 7,0.806,0.731,0.85,0.559,True,Flag for review,4,103,82,2097,25.6
-1642844,Dylan Harper,2025,1,Guard,Pick 2,0.792,0.7,0.825,0.743,False,Flag for review,5,103,69,1545,22.4
-1642845,VJ Edgecombe,2025,1,Guard,Pick 3,0.655,0.569,0.728,0.599,False,Flag for review,6,103,75,2607,34.8
+1642843,Cooper Flagg,2025,1,Forward,Pick 1,0.908,0.864,0.937,0.865,False,Flag for review,1,103,70,2328,33.3
+1642852,Derik Queen,2025,1,Center,Pick 13,0.829,0.769,0.878,0.762,False,Flag for review,2,103,81,2006,24.8
+1642851,Kon Knueppel,2025,1,Wing (G/F),Pick 4,0.814,0.765,0.872,0.831,False,Flag for review,3,103,81,2534,31.3
+1642847,Jeremiah Fears,2025,1,Guard,Pick 7,0.806,0.731,0.85,0.561,True,Flag for review,4,103,82,2097,25.6
+1642844,Dylan Harper,2025,1,Guard,Pick 2,0.792,0.7,0.825,0.741,False,Flag for review,5,103,69,1545,22.4
+1642845,VJ Edgecombe,2025,1,Guard,Pick 3,0.655,0.569,0.728,0.602,False,Flag for review,6,103,75,2607,34.8
 1642867,Collin Murray-Boyles,2025,1,Forward,Pick 9,0.588,0.492,0.668,0.734,False,Flag for review,7,103,57,1235,21.7
-1642866,Joan Beringer,2025,1,Forward,Pick 17,0.578,0.412,0.723,0.413,True,Insufficient evidence,8,103,40,306,7.7
-1642846,Ace Bailey,2025,1,Forward,Pick 5,0.526,0.425,0.654,0.376,True,Flag for review,9,103,72,1974,27.4
-1642860,Will Riley,2025,1,Forward,Pick 21,0.517,0.393,0.67,0.433,False,Flag for review,10,103,74,1617,21.9
+1642866,Joan Beringer,2025,1,Forward,Pick 17,0.578,0.412,0.723,0.414,True,Insufficient evidence,8,103,40,306,7.7
+1642846,Ace Bailey,2025,1,Forward,Pick 5,0.526,0.425,0.654,0.372,True,Flag for review,9,103,72,1974,27.4
+1642860,Will Riley,2025,1,Forward,Pick 21,0.517,0.393,0.67,0.436,False,Flag for review,10,103,74,1617,21.9
 1642907,Cedric Coward,2025,1,Guard,Pick 11,0.513,0.418,0.586,0.636,False,Flag for review,11,103,62,1584,25.6
-1642856,Egor Demin,2025,1,Guard,Pick 8,0.395,0.302,0.517,0.394,False,Flag for review,12,103,52,1298,25.0
+1642856,Egor Demin,2025,1,Guard,Pick 8,0.395,0.302,0.517,0.392,False,Flag for review,12,103,52,1298,25.0
 1642857,Kasparas Jakucionis,2025,1,Guard,Pick 20,0.395,0.293,0.479,0.172,True,Flag for review,12,103,53,932,17.6
-1642863,Khaman Maluach,2025,1,Center,Pick 10,0.391,0.263,0.498,0.371,False,Insufficient evidence,14,103,46,402,8.7
-1642875,Maxime Raynaud,2025,1,Center,Pick 42,0.377,0.232,0.508,0.618,True,Flag for review,15,103,74,1948,26.3
-1642848,Tre Johnson,2025,1,Guard,Pick 6,0.328,0.257,0.428,0.341,False,Flag for review,16,103,60,1433,23.9
-1642914,Javon Small,2025,1,Guard,Pick 48,0.315,0.257,0.385,0.281,False,Flag for review,17,103,41,821,20.0
-1641750,Ryan Kalkbrenner,2025,1,Center,Pick 34,0.306,0.188,0.482,0.506,True,Flag for review,18,103,69,1465,21.2
-1642849,Nolan Traore,2025,1,Guard,Pick 19,0.3,0.231,0.376,0.193,False,Flag for review,19,103,56,1231,22.0
-1642854,Asa Newell,2025,1,Forward,Pick 23,0.262,0.216,0.335,0.291,False,Insufficient evidence,20,103,44,490,11.1
-1642949,Yanic Konan Niederhauser,2025,1,Center,Pick 30,0.244,0.203,0.349,0.205,False,Insufficient evidence,21,103,41,415,10.1
-1642874,Danny Wolf,2025,1,Forward,Pick 27,0.243,0.199,0.327,0.263,False,Below threshold,22,103,57,1174,20.6
+1642863,Khaman Maluach,2025,1,Center,Pick 10,0.391,0.263,0.498,0.372,False,Insufficient evidence,14,103,46,402,8.7
+1642875,Maxime Raynaud,2025,1,Center,Pick 42,0.377,0.232,0.508,0.62,True,Flag for review,15,103,74,1948,26.3
+1642848,Tre Johnson,2025,1,Guard,Pick 6,0.328,0.257,0.428,0.339,False,Flag for review,16,103,60,1433,23.9
+1642914,Javon Small,2025,1,Guard,Pick 48,0.315,0.257,0.385,0.282,False,Flag for review,17,103,41,821,20.0
+1641750,Ryan Kalkbrenner,2025,1,Center,Pick 34,0.306,0.188,0.482,0.508,True,Flag for review,18,103,69,1465,21.2
+1642849,Nolan Traore,2025,1,Guard,Pick 19,0.3,0.231,0.376,0.192,False,Flag for review,19,103,56,1231,22.0
+1642854,Asa Newell,2025,1,Forward,Pick 23,0.262,0.216,0.335,0.294,False,Insufficient evidence,20,103,44,490,11.1
+1642949,Yanic Konan Niederhauser,2025,1,Center,Pick 30,0.244,0.203,0.349,0.204,False,Insufficient evidence,21,103,41,415,10.1
+1642874,Danny Wolf,2025,1,Forward,Pick 27,0.243,0.199,0.327,0.264,False,Below threshold,22,103,57,1174,20.6
 1642859,Jase Richardson,2025,1,Guard,Pick 25,0.235,0.171,0.276,0.179,False,Below threshold,23,103,54,575,10.7
-1642879,Ben Saraf,2025,1,Guard,Pick 26,0.22,0.162,0.292,0.115,False,Below threshold,24,103,44,908,20.6
-1642383,Walter Clayton Jr.,2025,1,Guard,Pick 18,0.203,0.151,0.298,0.23,False,Below threshold,25,103,69,1397,20.3
+1642879,Ben Saraf,2025,1,Guard,Pick 26,0.22,0.162,0.292,0.116,False,Below threshold,24,103,44,908,20.6
+1642383,Walter Clayton Jr.,2025,1,Guard,Pick 18,0.203,0.151,0.298,0.229,False,Below threshold,25,103,69,1397,20.3
 1642260,Nikola Topic,2025,1,Guard,Pick 12,0.191,0.11,0.316,0.135,False,Insufficient evidence,26,103,10,158,15.8
-1642868,Carter Bryant,2025,1,Forward,Pick 14,0.186,0.144,0.251,0.083,False,Below threshold,27,103,71,805,11.3
-1642878,Tyrese Proctor,2025,1,Guard,Pick 49,0.186,0.132,0.249,0.164,False,Below threshold,27,103,50,535,10.7
-1642950,Lachlan Olbrich,2025,1,Center,Pick 55,0.164,0.112,0.273,0.081,False,Insufficient evidence,29,103,37,337,9.1
-1642862,Liam McNeeley,2025,1,Forward,Pick 29,0.16,0.116,0.208,0.128,False,Insufficient evidence,30,103,31,362,11.7
+1642868,Carter Bryant,2025,1,Forward,Pick 14,0.186,0.144,0.251,0.085,False,Below threshold,27,103,71,805,11.3
+1642878,Tyrese Proctor,2025,1,Guard,Pick 49,0.186,0.132,0.249,0.163,False,Below threshold,27,103,50,535,10.7
+1642950,Lachlan Olbrich,2025,1,Center,Pick 55,0.164,0.112,0.273,0.08,False,Insufficient evidence,29,103,37,337,9.1
+1642862,Liam McNeeley,2025,1,Forward,Pick 29,0.16,0.116,0.208,0.129,False,Insufficient evidence,30,103,31,362,11.7
 1642869,Noah Penda,2025,1,Wing (G/F),Pick 32,0.155,0.093,0.226,0.096,False,Below threshold,31,103,59,744,12.6
-1642864,Hugo Gonzalez,2025,1,Guard,Pick 28,0.141,0.08,0.228,0.128,False,Below threshold,32,103,74,1069,14.4
-1630619,Moussa Cisse,2025,1,Center,Undrafted,0.128,0.056,0.233,0.195,False,Below threshold,33,103,38,522,13.7
+1642864,Hugo Gonzalez,2025,1,Guard,Pick 28,0.141,0.08,0.228,0.129,False,Below threshold,32,103,74,1069,14.4
+1630619,Moussa Cisse,2025,1,Center,Undrafted,0.128,0.056,0.233,0.196,False,Below threshold,33,103,38,522,13.7
 1642855,Noa Essengue,2025,1,Forward,Pick 12,0.112,0.062,0.175,0.109,False,Insufficient evidence,34,103,2,5,2.8
-1642885,Mohamed Diawara,2025,1,Forward,Pick 51,0.112,0.077,0.155,0.115,False,Below threshold,34,103,69,620,9.0
-1642962,Drake Powell,2025,1,Wing (G/F),Pick 22,0.111,0.08,0.161,0.122,False,Below threshold,36,103,63,1306,20.7
-1642905,Hansen Yang,2025,1,Center,Pick 16,0.102,0.052,0.173,0.202,False,Insufficient evidence,37,103,43,291,6.8
-1642911,Rocco Zikarsky,2025,1,Center,Pick 45,0.101,0.048,0.176,0.06,False,Insufficient evidence,38,103,5,35,7.1
+1642885,Mohamed Diawara,2025,1,Forward,Pick 51,0.112,0.077,0.155,0.116,False,Below threshold,34,103,69,620,9.0
+1642962,Drake Powell,2025,1,Wing (G/F),Pick 22,0.111,0.08,0.161,0.121,False,Below threshold,36,103,63,1306,20.7
+1642905,Hansen Yang,2025,1,Center,Pick 16,0.102,0.052,0.173,0.201,False,Insufficient evidence,37,103,43,291,6.8
+1642911,Rocco Zikarsky,2025,1,Center,Pick 45,0.101,0.048,0.176,0.061,False,Insufficient evidence,38,103,5,35,7.1
 1642948,Ryan Nembhard,2025,1,Guard,Undrafted,0.091,0.045,0.127,0.115,False,Below threshold,39,103,60,1158,19.3
-1642876,Adou Thiero,2025,1,Guard,Pick 36,0.086,0.048,0.114,0.08,False,Insufficient evidence,40,103,25,143,5.7
-1642853,Rasheer Fleming,2025,1,Forward,Pick 31,0.082,0.055,0.129,0.067,False,Below threshold,41,103,55,662,12.0
-1642928,Dylan Cardwell,2025,1,Center,Undrafted,0.071,0.041,0.112,0.18,False,Below threshold,42,103,44,895,20.4
-1642954,Will Richard,2025,1,Guard,Pick 56,0.069,0.048,0.105,0.057,False,Below threshold,43,103,69,1364,19.8
-1642363,Nique Clifford,2025,1,Guard,Pick 24,0.066,0.045,0.103,0.094,False,Below threshold,44,103,75,1865,24.9
-1642883,Sion James,2025,1,Guard,Pick 33,0.06,0.047,0.098,0.056,False,Below threshold,45,103,82,1826,22.3
+1642876,Adou Thiero,2025,1,Guard,Pick 36,0.086,0.048,0.114,0.081,False,Insufficient evidence,40,103,25,143,5.7
+1642853,Rasheer Fleming,2025,1,Forward,Pick 31,0.082,0.055,0.129,0.066,False,Below threshold,41,103,55,662,12.0
+1642928,Dylan Cardwell,2025,1,Center,Undrafted,0.071,0.041,0.112,0.181,False,Below threshold,42,103,44,895,20.4
+1642954,Will Richard,2025,1,Guard,Pick 56,0.069,0.048,0.105,0.055,False,Below threshold,43,103,69,1364,19.8
+1642363,Nique Clifford,2025,1,Guard,Pick 24,0.066,0.045,0.103,0.087,False,Below threshold,44,103,75,1865,24.9
+1642883,Sion James,2025,1,Guard,Pick 33,0.06,0.047,0.098,0.057,False,Below threshold,45,103,82,1826,22.3
 1642882,Julian Reese,2025,1,Forward,Undrafted,0.057,0.029,0.087,0.133,False,Insufficient evidence,46,103,13,398,30.7
-1643052,Chaney Johnson,2025,1,Wing (G/F),Undrafted,0.053,0.037,0.079,0.124,False,Insufficient evidence,47,103,17,344,20.3
+1643052,Chaney Johnson,2025,1,Wing (G/F),Undrafted,0.053,0.037,0.079,0.125,False,Insufficient evidence,47,103,17,344,20.3
 1642364,Jamir Watkins,2025,1,Forward,Pick 43,0.052,0.034,0.07,0.018,False,Below threshold,48,103,50,1022,20.4
 1642066,Myron Gardner,2025,1,Forward,Undrafted,0.049,0.029,0.084,0.091,False,Insufficient evidence,49,103,45,401,8.9
 1641747,DaRon Holmes II,2025,1,Forward,Pick 22,0.047,0.023,0.07,0.053,False,Insufficient evidence,50,103,25,204,8.2
-1642873,Amari Williams,2025,1,Center,Pick 46,0.044,0.031,0.069,0.071,False,Insufficient evidence,51,103,22,141,6.4
-1642920,Kobe Sanders,2025,1,Guard,Pick 50,0.044,0.028,0.063,0.048,False,Below threshold,51,103,68,1338,19.7
+1642873,Amari Williams,2025,1,Center,Pick 46,0.044,0.031,0.069,0.072,False,Insufficient evidence,51,103,22,141,6.4
+1642920,Kobe Sanders,2025,1,Guard,Pick 50,0.044,0.028,0.063,0.047,False,Below threshold,51,103,68,1338,19.7
 1642918,Alijah Martin,2025,1,Guard,Pick 39,0.032,0.02,0.046,0.022,False,Insufficient evidence,53,103,23,140,6.1
-1631126,Caleb Love,2025,1,Guard,Undrafted,0.029,0.015,0.042,0.047,False,Below threshold,54,103,49,1003,20.5
+1631126,Caleb Love,2025,1,Guard,Undrafted,0.029,0.015,0.042,0.048,False,Below threshold,54,103,49,1003,20.5
 1642880,Kam Jones,2025,1,Guard,Pick 38,0.026,0.015,0.036,0.022,False,Below threshold,55,103,37,609,16.5
 1642886,Koby Brea,2025,1,Guard,Pick 41,0.023,0.015,0.039,0.007,False,Insufficient evidence,56,103,12,81,6.8
 1643007,Taelon Peter,2025,1,Guard,Pick 54,0.023,0.013,0.034,0.014,False,Insufficient evidence,56,103,38,484,12.8
 1642942,Jahmai Mashack,2025,1,Guard,Pick 59,0.021,0.014,0.031,0.016,False,Below threshold,58,103,31,668,21.6
-1643016,Bez Mbeng,2025,1,Guard,Undrafted,0.02,0.013,0.033,0.028,False,Insufficient evidence,59,103,15,488,32.6
-1641780,Johni Broome,2025,1,Forward,Pick 35,0.015,0.008,0.022,0.007,False,Insufficient evidence,60,103,11,52,4.8
+1643016,Bez Mbeng,2025,1,Guard,Undrafted,0.02,0.013,0.033,0.029,False,Insufficient evidence,59,103,15,488,32.6
+1641780,Johni Broome,2025,1,Forward,Pick 35,0.015,0.008,0.022,0.008,False,Insufficient evidence,60,103,11,52,4.8
 1642396,Blake Hinson,2025,1,Forward,Undrafted,0.015,0.01,0.029,0.112,False,Insufficient evidence,60,103,14,282,20.2
-1642504,Cormac Ryan,2025,1,Guard,Undrafted,0.014,0.008,0.021,0.164,True,Insufficient evidence,62,103,11,268,24.4
+1642504,Cormac Ryan,2025,1,Guard,Undrafted,0.014,0.008,0.021,0.165,True,Insufficient evidence,62,103,11,268,24.4
 1642877,Micah Peavy,2025,1,Wing (G/F),Pick 40,0.014,0.009,0.022,0.024,False,Below threshold,62,103,61,901,14.8
 1642967,John Poulakidas,2025,1,Guard,Undrafted,0.014,0.008,0.021,0.025,False,Insufficient evidence,62,103,13,250,19.3
 1642917,Max Shulga,2025,1,Guard,Pick 57,0.012,0.007,0.022,0.008,False,Insufficient evidence,65,103,11,33,3.1
@@ -213,25 +213,25 @@ personId,name,debut,horizon,position,draft,p,p_low,p_high,p_challenger,models_di
 1642939,Miles Kelly,2025,1,Guard,Undrafted,0.012,0.007,0.02,0.004,False,Insufficient evidence,65,103,14,130,9.3
 1642380,Adama Bal,2025,1,Guard,Undrafted,0.011,0.006,0.019,0.03,False,Insufficient evidence,68,103,8,239,29.9
 1642404,Chaz Lanier,2025,1,Guard,Pick 37,0.011,0.005,0.017,0.028,False,Insufficient evidence,68,103,34,256,7.5
-1642964,Brooks Barnhizer,2025,1,Guard,Pick 44,0.011,0.006,0.019,0.032,False,Insufficient evidence,68,103,40,340,8.5
+1642964,Brooks Barnhizer,2025,1,Guard,Pick 44,0.011,0.006,0.019,0.031,False,Insufficient evidence,68,103,40,340,8.5
 1642282,Hunter Sallis,2025,1,Guard,Undrafted,0.01,0.006,0.018,0.005,False,Insufficient evidence,71,103,7,24,3.5
-1642362,Payton Sandfort,2025,1,Forward,Undrafted,0.01,0.005,0.014,0.003,False,Insufficient evidence,71,103,4,62,15.7
+1642362,Payton Sandfort,2025,1,Forward,Undrafted,0.01,0.005,0.014,0.002,False,Insufficient evidence,71,103,4,62,15.7
 1642935,Chucky Hepburn,2025,1,Guard,Undrafted,0.01,0.006,0.02,0.008,False,Insufficient evidence,71,103,2,12,6.4
 1642951,Sean Pedulla,2025,1,Guard,Undrafted,0.01,0.005,0.017,0.001,False,Insufficient evidence,71,103,7,29,4.3
 1641813,Mark Sears,2025,1,Guard,Undrafted,0.009,0.005,0.016,0.001,False,Insufficient evidence,75,103,7,24,3.6
-1641869,Malachi Smith,2025,1,Guard,Undrafted,0.009,0.006,0.016,0.078,False,Insufficient evidence,75,103,15,356,23.8
+1641869,Malachi Smith,2025,1,Guard,Undrafted,0.009,0.006,0.016,0.077,False,Insufficient evidence,75,103,15,356,23.8
 1642357,David Jones Garcia,2025,1,Guard,Undrafted,0.009,0.005,0.013,0.005,False,Insufficient evidence,75,103,11,65,5.9
-1642910,John Tonje,2025,1,Guard,Pick 53,0.009,0.006,0.016,0.009,False,Insufficient evidence,75,103,6,40,6.8
-1643060,Hayden Gray,2025,1,Guard,Undrafted,0.009,0.006,0.018,0.007,False,Insufficient evidence,75,103,1,24,24.4
-1643133,Lawson Lovering,2025,1,Center,Undrafted,0.009,0.005,0.015,0.023,False,Insufficient evidence,75,103,2,48,24.4
-1630828,Alex Antetokounmpo,2025,1,Forward,Undrafted,0.008,0.005,0.011,0.008,False,Insufficient evidence,81,103,6,19,3.3
-1641761,Grant Nelson,2025,1,Forward,Undrafted,0.008,0.005,0.012,0.011,False,Insufficient evidence,81,103,4,34,8.6
+1642910,John Tonje,2025,1,Guard,Pick 53,0.009,0.006,0.016,0.01,False,Insufficient evidence,75,103,6,40,6.8
+1643060,Hayden Gray,2025,1,Guard,Undrafted,0.009,0.006,0.018,0.005,False,Insufficient evidence,75,103,1,24,24.4
+1643133,Lawson Lovering,2025,1,Center,Undrafted,0.009,0.005,0.015,0.022,False,Insufficient evidence,75,103,2,48,24.4
+1630828,Alex Antetokounmpo,2025,1,Forward,Undrafted,0.008,0.005,0.011,0.009,False,Insufficient evidence,81,103,6,19,3.3
+1641761,Grant Nelson,2025,1,Forward,Undrafted,0.008,0.005,0.012,0.01,False,Insufficient evidence,81,103,4,34,8.6
 1641807,Norchad Omier,2025,1,Forward,Undrafted,0.008,0.005,0.011,0.004,False,Insufficient evidence,81,103,6,22,3.8
-1642400,Tristan Enaruna,2025,1,Forward,Undrafted,0.008,0.005,0.012,0.003,False,Insufficient evidence,81,103,9,83,9.2
+1642400,Tristan Enaruna,2025,1,Forward,Undrafted,0.008,0.005,0.012,0.002,False,Insufficient evidence,81,103,9,83,9.2
 1642884,Vladislav Goldin,2025,1,Center,Undrafted,0.008,0.005,0.012,0.004,False,Insufficient evidence,81,103,9,22,2.5
 1642938,Curtis Jones,2025,1,Guard,Undrafted,0.008,0.004,0.012,0.002,False,Insufficient evidence,81,103,10,85,8.5
 1643257,Jayson Kent,2025,1,Forward,Undrafted,0.008,0.005,0.012,0.001,False,Insufficient evidence,81,103,5,21,4.3
-1643018,LJ Cryer,2025,1,Guard,Undrafted,0.007,0.003,0.011,0.033,False,Insufficient evidence,88,103,18,289,16.1
+1643018,LJ Cryer,2025,1,Guard,Undrafted,0.007,0.003,0.011,0.034,False,Insufficient evidence,88,103,18,289,16.1
 1643024,Chris Manon,2025,1,Guard,Undrafted,0.007,0.004,0.01,0.002,False,Insufficient evidence,88,103,9,43,4.8
 1642490,Josh Oduro,2025,1,Center,Undrafted,0.006,0.004,0.012,0.026,False,Insufficient evidence,90,103,3,81,27.0
 1642955,Kadary Richmond,2025,1,Guard,Undrafted,0.006,0.004,0.01,0.005,False,Insufficient evidence,90,103,3,66,22.2

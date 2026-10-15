@@ -2,9 +2,9 @@ model,calibration,val_brier,val_auc,val_cal_gap
 Logistic regression,sigmoid,0.075,0.9197,-0.0106
 Logistic regression,isotonic,0.0755,0.917,-0.0126
 Logistic regression,none,0.0763,0.9197,-0.0118
-Random forest,none,0.077,0.8949,-0.013
-Gradient boosting,sigmoid,0.0775,0.8991,0.0028
-Gradient boosting,isotonic,0.0779,0.8943,0.004
-Random forest,isotonic,0.0789,0.8875,-0.0155
-Random forest,sigmoid,0.0798,0.8949,-0.0121
+Random forest,none,0.0771,0.8951,-0.013
+Gradient boosting,sigmoid,0.0775,0.8991,0.0027
+Gradient boosting,isotonic,0.0779,0.8945,0.004
+Random forest,isotonic,0.0788,0.8881,-0.0156
+Random forest,sigmoid,0.0798,0.8951,-0.0122
 Gradient boosting,none,0.0801,0.8991,-0.0093
