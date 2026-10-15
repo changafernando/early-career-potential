@@ -80,13 +80,25 @@ def format_value(f: str, v) -> str:
     return f"{v:.1f}"
 
 
+BEST_OF_LATEST = {"last_gmsc_pct": "best_gmsc_pct", "last_rate_pct": "best_rate_pct"}
+
+
+def merge_equal_ranks(c: pd.Series, x: pd.Series) -> pd.Series:
+    """After one season (or a flat career) best and latest season rank are the same number: show it once."""
+    for last, best in BEST_OF_LATEST.items():
+        if last in c and best in c and x[last] == x[best]:
+            c = c.drop(labels=[last]).add(pd.Series({best: c[last]}), fill_value=0)
+    return c
+
+
 def top_drivers(contrib: pd.DataFrame, X: pd.DataFrame, k: int = 3) -> pd.DataFrame:
     """Plain-language top-k features pushing each player's score up and down."""
     rows = []
     for pid, c in contrib.iterrows():
         c = c.drop(labels=["undrafted"], errors="ignore")  # draft information is shown once, via draft_pick
-        up = c[c > 0].sort_values(ascending=False).head(k)
-        dn = c[c < 0].sort_values().head(k)
+        c = merge_equal_ranks(c, X.loc[pid])
+        up = c[c > 0].sort_values(ascending=False, kind="stable").head(k)
+        dn = c[c < 0].sort_values(kind="stable").head(k)
         fmt = lambda s: [dict(feature=f, label=PLAIN_NAMES.get(f, f), value=format_value(f, X.at[pid, f]),
                               effect=round(float(v), 3)) for f, v in s.items()]
         rows.append(dict(personId=pid, drivers_up=fmt(up), drivers_down=fmt(dn)))

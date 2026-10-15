@@ -22,7 +22,7 @@ make the decisions.
 | Results | `outputs/` | `metrics.json` (incl. business case and release gates), model-selection and model-comparison tables, backtest predictions, fairness audit, drift report, figures |
 | Walkthrough notebook | `notebooks/walkthrough.ipynb` (+ `.html`) | The build and evaluation story, step by step, with outputs |
 | Documentation | `docs/` | Model card, runbook, data dictionary, user guide, evaluation protocol, changelog |
-| Tests | `tests/` | 20 unit and integration tests (leakage, construct logic, thresholds, output rules) |
+| Tests | `tests/` | 21 unit and integration tests (leakage, construct logic, thresholds, output rules) |
 
 ## Quick start
 
@@ -32,7 +32,7 @@ Requires Python 3.10 or later.
 pip install -r requirements.txt
 python run_pipeline.py all        # about 3 minutes on a laptop: select, backtest, train, score, monitor, build dashboard
 open dashboard/ecp_dashboard.html # or double-click it; it works offline in any modern browser
-python -m pytest -q               # 20 tests
+python -m pytest -q               # 21 tests
 ```
 
 The processed data ships in `data/processed/`, so the raw dataset is **not** needed to run the model.

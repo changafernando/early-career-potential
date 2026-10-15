@@ -34,10 +34,10 @@
         "effect": 0.446
       },
       {
-        "feature": "oreb_100",
-        "label": "offensive rebounds per 100",
-        "value": "+5.6 vs league",
-        "effect": 0.228
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "54th percentile",
+        "effect": 0.416
       }
     ],
     "drivers_down": [
@@ -138,22 +138,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "4th percentile",
+        "effect": -1.095
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.9 years",
         "effect": -0.923
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "4th percentile",
-        "effect": -0.547
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "4th percentile",
-        "effect": -0.547
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -214,6 +214,12 @@
     "age_debut": 26.5,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "34th percentile",
+        "effect": 0.122
+      },
+      {
         "feature": "height",
         "label": "height",
         "value": "6'4\"",
@@ -224,12 +230,6 @@
         "label": "3-point share vs league",
         "value": "+17.7 pts vs league",
         "effect": 0.103
-      },
-      {
-        "feature": "weight",
-        "label": "weight",
-        "value": "195",
-        "effect": 0.069
       }
     ],
     "drivers_down": [
@@ -240,16 +240,16 @@
         "effect": -1.585
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "6th percentile",
+        "effect": -0.415
+      },
+      {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
-      },
-      {
-        "feature": "gmsc_100",
-        "label": "Game Score per 100",
-        "value": "-7.7 vs league",
-        "effect": -0.208
       }
     ],
     "comparables": [
@@ -330,22 +330,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "9th percentile",
+        "effect": -0.862
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.1 years",
         "effect": -0.605
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "9th percentile",
-        "effect": -0.431
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "9th percentile",
-        "effect": -0.431
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -406,22 +406,22 @@
     "age_debut": 24.0,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "51st percentile",
-        "effect": 0.389
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "51st percentile",
-        "effect": 0.389
+        "effect": 0.778
       },
       {
         "feature": "height",
         "label": "height",
         "value": "6'3\"",
         "effect": 0.153
+      },
+      {
+        "feature": "three_rate_vs_league",
+        "label": "3-point share vs league",
+        "value": "+18.1 pts vs league",
+        "effect": 0.105
       }
     ],
     "drivers_down": [
@@ -534,10 +534,10 @@
         "effect": -0.299
       },
       {
-        "feature": "mpg",
-        "label": "minutes per game",
-        "value": "25.4",
-        "effect": -0.185
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "24th percentile",
+        "effect": -0.268
       }
     ],
     "comparables": [
@@ -624,16 +624,16 @@
         "effect": -1.696
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "19th percentile",
+        "effect": -0.466
+      },
+      {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
-      },
-      {
-        "feature": "mpg",
-        "label": "minutes per game",
-        "value": "31.7",
-        "effect": -0.284
       }
     ],
     "comparables": [
@@ -720,16 +720,16 @@
         "effect": -1.506
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "3rd percentile",
-        "effect": -0.551
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "3rd percentile",
-        "effect": -0.551
+        "effect": -1.101
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -816,16 +816,16 @@
         "effect": -2.197
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "1st percentile",
-        "effect": -0.592
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "1st percentile",
-        "effect": -0.592
+        "effect": -1.183
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -906,22 +906,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "22nd percentile",
+        "effect": -0.357
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.2 years",
         "effect": -0.196
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "22nd percentile",
-        "effect": -0.178
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "22nd percentile",
-        "effect": -0.178
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -982,16 +982,16 @@
     "age_debut": 23.7,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "75th percentile",
-        "effect": 0.874
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "75th percentile",
-        "effect": 0.874
+        "effect": 1.748
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "70th percentile",
+        "effect": 0.699
       },
       {
         "feature": "is_center",
@@ -1098,22 +1098,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "9th percentile",
-        "effect": -0.435
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "9th percentile",
-        "effect": -0.435
+        "effect": -0.869
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.6 years",
         "effect": -0.37
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -1194,22 +1194,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "2nd percentile",
-        "effect": -0.575
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "2nd percentile",
-        "effect": -0.575
+        "effect": -1.149
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.2 years",
         "effect": -0.227
+      },
+      {
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -1290,22 +1290,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "10th percentile",
+        "effect": -0.821
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.1 years",
         "effect": -0.604
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "10th percentile",
-        "effect": -0.411
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "10th percentile",
-        "effect": -0.411
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -1386,22 +1386,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "7th percentile",
-        "effect": -0.479
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "7th percentile",
-        "effect": -0.479
+        "effect": -0.958
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.7 years",
         "effect": -0.401
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -1462,22 +1462,22 @@
     "age_debut": 25.9,
     "drivers_up": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "50th percentile",
-        "effect": 0.171
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "50th percentile",
-        "effect": 0.171
+        "effect": 0.343
       },
       {
         "feature": "ast_100",
         "label": "assists per 100",
         "value": "+1.4 vs league",
         "effect": 0.141
+      },
+      {
+        "feature": "height",
+        "label": "height",
+        "value": "6'4\"",
+        "effect": 0.114
       }
     ],
     "drivers_down": [
@@ -1558,22 +1558,22 @@
     "age_debut": 24.4,
     "drivers_up": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "56th percentile",
-        "effect": 0.229
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "56th percentile",
-        "effect": 0.229
+        "effect": 0.459
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-0.8 vs league",
         "effect": 0.164
+      },
+      {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "35th percentile",
+        "effect": 0.149
       }
     ],
     "drivers_down": [
@@ -1674,22 +1674,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "16th percentile",
-        "effect": -0.291
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "16th percentile",
-        "effect": -0.291
+        "effect": -0.582
       },
       {
         "feature": "ft_rate_vs_league",
         "label": "free-throw rate vs league",
         "value": "-16.6 pts vs league",
         "effect": -0.249
+      },
+      {
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "-7.3 vs league",
+        "effect": -0.188
       }
     ],
     "comparables": [
@@ -1770,22 +1770,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "2nd percentile",
-        "effect": -0.571
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "2nd percentile",
-        "effect": -0.571
+        "effect": -1.142
       },
       {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
+      },
+      {
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -1866,22 +1866,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "16th percentile",
+        "effect": -0.616
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.9 years",
         "effect": -0.502
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "16th percentile",
-        "effect": -0.308
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "16th percentile",
-        "effect": -0.308
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -1965,19 +1965,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "11th percentile",
-        "effect": -0.394
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "11th percentile",
-        "effect": -0.394
+        "effect": -0.787
       },
       {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
+      },
+      {
+        "feature": "age_debut",
+        "label": "age at debut",
+        "value": "23.3 years",
+        "effect": -0.235
       }
     ],
     "comparables": [
@@ -2038,22 +2038,22 @@
     "age_debut": 23.7,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "63rd percentile",
-        "effect": 0.642
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "63rd percentile",
-        "effect": 0.642
+        "effect": 1.283
       },
       {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "pick 24",
         "effect": 0.178
+      },
+      {
+        "feature": "weight",
+        "label": "weight",
+        "value": "175",
+        "effect": 0.121
       }
     ],
     "drivers_down": [
@@ -2064,16 +2064,16 @@
         "effect": -0.413
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "10th percentile",
+        "effect": -0.35
+      },
+      {
         "feature": "minutes",
         "label": "total minutes",
         "value": "1,866",
         "effect": -0.23
-      },
-      {
-        "feature": "mpg",
-        "label": "minutes per game",
-        "value": "24.9",
-        "effect": -0.177
       }
     ],
     "comparables": [
@@ -2134,22 +2134,22 @@
     "age_debut": 24.3,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "50th percentile",
-        "effect": 0.372
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "50th percentile",
-        "effect": 0.372
+        "effect": 0.744
       },
       {
         "feature": "is_guard",
         "label": "listed guard",
         "value": "no",
         "effect": 0.1
+      },
+      {
+        "feature": "three_rate_vs_league",
+        "label": "3-point share vs league",
+        "value": "+11.9 pts vs league",
+        "effect": 0.073
       }
     ],
     "drivers_down": [
@@ -2250,6 +2250,12 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "21st percentile",
+        "effect": -0.411
+      },
+      {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
@@ -2260,12 +2266,6 @@
         "label": "turnovers per 100",
         "value": "-1.6 vs league",
         "effect": -0.263
-      },
-      {
-        "feature": "mpg",
-        "label": "minutes per game",
-        "value": "29.9",
-        "effect": -0.256
       }
     ],
     "comparables": [
@@ -2326,22 +2326,22 @@
     "age_debut": 22.6,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "60th percentile",
-        "effect": 0.584
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "60th percentile",
-        "effect": 0.584
+        "effect": 1.167
       },
       {
         "feature": "ast_100",
         "label": "assists per 100",
         "value": "+3.9 vs league",
         "effect": 0.285
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 18",
+        "effect": 0.255
       }
     ],
     "drivers_down": [
@@ -2352,16 +2352,16 @@
         "effect": -0.141
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "22nd percentile",
+        "effect": -0.133
+      },
+      {
         "feature": "is_center",
         "label": "listed center",
         "value": "no",
         "effect": -0.13
-      },
-      {
-        "feature": "is_guard",
-        "label": "listed guard",
-        "value": "yes",
-        "effect": -0.114
       }
     ],
     "comparables": [
@@ -2425,19 +2425,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "74th percentile",
-        "effect": 0.378
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "74th percentile",
-        "effect": 0.378
+        "effect": 0.757
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "+1.7 vs league",
         "effect": 0.299
+      },
+      {
+        "feature": "three_rate_vs_league",
+        "label": "3-point share vs league",
+        "value": "+27.2 pts vs league",
+        "effect": 0.152
       }
     ],
     "drivers_down": [
@@ -2544,16 +2544,16 @@
         "effect": -0.677
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "15th percentile",
-        "effect": -0.318
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "15th percentile",
-        "effect": -0.318
+        "effect": -0.637
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -2634,22 +2634,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "2nd percentile",
+        "effect": -0.493
+      },
+      {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "19th percentile",
+        "effect": -0.486
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.8 years",
         "effect": -0.473
-      },
-      {
-        "feature": "tov_100",
-        "label": "turnovers per 100",
-        "value": "-2.2 vs league",
-        "effect": -0.358
-      },
-      {
-        "feature": "gmsc_100",
-        "label": "Game Score per 100",
-        "value": "-9.5 vs league",
-        "effect": -0.308
       }
     ],
     "comparables": [
@@ -2736,16 +2736,16 @@
         "effect": -1.486
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "1st percentile",
-        "effect": -0.605
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "1st percentile",
-        "effect": -0.605
+        "effect": -1.211
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -2835,13 +2835,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "12th percentile",
-        "effect": -0.383
+        "effect": -0.767
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "12th percentile",
-        "effect": -0.383
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -2905,19 +2905,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "76th percentile",
-        "effect": 0.404
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "76th percentile",
-        "effect": 0.404
+        "effect": 0.807
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "+2.3 vs league",
         "effect": 0.327
+      },
+      {
+        "feature": "three_rate_vs_league",
+        "label": "3-point share vs league",
+        "value": "+16.3 pts vs league",
+        "effect": 0.096
       }
     ],
     "drivers_down": [
@@ -2998,22 +2998,22 @@
     "age_debut": 18.8,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "95th percentile",
+        "effect": 2.548
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "18.8 years",
         "effect": 1.644
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "95th percentile",
-        "effect": 1.274
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "95th percentile",
-        "effect": 1.274
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "85th percentile",
+        "effect": 0.954
       }
     ],
     "drivers_down": [
@@ -3094,22 +3094,22 @@
     "age_debut": 19.6,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "80th percentile",
+        "effect": 1.926
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "19.6 years",
         "effect": 1.304
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "80th percentile",
-        "effect": 0.963
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "80th percentile",
-        "effect": 0.963
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "73rd percentile",
+        "effect": 0.753
       }
     ],
     "drivers_down": [
@@ -3193,19 +3193,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "91st percentile",
-        "effect": 1.188
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "91st percentile",
-        "effect": 1.188
+        "effect": 2.377
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.2 years",
         "effect": 1.055
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 3",
+        "effect": 0.448
       }
     ],
     "drivers_down": [
@@ -3286,22 +3286,22 @@
     "age_debut": 19.2,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "78th percentile",
+        "effect": 1.864
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "19.2 years",
         "effect": 1.494
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "78th percentile",
-        "effect": 0.932
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "78th percentile",
-        "effect": 0.932
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 5",
+        "effect": 0.423
       }
     ],
     "drivers_down": [
@@ -3382,22 +3382,22 @@
     "age_debut": 19.0,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "85th percentile",
+        "effect": 2.158
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "19.0 years",
         "effect": 1.566
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "85th percentile",
-        "effect": 1.079
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "85th percentile",
-        "effect": 1.079
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "58th percentile",
+        "effect": 0.478
       }
     ],
     "drivers_down": [
@@ -3484,16 +3484,16 @@
         "effect": 1.31
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "62nd percentile",
-        "effect": 0.604
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "62nd percentile",
-        "effect": 0.604
+        "effect": 1.208
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 6",
+        "effect": 0.41
       }
     ],
     "drivers_down": [
@@ -3580,36 +3580,36 @@
         "effect": 1.405
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "48th percentile",
+        "effect": 0.675
+      },
+      {
         "feature": "tov_100",
         "label": "turnovers per 100",
         "value": "+2.3 vs league",
         "effect": 0.357
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "48th percentile",
-        "effect": 0.338
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "10th percentile",
-        "effect": -0.173
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "10th percentile",
-        "effect": -0.173
+        "effect": -0.346
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-7.0 vs league",
         "effect": -0.171
+      },
+      {
+        "feature": "mpg",
+        "label": "minutes per game",
+        "value": "22.0",
+        "effect": -0.132
       }
     ],
     "comparables": [
@@ -3670,22 +3670,22 @@
     "age_debut": 20.2,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "95th percentile",
-        "effect": 1.267
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "95th percentile",
-        "effect": 1.267
+        "effect": 2.534
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.2 years",
         "effect": 1.059
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "80th percentile",
+        "effect": 0.861
       }
     ],
     "drivers_down": [
@@ -3769,19 +3769,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "87th percentile",
-        "effect": 1.103
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "87th percentile",
-        "effect": 1.103
+        "effect": 2.206
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.8 years",
         "effect": 0.806
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "68th percentile",
+        "effect": 0.656
       }
     ],
     "drivers_down": [
@@ -3868,19 +3868,25 @@
         "effect": 0.609
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "37th percentile",
+        "effect": 0.217
+      },
+      {
         "feature": "three_rate_vs_league",
         "label": "3-point share vs league",
         "value": "+19.0 pts vs league",
         "effect": 0.109
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "37th percentile",
-        "effect": 0.109
       }
     ],
     "drivers_down": [
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "13th percentile",
+        "effect": -0.292
+      },
       {
         "feature": "ast_100",
         "label": "assists per 100",
@@ -3892,12 +3898,6 @@
         "label": "free-throw rate vs league",
         "value": "-10.5 pts vs league",
         "effect": -0.155
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "13th percentile",
-        "effect": -0.146
       }
     ],
     "comparables": [
@@ -3964,16 +3964,16 @@
         "effect": 1.132
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "52nd percentile",
-        "effect": 0.193
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "52nd percentile",
-        "effect": 0.193
+        "effect": 0.385
+      },
+      {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "38th percentile",
+        "effect": 0.258
       }
     ],
     "drivers_down": [
@@ -4074,22 +4074,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "1st percentile",
-        "effect": -0.609
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "1st percentile",
-        "effect": -0.609
+        "effect": -1.218
       },
       {
         "feature": "is_center",
         "label": "listed center",
         "value": "no",
         "effect": -0.13
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "not enough minutes",
+        "effect": -0.087
       }
     ],
     "comparables": [
@@ -4159,13 +4159,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "59th percentile",
-        "effect": 0.56
+        "effect": 1.119
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "59th percentile",
-        "effect": 0.56
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 8",
+        "effect": 0.384
       }
     ],
     "drivers_down": [
@@ -4255,13 +4255,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "49th percentile",
-        "effect": 0.355
+        "effect": 0.709
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "49th percentile",
-        "effect": 0.355
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 20",
+        "effect": 0.229
       }
     ],
     "drivers_down": [
@@ -4348,16 +4348,16 @@
         "effect": 1.145
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "37th percentile",
+        "effect": 0.252
+      },
+      {
         "feature": "height",
         "label": "height",
         "value": "6'1\"",
         "effect": 0.232
-      },
-      {
-        "feature": "draft_pick",
-        "label": "draft pick",
-        "value": "pick 25",
-        "effect": 0.165
       }
     ],
     "drivers_down": [
@@ -4438,22 +4438,22 @@
     "age_debut": 19.7,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "71st percentile",
+        "effect": 1.605
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "19.7 years",
         "effect": 1.281
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "71st percentile",
-        "effect": 0.802
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "71st percentile",
-        "effect": 0.802
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 21",
+        "effect": 0.216
       }
     ],
     "drivers_down": [
@@ -4554,22 +4554,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "19th percentile",
+        "effect": -0.191
+      },
+      {
         "feature": "tov_100",
         "label": "turnovers per 100",
         "value": "-1.0 vs league",
         "effect": -0.173
       },
       {
-        "feature": "is_center",
-        "label": "listed center",
-        "value": "no",
-        "effect": -0.13
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "19th percentile",
-        "effect": -0.095
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "27th percentile",
+        "effect": -0.158
       }
     ],
     "comparables": [
@@ -4732,19 +4732,25 @@
         "effect": 1.275
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "45th percentile",
-        "effect": 0.276
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "45th percentile",
-        "effect": 0.276
+        "effect": 0.552
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 28",
+        "effect": 0.126
       }
     ],
     "drivers_down": [
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "10th percentile",
+        "effect": -0.342
+      },
       {
         "feature": "ft_rate_vs_league",
         "label": "free-throw rate vs league",
@@ -4752,16 +4758,10 @@
         "effect": -0.237
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "10th percentile",
-        "effect": -0.171
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "10th percentile",
-        "effect": -0.171
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "-7.0 vs league",
+        "effect": -0.17
       }
     ],
     "comparables": [
@@ -4831,13 +4831,13 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "90th percentile",
-        "effect": 0.518
+        "effect": 1.035
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "90th percentile",
-        "effect": 0.518
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "+5.6 vs league",
+        "effect": 0.507
       }
     ],
     "drivers_down": [
@@ -4918,22 +4918,22 @@
     "age_debut": 20.3,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "66th percentile",
+        "effect": 1.393
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.3 years",
         "effect": 0.997
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "66th percentile",
-        "effect": 0.696
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "66th percentile",
-        "effect": 0.696
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "64th percentile",
+        "effect": 0.591
       }
     ],
     "drivers_down": [
@@ -5020,19 +5020,25 @@
         "effect": 1.193
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "40th percentile",
+        "effect": 0.368
+      },
+      {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "pick 14",
         "effect": 0.307
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "40th percentile",
-        "effect": 0.184
       }
     ],
     "drivers_down": [
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "14th percentile",
+        "effect": -0.272
+      },
       {
         "feature": "ft_rate_vs_league",
         "label": "free-throw rate vs league",
@@ -5044,12 +5050,6 @@
         "label": "turnovers per 100",
         "value": "-0.8 vs league",
         "effect": -0.14
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "14th percentile",
-        "effect": -0.136
       }
     ],
     "comparables": [
@@ -5116,19 +5116,25 @@
         "effect": 0.819
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "41st percentile",
-        "effect": 0.198
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "41st percentile",
-        "effect": 0.198
+        "effect": 0.395
+      },
+      {
+        "feature": "oreb_100",
+        "label": "offensive rebounds per 100",
+        "value": "+2.0 vs league",
+        "effect": 0.077
       }
     ],
     "drivers_down": [
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "21st percentile",
+        "effect": -0.164
+      },
       {
         "feature": "is_center",
         "label": "listed center",
@@ -5140,12 +5146,6 @@
         "label": "listed guard",
         "value": "yes",
         "effect": -0.114
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "21st percentile",
-        "effect": -0.082
       }
     ],
     "comparables": [
@@ -5226,22 +5226,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "15th percentile",
+        "effect": -0.657
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.7 years",
         "effect": -0.426
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "15th percentile",
-        "effect": -0.329
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "15th percentile",
-        "effect": -0.329
+        "feature": "three_rate_vs_league",
+        "label": "3-point share vs league",
+        "value": "-41.5 pts vs league",
+        "effect": -0.201
       }
     ],
     "comparables": [
@@ -5302,22 +5302,22 @@
     "age_debut": 21.4,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "57th percentile",
+        "effect": 1.044
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "21.4 years",
         "effect": 0.533
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "57th percentile",
-        "effect": 0.522
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "57th percentile",
-        "effect": 0.522
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "43rd percentile",
+        "effect": 0.219
       }
     ],
     "drivers_down": [
@@ -5401,13 +5401,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "85th percentile",
-        "effect": 1.062
+        "effect": 2.124
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "85th percentile",
-        "effect": 1.062
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "65th percentile",
+        "effect": 0.606
       },
       {
         "feature": "is_center",
@@ -5517,19 +5517,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "17th percentile",
-        "effect": -0.281
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "17th percentile",
-        "effect": -0.281
+        "effect": -0.562
       },
       {
         "feature": "three_rate_vs_league",
         "label": "3-point share vs league",
         "value": "-31.8 pts vs league",
         "effect": -0.151
+      },
+      {
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -5590,22 +5590,22 @@
     "age_debut": 24.2,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "39th percentile",
-        "effect": 0.15
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "39th percentile",
-        "effect": 0.15
+        "effect": 0.299
       },
       {
         "feature": "pts_100",
         "label": "points per 100 possessions",
         "value": "-9.3 vs league",
         "effect": 0.064
+      },
+      {
+        "feature": "stl_100",
+        "label": "steals per 100",
+        "value": "+0.6 vs league",
+        "effect": 0.044
       }
     ],
     "drivers_down": [
@@ -5616,16 +5616,16 @@
         "effect": -0.653
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "4th percentile",
+        "effect": -0.454
+      },
+      {
         "feature": "tov_100",
         "label": "turnovers per 100",
         "value": "-1.7 vs league",
         "effect": -0.281
-      },
-      {
-        "feature": "gmsc_100",
-        "label": "Game Score per 100",
-        "value": "-8.5 vs league",
-        "effect": -0.253
       }
     ],
     "comparables": [
@@ -5695,13 +5695,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "38th percentile",
-        "effect": 0.143
+        "effect": 0.286
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "38th percentile",
-        "effect": 0.143
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "46th percentile",
+        "effect": 0.277
       }
     ],
     "drivers_down": [
@@ -5794,30 +5794,30 @@
         "effect": 0.389
       },
       {
-        "feature": "ast_100",
-        "label": "assists per 100",
-        "value": "+2.4 vs league",
-        "effect": 0.203
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "40th percentile",
+        "effect": 0.354
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "7th percentile",
-        "effect": -0.2
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "7th percentile",
-        "effect": -0.2
+        "effect": -0.4
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-7.4 vs league",
         "effect": -0.195
+      },
+      {
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -5898,6 +5898,12 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "6th percentile",
+        "effect": -0.419
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.6 years",
@@ -5908,12 +5914,6 @@
         "label": "free-throw rate vs league",
         "value": "-21.6 pts vs league",
         "effect": -0.328
-      },
-      {
-        "feature": "gmsc_100",
-        "label": "Game Score per 100",
-        "value": "-7.7 vs league",
-        "effect": -0.211
       }
     ],
     "comparables": [
@@ -5974,6 +5974,12 @@
     "age_debut": 22.3,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "49th percentile",
+        "effect": 0.324
+      },
+      {
         "feature": "ft_rate_vs_league",
         "label": "free-throw rate vs league",
         "value": "+10.6 pts vs league",
@@ -5984,12 +5990,6 @@
         "label": "age at debut",
         "value": "22.3 years",
         "effect": 0.174
-      },
-      {
-        "feature": "oreb_100",
-        "label": "offensive rebounds per 100",
-        "value": "+4.1 vs league",
-        "effect": 0.166
       }
     ],
     "drivers_down": [
@@ -6070,25 +6070,31 @@
     "age_debut": 22.9,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "58th percentile",
-        "effect": 0.532
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "58th percentile",
-        "effect": 0.532
+        "effect": 1.065
       },
       {
         "feature": "three_rate_vs_league",
         "label": "3-point share vs league",
         "value": "+21.9 pts vs league",
         "effect": 0.125
+      },
+      {
+        "feature": "pts_100",
+        "label": "points per 100 possessions",
+        "value": "-11.3 vs league",
+        "effect": 0.084
       }
     ],
     "drivers_down": [
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "4th percentile",
+        "effect": -0.446
+      },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
@@ -6096,15 +6102,9 @@
         "effect": -0.249
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "4th percentile",
-        "effect": -0.223
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "4th percentile",
+        "feature": "minutes",
+        "label": "total minutes",
+        "value": "1,826",
         "effect": -0.223
       }
     ],
@@ -6186,22 +6186,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "5th percentile",
+        "effect": -1.026
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.4 years",
         "effect": -0.729
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "5th percentile",
-        "effect": -0.513
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "5th percentile",
-        "effect": -0.513
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -6271,13 +6271,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "37th percentile",
-        "effect": 0.116
+        "effect": 0.231
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "37th percentile",
-        "effect": 0.116
+        "feature": "three_rate_vs_league",
+        "label": "3-point share vs league",
+        "value": "+19.5 pts vs league",
+        "effect": 0.112
       }
     ],
     "drivers_down": [
@@ -6294,10 +6294,10 @@
         "effect": -0.17
       },
       {
-        "feature": "is_center",
-        "label": "listed center",
-        "value": "no",
-        "effect": -0.13
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "20th percentile",
+        "effect": -0.168
       }
     ],
     "comparables": [
@@ -6378,22 +6378,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "14th percentile",
-        "effect": -0.339
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "14th percentile",
-        "effect": -0.339
+        "effect": -0.678
       },
       {
         "feature": "is_center",
         "label": "listed center",
         "value": "no",
         "effect": -0.13
+      },
+      {
+        "feature": "is_guard",
+        "label": "listed guard",
+        "value": "yes",
+        "effect": -0.114
       }
     ],
     "comparables": [
@@ -6474,22 +6474,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "17th percentile",
+        "effect": -0.568
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "0th percentile",
+        "effect": -0.52
+      },
+      {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-12.5 vs league",
         "effect": -0.468
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "17th percentile",
-        "effect": -0.284
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "17th percentile",
-        "effect": -0.284
       }
     ],
     "comparables": [
@@ -6553,13 +6553,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "79th percentile",
-        "effect": 0.953
+        "effect": 1.905
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "79th percentile",
-        "effect": 0.953
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "66th percentile",
+        "effect": 0.633
       },
       {
         "feature": "draft_pick",
@@ -6666,22 +6666,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "7th percentile",
+        "effect": -0.972
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.5 years",
         "effect": -0.751
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "7th percentile",
-        "effect": -0.486
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "7th percentile",
-        "effect": -0.486
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 53",
+        "effect": -0.196
       }
     ],
     "comparables": [
@@ -6762,22 +6762,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "11th percentile",
-        "effect": -0.407
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "11th percentile",
-        "effect": -0.407
+        "effect": -0.814
       },
       {
         "feature": "height",
         "label": "height",
         "value": "7'3\"",
         "effect": -0.319
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 45",
+        "effect": -0.093
       }
     ],
     "comparables": [
@@ -6838,22 +6838,22 @@
     "age_debut": 22.8,
     "drivers_up": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "55th percentile",
-        "effect": 0.466
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "55th percentile",
-        "effect": 0.466
+        "effect": 0.932
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "72nd percentile",
-        "effect": 0.367
+        "effect": 0.734
+      },
+      {
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "+1.5 vs league",
+        "effect": 0.287
       }
     ],
     "drivers_down": [
@@ -6954,22 +6954,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "1st percentile",
-        "effect": -0.595
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "1st percentile",
-        "effect": -0.595
+        "effect": -1.19
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.3 years",
         "effect": -0.255
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 57",
+        "effect": -0.247
       }
     ],
     "comparables": [
@@ -7050,22 +7050,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "16th percentile",
+        "effect": -0.599
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.8 years",
         "effect": -0.465
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "16th percentile",
-        "effect": -0.3
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "16th percentile",
-        "effect": -0.3
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -7129,19 +7129,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "53rd percentile",
-        "effect": 0.44
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "53rd percentile",
-        "effect": 0.44
+        "effect": 0.88
       },
       {
         "feature": "three_rate_vs_league",
         "label": "3-point share vs league",
         "value": "+9.5 pts vs league",
         "effect": 0.061
+      },
+      {
+        "feature": "pm_100",
+        "label": "plus-minus per 100",
+        "value": "+1.2 vs league",
+        "effect": 0.042
       }
     ],
     "drivers_down": [
@@ -7152,16 +7152,16 @@
         "effect": -0.285
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "15th percentile",
+        "effect": -0.264
+      },
+      {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "pick 50",
         "effect": -0.157
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "15th percentile",
-        "effect": -0.132
       }
     ],
     "comparables": [
@@ -7222,22 +7222,22 @@
     "age_debut": 23.8,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "52nd percentile",
+        "effect": 0.812
+      },
+      {
         "feature": "is_center",
         "label": "listed center",
         "value": "yes",
         "effect": 0.446
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "52nd percentile",
-        "effect": 0.406
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "52nd percentile",
-        "effect": 0.406
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "51st percentile",
+        "effect": 0.362
       }
     ],
     "drivers_down": [
@@ -7341,19 +7341,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "10th percentile",
-        "effect": -0.417
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "10th percentile",
-        "effect": -0.417
+        "effect": -0.835
       },
       {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
+      },
+      {
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -7434,22 +7434,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "0th percentile",
-        "effect": -0.612
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "0th percentile",
-        "effect": -0.612
+        "effect": -1.224
       },
       {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
+      },
+      {
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -7530,22 +7530,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "12th percentile",
+        "effect": -0.746
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.0 years",
         "effect": -0.561
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "12th percentile",
-        "effect": -0.373
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "12th percentile",
-        "effect": -0.373
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -7626,22 +7626,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "14th percentile",
+        "effect": -0.685
+      },
+      {
         "feature": "ft_rate_vs_league",
         "label": "free-throw rate vs league",
         "value": "-24.1 pts vs league",
         "effect": -0.366
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "14th percentile",
-        "effect": -0.342
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "14th percentile",
-        "effect": -0.342
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -7722,6 +7722,12 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "2nd percentile",
+        "effect": -0.497
+      },
+      {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-9.5 vs league",
@@ -7732,12 +7738,6 @@
         "label": "draft pick",
         "value": "pick 59",
         "effect": -0.273
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "2nd percentile",
-        "effect": -0.248
       }
     ],
     "comparables": [
@@ -7798,22 +7798,22 @@
     "age_debut": 22.6,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "55th percentile",
+        "effect": 0.942
+      },
+      {
         "feature": "ast_100",
         "label": "assists per 100",
         "value": "+7.3 vs league",
         "effect": 0.481
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "55th percentile",
-        "effect": 0.471
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "55th percentile",
-        "effect": 0.471
+        "feature": "height",
+        "label": "height",
+        "value": "5'11\"",
+        "effect": 0.31
       }
     ],
     "drivers_down": [
@@ -7900,16 +7900,16 @@
         "effect": 0.566
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "62nd percentile",
+        "effect": 0.56
+      },
+      {
         "feature": "is_center",
         "label": "listed center",
         "value": "yes",
         "effect": 0.446
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "62nd percentile",
-        "effect": 0.28
       }
     ],
     "drivers_down": [
@@ -8016,16 +8016,16 @@
         "effect": -0.222
       },
       {
-        "feature": "tov_100",
-        "label": "turnovers per 100",
-        "value": "-0.5 vs league",
-        "effect": -0.1
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "28th percentile",
+        "effect": -0.131
       },
       {
-        "feature": "three_rate_vs_league",
-        "label": "3-point share vs league",
-        "value": "-16.8 pts vs league",
-        "effect": -0.074
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "24th percentile",
+        "effect": -0.11
       }
     ],
     "comparables": [
@@ -8106,22 +8106,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "5th percentile",
-        "effect": -0.527
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "5th percentile",
-        "effect": -0.527
+        "effect": -1.054
       },
       {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
+      },
+      {
+        "feature": "age_debut",
+        "label": "age at debut",
+        "value": "23.0 years",
+        "effect": -0.131
       }
     ],
     "comparables": [
@@ -8185,19 +8185,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "57th percentile",
-        "effect": 0.515
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "57th percentile",
-        "effect": 0.515
+        "effect": 1.031
       },
       {
         "feature": "height",
         "label": "height",
         "value": "6'3\"",
         "effect": 0.153
+      },
+      {
+        "feature": "three_rate_vs_league",
+        "label": "3-point share vs league",
+        "value": "+19.8 pts vs league",
+        "effect": 0.113
       }
     ],
     "drivers_down": [
@@ -8208,16 +8208,16 @@
         "effect": -0.235
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "18th percentile",
+        "effect": -0.21
+      },
+      {
         "feature": "ft_rate_vs_league",
         "label": "free-throw rate vs league",
         "value": "-10.8 pts vs league",
         "effect": -0.158
-      },
-      {
-        "feature": "tov_100",
-        "label": "turnovers per 100",
-        "value": "-0.9 vs league",
-        "effect": -0.154
       }
     ],
     "comparables": [
@@ -8298,22 +8298,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "15th percentile",
+        "effect": -0.65
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.1 years",
         "effect": -0.607
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "15th percentile",
-        "effect": -0.325
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "15th percentile",
-        "effect": -0.325
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -8400,16 +8400,16 @@
         "effect": -0.538
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "19th percentile",
+        "effect": -0.473
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.7 years",
         "effect": -0.413
-      },
-      {
-        "feature": "tov_100",
-        "label": "turnovers per 100",
-        "value": "-2.2 vs league",
-        "effect": -0.361
       }
     ],
     "comparables": [
@@ -8479,16 +8479,22 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "46th percentile",
-        "effect": 0.297
+        "effect": 0.593
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "46th percentile",
-        "effect": 0.297
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "pick 22",
+        "effect": 0.204
       }
     ],
     "drivers_down": [
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "3rd percentile",
+        "effect": -0.469
+      },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
@@ -8496,16 +8502,10 @@
         "effect": -0.268
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "3rd percentile",
-        "effect": -0.235
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "3rd percentile",
-        "effect": -0.235
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.13
       }
     ],
     "comparables": [
@@ -8586,22 +8586,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "3rd percentile",
+        "effect": -0.473
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.6 years",
         "effect": -0.388
       },
       {
-        "feature": "gmsc_100",
-        "label": "Game Score per 100",
-        "value": "-9.2 vs league",
-        "effect": -0.291
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "3rd percentile",
-        "effect": -0.237
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "22nd percentile",
+        "effect": -0.377
       }
     ],
     "comparables": [
@@ -8694,10 +8694,10 @@
         "effect": -0.299
       },
       {
-        "feature": "ft_rate_vs_league",
-        "label": "free-throw rate vs league",
-        "value": "-18.7 pts vs league",
-        "effect": -0.282
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "24th percentile",
+        "effect": -0.295
       }
     ],
     "comparables": [
@@ -8784,16 +8784,16 @@
         "effect": -0.392
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "8th percentile",
+        "effect": -0.381
+      },
+      {
         "feature": "ft_rate_vs_league",
         "label": "free-throw rate vs league",
         "value": "-16.2 pts vs league",
         "effect": -0.244
-      },
-      {
-        "feature": "draft_pick",
-        "label": "draft pick",
-        "value": "pick 54",
-        "effect": -0.209
       }
     ],
     "comparables": [
@@ -8889,7 +8889,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "14th percentile",
-        "effect": -0.14
+        "effect": -0.28
       }
     ],
     "comparables": [
@@ -9066,22 +9066,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "7th percentile",
+        "effect": -0.944
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.8 years",
         "effect": -0.484
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "7th percentile",
-        "effect": -0.472
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "7th percentile",
-        "effect": -0.472
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -9162,22 +9162,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "7th percentile",
-        "effect": -0.482
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "7th percentile",
-        "effect": -0.482
+        "effect": -0.965
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.8 years",
         "effect": -0.452
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -9241,19 +9241,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "62nd percentile",
-        "effect": 0.274
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "62nd percentile",
-        "effect": 0.274
+        "effect": 0.548
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "+0.1 vs league",
         "effect": 0.211
+      },
+      {
+        "feature": "ft_rate_vs_league",
+        "label": "free-throw rate vs league",
+        "value": "+10.9 pts vs league",
+        "effect": 0.179
       }
     ],
     "drivers_down": [
@@ -9357,19 +9357,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "4th percentile",
-        "effect": -0.537
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "4th percentile",
-        "effect": -0.537
+        "effect": -1.074
       },
       {
         "feature": "draft_pick",
         "label": "draft pick",
         "value": "undrafted",
         "effect": -0.299
+      },
+      {
+        "feature": "mpg",
+        "label": "minutes per game",
+        "value": "24.4",
+        "effect": -0.171
       }
     ],
     "comparables": [
@@ -9450,22 +9450,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "10th percentile",
+        "effect": -0.849
+      },
+      {
         "feature": "weight",
         "label": "weight",
         "value": "not enough minutes",
         "effect": -0.538
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "10th percentile",
-        "effect": -0.424
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "10th percentile",
-        "effect": -0.424
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -9546,22 +9546,22 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "0th percentile",
+        "effect": -1.231
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.5 years",
         "effect": -0.743
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "0th percentile",
-        "effect": -0.616
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "0th percentile",
-        "effect": -0.616
+        "feature": "weight",
+        "label": "weight",
+        "value": "not enough minutes",
+        "effect": -0.538
       }
     ],
     "comparables": [
@@ -9651,12 +9651,12 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "15th percentile",
-        "effect": -0.315
+        "effect": -0.63
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "15th percentile",
+        "feature": "mpg",
+        "label": "minutes per game",
+        "value": "33.7",
         "effect": -0.315
       }
     ],
@@ -9738,6 +9738,12 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "13th percentile",
+        "effect": -0.726
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.0 years",
@@ -9748,12 +9754,6 @@
         "label": "Game Score per 100",
         "value": "-12.8 vs league",
         "effect": -0.486
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "13th percentile",
-        "effect": -0.363
       }
     ],
     "comparables": [
@@ -9834,22 +9834,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "6th percentile",
-        "effect": -0.503
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "6th percentile",
-        "effect": -0.503
+        "effect": -1.006
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.7 years",
         "effect": -0.419
+      },
+      {
+        "feature": "draft_pick",
+        "label": "draft pick",
+        "value": "undrafted",
+        "effect": -0.299
       }
     ],
     "comparables": [
@@ -10026,10 +10026,10 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "19th percentile",
-        "effect": -0.746
+        "effect": -0.974
       },
       {
         "feature": "gmsc_100",
@@ -10038,10 +10038,10 @@
         "effect": -0.261
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "19th percentile",
-        "effect": -0.229
+        "feature": "height",
+        "label": "height",
+        "value": "7'0\"",
+        "effect": -0.213
       }
     ],
     "comparables": [
@@ -10512,16 +10512,16 @@
         "effect": -0.562
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "13th percentile",
+        "effect": -0.49
+      },
+      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "not enough minutes",
         "effect": -0.408
-      },
-      {
-        "feature": "games",
-        "label": "games played",
-        "value": "24",
-        "effect": -0.405
       }
     ],
     "comparables": [
@@ -10582,16 +10582,16 @@
     "age_debut": 24.1,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "58th percentile",
+        "effect": 0.341
+      },
+      {
         "feature": "pm_100",
         "label": "plus-minus per 100",
         "value": "+6.3 vs league",
         "effect": 0.287
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "58th percentile",
-        "effect": 0.271
       },
       {
         "feature": "games",
@@ -10602,10 +10602,10 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "22nd percentile",
-        "effect": -0.695
+        "effect": -0.888
       },
       {
         "feature": "age_debut",
@@ -10678,16 +10678,16 @@
     "age_debut": 23.5,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "60th percentile",
+        "effect": 0.606
+      },
+      {
         "feature": "blk_100",
         "label": "blocks per 100",
         "value": "+1.7 vs league",
         "effect": 0.43
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "60th percentile",
-        "effect": 0.414
       },
       {
         "feature": "dreb_100",
@@ -10800,10 +10800,10 @@
         "effect": -1.402
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "18th percentile",
-        "effect": -0.781
+        "effect": -1.034
       },
       {
         "feature": "games",
@@ -10890,6 +10890,12 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "16th percentile",
+        "effect": -0.437
+      },
+      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "not enough minutes",
@@ -10900,12 +10906,6 @@
         "label": "Game Score per 100",
         "value": "-7.9 vs league",
         "effect": -0.374
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "16th percentile",
-        "effect": -0.354
       }
     ],
     "comparables": [
@@ -11161,19 +11161,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "89th percentile",
-        "effect": 0.865
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "89th percentile",
-        "effect": 0.848
+        "effect": 1.713
       },
       {
         "feature": "dreb_100",
         "label": "defensive rebounds per 100",
         "value": "+4.2 vs league",
         "effect": 0.569
+      },
+      {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "78th percentile",
+        "effect": 0.566
       }
     ],
     "drivers_down": [
@@ -11370,6 +11370,12 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "17th percentile",
+        "effect": -0.426
+      },
+      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "not enough minutes",
@@ -11380,12 +11386,6 @@
         "label": "games played",
         "value": "25",
         "effect": -0.397
-      },
-      {
-        "feature": "age_debut",
-        "label": "age at debut",
-        "value": "23.6 years",
-        "effect": -0.361
       }
     ],
     "comparables": [
@@ -11446,16 +11446,16 @@
     "age_debut": 23.8,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "52nd percentile",
+        "effect": 0.224
+      },
+      {
         "feature": "pm_100",
         "label": "plus-minus per 100",
         "value": "+3.0 vs league",
         "effect": 0.203
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "52nd percentile",
-        "effect": 0.177
       },
       {
         "feature": "blk_100",
@@ -11472,10 +11472,10 @@
         "effect": -0.457
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "38th percentile",
-        "effect": -0.323
+        "effect": -0.262
       },
       {
         "feature": "ast_100",
@@ -11542,16 +11542,16 @@
     "age_debut": 23.4,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "74th percentile",
+        "effect": 0.64
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "151",
         "effect": 0.606
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "74th percentile",
-        "effect": 0.51
       },
       {
         "feature": "minutes",
@@ -11562,10 +11562,10 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "35th percentile",
-        "effect": -0.389
+        "effect": -0.373
       },
       {
         "feature": "age_debut",
@@ -11673,7 +11673,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "24th percentile",
-        "effect": -0.238
+        "effect": -0.293
       }
     ],
     "comparables": [
@@ -11833,7 +11833,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "79th percentile",
-        "effect": 0.581
+        "effect": 0.728
       },
       {
         "feature": "games",
@@ -11862,10 +11862,10 @@
         "effect": -0.18
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "47th percentile",
-        "effect": -0.114
+        "feature": "blk_100",
+        "label": "blocks per 100",
+        "value": "-0.6 vs league",
+        "effect": -0.108
       }
     ],
     "comparables": [
@@ -12042,16 +12042,16 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "6th percentile",
+        "effect": -0.623
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "9",
         "effect": -0.524
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "6th percentile",
-        "effect": -0.503
       },
       {
         "feature": "best_rate_pct",
@@ -12240,16 +12240,16 @@
         "effect": -0.548
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "10th percentile",
+        "effect": -0.543
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "24.0 years",
         "effect": -0.511
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "10th percentile",
-        "effect": -0.439
       }
     ],
     "comparables": [
@@ -12319,13 +12319,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "90th percentile",
-        "effect": 0.744
+        "effect": 0.931
       },
       {
-        "feature": "games",
-        "label": "games played",
-        "value": "157",
-        "effect": 0.653
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "62nd percentile",
+        "effect": 0.691
       }
     ],
     "drivers_down": [
@@ -12421,15 +12421,15 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "65th percentile",
-        "effect": 0.368
+        "effect": 0.462
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "32nd percentile",
-        "effect": -0.465
+        "effect": -0.502
       },
       {
         "feature": "ast_100",
@@ -12618,10 +12618,10 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "12th percentile",
-        "effect": -0.914
+        "effect": -1.258
       },
       {
         "feature": "age_debut",
@@ -12630,10 +12630,10 @@
         "effect": -0.816
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "12th percentile",
-        "effect": -0.344
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "-7.2 vs league",
+        "effect": -0.311
       }
     ],
     "comparables": [
@@ -12790,22 +12790,22 @@
     "age_debut": 19.5,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "87th percentile",
+        "effect": 1.653
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "19.5 years",
         "effect": 1.323
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "87th percentile",
-        "effect": 0.84
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "87th percentile",
-        "effect": 0.813
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "78th percentile",
+        "effect": 0.713
       }
     ],
     "drivers_down": [
@@ -12988,24 +12988,24 @@
         "effect": 1.147
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "62nd percentile",
+        "effect": 0.408
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "116",
         "effect": 0.327
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "62nd percentile",
-        "effect": 0.324
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "14th percentile",
-        "effect": -0.873
+        "effect": -1.189
       },
       {
         "feature": "gmsc_100",
@@ -13014,10 +13014,10 @@
         "effect": -0.458
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "14th percentile",
-        "effect": -0.316
+        "feature": "dreb_100",
+        "label": "defensive rebounds per 100",
+        "value": "-2.6 vs league",
+        "effect": -0.226
       }
     ],
     "comparables": [
@@ -13087,13 +13087,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "88th percentile",
-        "effect": 0.709
+        "effect": 0.887
       },
       {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "67th percentile",
-        "effect": 0.519
+        "effect": 0.863
       }
     ],
     "drivers_down": [
@@ -13174,22 +13174,22 @@
     "age_debut": 20.0,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "82nd percentile",
+        "effect": 1.456
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.0 years",
         "effect": 1.126
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "82nd percentile",
-        "effect": 0.76
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "91st percentile",
-        "effect": 0.757
+        "effect": 0.947
       }
     ],
     "drivers_down": [
@@ -13372,24 +13372,24 @@
         "effect": 1.061
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "62nd percentile",
+        "effect": 0.414
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "124",
         "effect": 0.391
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "62nd percentile",
-        "effect": 0.329
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "29th percentile",
-        "effect": -0.516
+        "effect": -0.588
       },
       {
         "feature": "dreb_100",
@@ -13477,27 +13477,27 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "77th percentile",
-        "effect": 0.543
+        "effect": 0.681
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "17th percentile",
-        "effect": -0.802
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "17th percentile",
-        "effect": -0.267
+        "effect": -1.069
       },
       {
         "feature": "pm_100",
         "label": "plus-minus per 100",
         "value": "-15.3 vs league",
         "effect": -0.267
+      },
+      {
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "-6.2 vs league",
+        "effect": -0.228
       }
     ],
     "comparables": [
@@ -13564,16 +13564,16 @@
         "effect": 1.099
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "66th percentile",
+        "effect": 0.812
+      },
+      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "76th percentile",
-        "effect": 0.541
-      },
-      {
-        "feature": "ast_100",
-        "label": "assists per 100",
-        "value": "+6.8 vs league",
-        "effect": 0.534
+        "effect": 0.678
       }
     ],
     "drivers_down": [
@@ -13657,7 +13657,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "57th percentile",
-        "effect": 0.358
+        "effect": 0.468
       },
       {
         "feature": "height",
@@ -13753,19 +13753,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "88th percentile",
-        "effect": 0.854
+        "effect": 1.687
+      },
+      {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "93rd percentile",
+        "effect": 0.982
       },
       {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.6 years",
         "effect": 0.844
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "88th percentile",
-        "effect": 0.833
       }
     ],
     "drivers_down": [
@@ -13846,22 +13846,22 @@
     "age_debut": 20.9,
     "drivers_up": [
       {
-        "feature": "age_debut",
-        "label": "age at debut",
-        "value": "20.9 years",
-        "effect": 0.723
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "70th percentile",
+        "effect": 0.983
       },
       {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "84th percentile",
-        "effect": 0.65
+        "effect": 0.814
       },
       {
-        "feature": "games",
-        "label": "games played",
-        "value": "148",
-        "effect": 0.582
+        "feature": "age_debut",
+        "label": "age at debut",
+        "value": "20.9 years",
+        "effect": 0.723
       }
     ],
     "drivers_down": [
@@ -13957,7 +13957,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "55th percentile",
-        "effect": 0.23
+        "effect": 0.291
       }
     ],
     "drivers_down": [
@@ -14047,13 +14047,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "69th percentile",
-        "effect": 0.424
+        "effect": 0.532
       },
       {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "55th percentile",
-        "effect": 0.334
+        "effect": 0.408
       }
     ],
     "drivers_down": [
@@ -14256,10 +14256,10 @@
         "effect": -0.276
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "40th percentile",
-        "effect": -0.267
+        "effect": -0.167
       },
       {
         "feature": "height",
@@ -14326,22 +14326,22 @@
     "age_debut": 20.5,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "87th percentile",
+        "effect": 1.636
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.5 years",
         "effect": 0.908
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "87th percentile",
-        "effect": 0.833
-      },
-      {
-        "feature": "dreb_100",
-        "label": "defensive rebounds per 100",
-        "value": "+6.2 vs league",
-        "effect": 0.808
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "88th percentile",
+        "effect": 0.9
       }
     ],
     "drivers_down": [
@@ -14550,10 +14550,10 @@
         "effect": -0.219
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "45th percentile",
-        "effect": -0.15
+        "feature": "blk_100",
+        "label": "blocks per 100",
+        "value": "-0.6 vs league",
+        "effect": -0.114
       }
     ],
     "comparables": [
@@ -14713,13 +14713,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "80th percentile",
-        "effect": 0.599
+        "effect": 0.751
       },
       {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "59th percentile",
-        "effect": 0.39
+        "effect": 0.545
       },
       {
         "feature": "age_debut",
@@ -14809,19 +14809,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "79th percentile",
-        "effect": 0.711
+        "effect": 1.335
       },
       {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "84th percentile",
-        "effect": 0.658
+        "effect": 0.824
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "79th percentile",
-        "effect": 0.624
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "+2.2 vs league",
+        "effect": 0.519
       }
     ],
     "drivers_down": [
@@ -14902,16 +14902,16 @@
     "age_debut": 22.3,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "73rd percentile",
+        "effect": 0.617
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "143",
         "effect": 0.542
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "73rd percentile",
-        "effect": 0.492
       },
       {
         "feature": "dreb_100",
@@ -14921,12 +14921,6 @@
       }
     ],
     "drivers_down": [
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "41st percentile",
-        "effect": -0.257
-      },
       {
         "feature": "three_rate_vs_league",
         "label": "3-point share vs league",
@@ -14938,6 +14932,12 @@
         "label": "height",
         "value": "6'11\"",
         "effect": -0.172
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "41st percentile",
+        "effect": -0.15
       }
     ],
     "comparables": [
@@ -15013,15 +15013,15 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "57th percentile",
-        "effect": 0.251
+        "effect": 0.316
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "21st percentile",
-        "effect": -0.7
+        "effect": -0.897
       },
       {
         "feature": "ft_rate_vs_league",
@@ -15030,10 +15030,10 @@
         "effect": -0.224
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "21st percentile",
-        "effect": -0.197
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "-5.2 vs league",
+        "effect": -0.134
       }
     ],
     "comparables": [
@@ -15100,24 +15100,24 @@
         "effect": 0.653
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "70th percentile",
+        "effect": 0.557
+      },
+      {
         "feature": "ast_100",
         "label": "assists per 100",
         "value": "+5.7 vs league",
         "effect": 0.46
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "70th percentile",
-        "effect": 0.444
       }
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "22nd percentile",
-        "effect": -0.689
+        "effect": -0.88
       },
       {
         "feature": "dreb_100",
@@ -15126,10 +15126,10 @@
         "effect": -0.342
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "22nd percentile",
-        "effect": -0.19
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "-5.1 vs league",
+        "effect": -0.125
       }
     ],
     "comparables": [
@@ -15210,10 +15210,10 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "32nd percentile",
-        "effect": -0.455
+        "effect": -0.485
       },
       {
         "feature": "dreb_100",
@@ -15289,19 +15289,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "75th percentile",
-        "effect": 0.648
+        "effect": 1.181
       },
       {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "77th percentile",
-        "effect": 0.553
+        "effect": 0.693
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "75th percentile",
-        "effect": 0.533
+        "feature": "pm_100",
+        "label": "plus-minus per 100",
+        "value": "+14.6 vs league",
+        "effect": 0.499
       }
     ],
     "drivers_down": [
@@ -15382,16 +15382,16 @@
     "age_debut": 23.3,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "60th percentile",
+        "effect": 0.58
+      },
+      {
         "feature": "pm_100",
         "label": "plus-minus per 100",
         "value": "+12.1 vs league",
         "effect": 0.437
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "60th percentile",
-        "effect": 0.404
       },
       {
         "feature": "gmsc_100",
@@ -15417,7 +15417,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "29th percentile",
-        "effect": -0.162
+        "effect": -0.198
       }
     ],
     "comparables": [
@@ -15498,22 +15498,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "13th percentile",
-        "effect": -0.898
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "13th percentile",
-        "effect": -0.333
+        "effect": -1.232
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-6.5 vs league",
         "effect": -0.246
+      },
+      {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "30th percentile",
+        "effect": -0.188
       }
     ],
     "comparables": [
@@ -15594,22 +15594,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "9th percentile",
-        "effect": -0.985
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "9th percentile",
-        "effect": -0.393
+        "effect": -1.378
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-7.3 vs league",
         "effect": -0.321
+      },
+      {
+        "feature": "mpg_trend",
+        "label": "trend in minutes per game",
+        "value": "-10.5 min",
+        "effect": -0.222
       }
     ],
     "comparables": [
@@ -15690,22 +15690,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "11th percentile",
-        "effect": -0.944
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "11th percentile",
-        "effect": -0.365
+        "effect": -1.309
       },
       {
         "feature": "dreb_100",
         "label": "defensive rebounds per 100",
         "value": "-3.6 vs league",
         "effect": -0.346
+      },
+      {
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "-7.4 vs league",
+        "effect": -0.331
       }
     ],
     "comparables": [
@@ -15882,16 +15882,16 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "15th percentile",
+        "effect": -0.448
+      },
+      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "not enough minutes",
         "effect": -0.408
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "15th percentile",
-        "effect": -0.363
       },
       {
         "feature": "gmsc_100",
@@ -15967,7 +15967,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "59th percentile",
-        "effect": 0.284
+        "effect": 0.357
       },
       {
         "feature": "dreb_100",
@@ -16266,10 +16266,10 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "35th percentile",
-        "effect": -0.394
+        "effect": -0.382
       },
       {
         "feature": "dreb_100",
@@ -16345,19 +16345,19 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "77th percentile",
-        "effect": 0.68
-      },
-      {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "77th percentile",
-        "effect": 0.579
+        "effect": 1.258
       },
       {
         "feature": "blk_100",
         "label": "blocks per 100",
         "value": "+2.2 vs league",
         "effect": 0.558
+      },
+      {
+        "feature": "gmsc_100",
+        "label": "Game Score per 100",
+        "value": "+2.3 vs league",
+        "effect": 0.534
       }
     ],
     "drivers_down": [
@@ -16461,7 +16461,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "12th percentile",
-        "effect": -0.419
+        "effect": -0.518
       },
       {
         "feature": "best_rate_pct",
@@ -16563,7 +16563,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "11th percentile",
-        "effect": -0.429
+        "effect": -0.531
       },
       {
         "feature": "best_rate_pct",
@@ -16950,10 +16950,10 @@
         "effect": -0.516
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "not enough minutes",
-        "effect": -0.408
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "13th percentile",
+        "effect": -0.486
       }
     ],
     "comparables": [
@@ -17209,19 +17209,19 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "70th percentile",
-        "effect": 0.452
+        "effect": 0.567
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "56th percentile",
+        "effect": 0.425
       },
       {
         "feature": "weight",
         "label": "weight",
         "value": "165",
         "effect": 0.362
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "56th percentile",
-        "effect": 0.341
       }
     ],
     "drivers_down": [
@@ -17311,7 +17311,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "51st percentile",
-        "effect": 0.156
+        "effect": 0.199
       },
       {
         "feature": "three_rate_vs_league",
@@ -17322,22 +17322,22 @@
     ],
     "drivers_down": [
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "5th percentile",
-        "effect": -1.066
-      },
-      {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "5th percentile",
-        "effect": -0.449
+        "effect": -1.515
       },
       {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "-8.4 vs league",
         "effect": -0.419
+      },
+      {
+        "feature": "age_debut",
+        "label": "age at debut",
+        "value": "23.3 years",
+        "effect": -0.259
       }
     ],
     "comparables": [
@@ -17424,16 +17424,16 @@
         "effect": -0.408
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "18th percentile",
+        "effect": -0.407
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "28",
         "effect": -0.373
-      },
-      {
-        "feature": "age_debut",
-        "label": "age at debut",
-        "value": "23.5 years",
-        "effect": -0.344
       }
     ],
     "comparables": [
@@ -17520,10 +17520,10 @@
         "effect": -0.965
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
         "value": "30th percentile",
-        "effect": -0.511
+        "effect": -0.579
       },
       {
         "feature": "games",
@@ -17616,16 +17616,16 @@
         "effect": -0.408
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "21st percentile",
+        "effect": -0.337
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "23.5 years",
         "effect": -0.307
-      },
-      {
-        "feature": "games",
-        "label": "games played",
-        "value": "40",
-        "effect": -0.277
       }
     ],
     "comparables": [
@@ -17788,16 +17788,16 @@
         "effect": 0.407
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "60th percentile",
+        "effect": 0.27
+      },
+      {
         "feature": "mpg_trend",
         "label": "trend in minutes per game",
         "value": "+14.8 min",
         "effect": 0.237
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "60th percentile",
-        "effect": 0.226
       }
     ],
     "drivers_down": [
@@ -17994,16 +17994,16 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "29th percentile",
+        "effect": -0.586
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "46",
         "effect": -0.401
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "29th percentile",
-        "effect": -0.366
       },
       {
         "feature": "weight",
@@ -18096,16 +18096,16 @@
         "effect": -1.274
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "21st percentile",
+        "effect": -0.807
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "20",
         "effect": -0.567
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "21st percentile",
-        "effect": -0.472
       }
     ],
     "comparables": [
@@ -18172,16 +18172,16 @@
         "effect": 0.586
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "68th percentile",
+        "effect": 0.495
+      },
+      {
         "feature": "weight",
         "label": "weight",
         "value": "185",
         "effect": 0.42
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "68th percentile",
-        "effect": 0.343
       }
     ],
     "drivers_down": [
@@ -18454,16 +18454,16 @@
     "age_debut": 21.5,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "92nd percentile",
+        "effect": 1.391
+      },
+      {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "+5.8 vs league",
         "effect": 1.187
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "92nd percentile",
-        "effect": 0.877
       },
       {
         "feature": "best_gmsc_pct",
@@ -18646,16 +18646,16 @@
     "age_debut": 23.9,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "88th percentile",
+        "effect": 1.278
+      },
+      {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "+5.5 vs league",
         "effect": 1.14
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "88th percentile",
-        "effect": 0.804
       },
       {
         "feature": "dreb_100",
@@ -18754,10 +18754,10 @@
         "effect": 0.69
       },
       {
-        "feature": "dreb_100",
-        "label": "defensive rebounds per 100",
-        "value": "+2.5 vs league",
-        "effect": 0.389
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "67th percentile",
+        "effect": 0.624
       }
     ],
     "drivers_down": [
@@ -18774,10 +18774,10 @@
         "effect": -0.194
       },
       {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "49th percentile",
-        "effect": -0.106
+        "feature": "is_center",
+        "label": "listed center",
+        "value": "no",
+        "effect": -0.103
       }
     ],
     "comparables": [
@@ -18838,22 +18838,22 @@
     "age_debut": 22.7,
     "drivers_up": [
       {
-        "feature": "games",
-        "label": "games played",
-        "value": "216",
-        "effect": 0.686
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "90th percentile",
-        "effect": 0.671
+        "effect": 1.125
       },
       {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "72nd percentile",
-        "effect": 0.473
+        "effect": 0.765
+      },
+      {
+        "feature": "games",
+        "label": "games played",
+        "value": "216",
+        "effect": 0.686
       }
     ],
     "drivers_down": [
@@ -19321,7 +19321,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "89th percentile",
-        "effect": 0.656
+        "effect": 1.096
       },
       {
         "feature": "best_rate_pct",
@@ -19533,7 +19533,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "23rd percentile",
-        "effect": -0.516
+        "effect": -0.768
       },
       {
         "feature": "ft_rate_vs_league",
@@ -19629,7 +19629,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "1st percentile",
-        "effect": -0.97
+        "effect": -1.472
       },
       {
         "feature": "gmsc_100",
@@ -19638,10 +19638,10 @@
         "effect": -0.798
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "1st percentile",
-        "effect": -0.502
+        "feature": "pts_100",
+        "label": "points per 100 possessions",
+        "value": "-10.0 vs league",
+        "effect": -0.4
       }
     ],
     "comparables": [
@@ -19804,16 +19804,16 @@
         "effect": 2.141
       },
       {
-        "feature": "age_debut",
-        "label": "age at debut",
-        "value": "19.8 years",
-        "effect": 1.234
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "99th percentile",
+        "effect": 1.637
       },
       {
-        "feature": "blk_100",
-        "label": "blocks per 100",
-        "value": "+4.4 vs league",
-        "effect": 1.224
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "98th percentile",
+        "effect": 1.351
       }
     ],
     "drivers_down": [
@@ -19894,22 +19894,22 @@
     "age_debut": 20.9,
     "drivers_up": [
       {
-        "feature": "age_debut",
-        "label": "age at debut",
-        "value": "20.9 years",
-        "effect": 0.763
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "90th percentile",
-        "effect": 0.658
+        "effect": 1.101
       },
       {
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "81st percentile",
-        "effect": 0.654
+        "effect": 1.046
+      },
+      {
+        "feature": "age_debut",
+        "label": "age at debut",
+        "value": "20.9 years",
+        "effect": 0.763
       }
     ],
     "drivers_down": [
@@ -20002,10 +20002,10 @@
         "effect": 0.153
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "54th percentile",
-        "effect": 0.146
+        "feature": "dreb_100",
+        "label": "defensive rebounds per 100",
+        "value": "+0.5 vs league",
+        "effect": 0.137
       }
     ],
     "drivers_down": [
@@ -20013,7 +20013,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "34th percentile",
-        "effect": -0.294
+        "effect": -0.424
       },
       {
         "feature": "mpg_trend",
@@ -20086,22 +20086,22 @@
     "age_debut": 20.7,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "98th percentile",
+        "effect": 1.336
+      },
+      {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "85th percentile",
+        "effect": 1.173
+      },
+      {
         "feature": "gmsc_100",
         "label": "Game Score per 100",
         "value": "+3.2 vs league",
         "effect": 0.845
-      },
-      {
-        "feature": "age_debut",
-        "label": "age at debut",
-        "value": "20.7 years",
-        "effect": 0.843
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "98th percentile",
-        "effect": 0.78
       }
     ],
     "drivers_down": [
@@ -20182,16 +20182,16 @@
     "age_debut": 20.7,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "83rd percentile",
+        "effect": 0.913
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.7 years",
         "effect": 0.843
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "83rd percentile",
-        "effect": 0.561
       },
       {
         "feature": "games",
@@ -20284,16 +20284,16 @@
         "effect": 1.253
       },
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "82nd percentile",
+        "effect": 0.88
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "208",
         "effect": 0.635
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "82nd percentile",
-        "effect": 0.543
       }
     ],
     "drivers_down": [
@@ -20493,7 +20493,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "5th percentile",
-        "effect": -0.897
+        "effect": -1.359
       },
       {
         "feature": "gmsc_100",
@@ -20502,10 +20502,10 @@
         "effect": -0.744
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "5th percentile",
-        "effect": -0.462
+        "feature": "pts_100",
+        "label": "points per 100 possessions",
+        "value": "-8.7 vs league",
+        "effect": -0.319
       }
     ],
     "comparables": [
@@ -20575,13 +20575,13 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "71st percentile",
-        "effect": 0.464
+        "effect": 0.751
       },
       {
-        "feature": "pts_100",
-        "label": "points per 100 possessions",
-        "value": "+3.3 vs league",
-        "effect": 0.391
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "67th percentile",
+        "effect": 0.471
       }
     ],
     "drivers_down": [
@@ -20767,7 +20767,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "77th percentile",
-        "effect": 0.478
+        "effect": 0.755
       },
       {
         "feature": "games",
@@ -20787,7 +20787,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "38th percentile",
-        "effect": -0.212
+        "effect": -0.297
       },
       {
         "feature": "weight",
@@ -20869,7 +20869,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "76th percentile",
-        "effect": 0.463
+        "effect": 0.726
       }
     ],
     "drivers_down": [
@@ -20950,22 +20950,22 @@
     "age_debut": 19.9,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "91st percentile",
+        "effect": 1.362
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "19.9 years",
         "effect": 1.168
       },
       {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "91st percentile",
-        "effect": 0.859
-      },
-      {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "91st percentile",
-        "effect": 0.683
+        "effect": 1.149
       }
     ],
     "drivers_down": [
@@ -21261,7 +21261,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "28th percentile",
-        "effect": -0.426
+        "effect": -0.628
       },
       {
         "feature": "gmsc_100",
@@ -21270,10 +21270,10 @@
         "effect": -0.413
       },
       {
-        "feature": "ft_rate_vs_league",
-        "label": "free-throw rate vs league",
-        "value": "-13.1 pts vs league",
-        "effect": -0.278
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "40th percentile",
+        "effect": -0.293
       }
     ],
     "comparables": [
@@ -21535,13 +21535,13 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "82nd percentile",
-        "effect": 0.553
+        "effect": 0.899
       },
       {
-        "feature": "games",
-        "label": "games played",
-        "value": "177",
-        "effect": 0.437
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "65th percentile",
+        "effect": 0.561
       }
     ],
     "drivers_down": [
@@ -21631,7 +21631,7 @@
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "71st percentile",
-        "effect": 0.388
+        "effect": 0.582
       },
       {
         "feature": "is_center",
@@ -21933,7 +21933,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "23rd percentile",
-        "effect": -0.53
+        "effect": -0.79
       },
       {
         "feature": "gmsc_100",
@@ -22032,16 +22032,16 @@
         "effect": -0.456
       },
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "34th percentile",
+        "effect": -0.417
+      },
+      {
         "feature": "weight",
         "label": "weight",
         "value": "250",
         "effect": -0.336
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "34th percentile",
-        "effect": -0.289
       }
     ],
     "comparables": [
@@ -22102,22 +22102,22 @@
     "age_debut": 23.4,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "86th percentile",
+        "effect": 0.99
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "230",
         "effect": 0.776
       },
       {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "86th percentile",
-        "effect": 0.601
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "86th percentile",
-        "effect": 0.39
+        "feature": "minutes",
+        "label": "total minutes",
+        "value": "6,947",
+        "effect": 0.188
       }
     ],
     "drivers_down": [
@@ -22393,13 +22393,13 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "67th percentile",
-        "effect": 0.368
+        "effect": 0.603
       },
       {
         "feature": "best_gmsc_pct",
         "label": "best season rank (total impact)",
         "value": "68th percentile",
-        "effect": 0.351
+        "effect": 0.51
       },
       {
         "feature": "gmsc_100",
@@ -22582,6 +22582,12 @@
     "age_debut": 20.6,
     "drivers_up": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "91st percentile",
+        "effect": 1.134
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.6 years",
@@ -22592,12 +22598,6 @@
         "label": "games played",
         "value": "219",
         "effect": 0.706
-      },
-      {
-        "feature": "best_gmsc_pct",
-        "label": "best season rank (total impact)",
-        "value": "91st percentile",
-        "effect": 0.676
       }
     ],
     "drivers_down": [
@@ -22678,16 +22678,16 @@
     "age_debut": 21.3,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "74th percentile",
+        "effect": 0.835
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "21.3 years",
         "effect": 0.599
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "74th percentile",
-        "effect": 0.518
       },
       {
         "feature": "gmsc_100",
@@ -22797,7 +22797,7 @@
         "feature": "best_rate_pct",
         "label": "best season rank (per possession)",
         "value": "13th percentile",
-        "effect": -0.73
+        "effect": -1.099
       },
       {
         "feature": "gmsc_100",
@@ -22806,10 +22806,10 @@
         "effect": -0.512
       },
       {
-        "feature": "last_rate_pct",
-        "label": "latest season rank (per possession)",
-        "value": "13th percentile",
-        "effect": -0.369
+        "feature": "pts_100",
+        "label": "points per 100 possessions",
+        "value": "-8.4 vs league",
+        "effect": -0.302
       }
     ],
     "comparables": [
@@ -22890,6 +22890,12 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_gmsc_pct",
+        "label": "best season rank (total impact)",
+        "value": "27th percentile",
+        "effect": -0.653
+      },
+      {
         "feature": "games",
         "label": "games played",
         "value": "22",
@@ -22900,12 +22906,6 @@
         "label": "age at debut",
         "value": "24.0 years",
         "effect": -0.538
-      },
-      {
-        "feature": "last_gmsc_pct",
-        "label": "latest season rank (total impact)",
-        "value": "27th percentile",
-        "effect": -0.399
       }
     ],
     "comparables": [
@@ -22966,6 +22966,12 @@
     "age_debut": 20.6,
     "drivers_up": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "82nd percentile",
+        "effect": 1.074
+      },
+      {
         "feature": "age_debut",
         "label": "age at debut",
         "value": "20.6 years",
@@ -22976,12 +22982,6 @@
         "label": "Game Score per 100",
         "value": "+2.8 vs league",
         "effect": 0.797
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "82nd percentile",
-        "effect": 0.672
       }
     ],
     "drivers_down": [
@@ -23082,16 +23082,16 @@
     ],
     "drivers_down": [
       {
+        "feature": "best_rate_pct",
+        "label": "best season rank (per possession)",
+        "value": "33rd percentile",
+        "effect": -0.452
+      },
+      {
         "feature": "pts_100",
         "label": "points per 100 possessions",
         "value": "-9.3 vs league",
         "effect": -0.354
-      },
-      {
-        "feature": "best_rate_pct",
-        "label": "best season rank (per possession)",
-        "value": "33rd percentile",
-        "effect": -0.312
       },
       {
         "feature": "gmsc_100",

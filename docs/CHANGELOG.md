@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+* Player briefs show best and latest season rank once when they are the same number (every one-season player),
+  with their effects combined, instead of listing one fact as two drivers. Driver order is now stable, so
+  `score` no longer rewrites unchanged outputs.
+* `models/registry.json` records the scikit-learn, numpy, pandas and joblib versions used for training, and `score`
+  warns when the current environment differs. The current registry predates this: run `all` to record them.
+
 ## v1.0.0 (Assessment 3): production-ready artefact
 
 **Design changes since the Assessment 2 prototype (v0.1)**

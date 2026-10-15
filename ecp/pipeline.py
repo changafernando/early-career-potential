@@ -28,6 +28,13 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 TREE_MODELS = ("Random forest", "Gradient boosting")
 
 
+def library_versions() -> dict:
+    """Versions the saved .joblib models depend on; a mismatch can change or break them on load."""
+    import sklearn
+    return {"scikit-learn": sklearn.__version__, "numpy": np.__version__, "pandas": pd.__version__,
+            "joblib": joblib.__version__}
+
+
 def _json(obj, path: Path):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, indent=2, default=lambda o: o.item() if hasattr(o, "item") else str(o)))
@@ -194,6 +201,7 @@ def train_production(cfg: dict, D: dict, sel: dict) -> dict:
            "training_classes": [cfg["cohort"]["first_debut"], cfg["cohort"]["last_labelled_debut"]],
            "n_training_players": int(lab.sum()), "base_rate": round(float(coh.y[lab].mean()), 4),
            "champion": sel["champion"], "challenger": sel["challenger"], "data_hash": D["data_hash"],
+           "library_versions": library_versions(),
            "decision_threshold": round(1 / (1 + cfg["decision"]["cost_ratio"]), 3), "status": "Candidate - awaiting Model Review Board",
            "models": {}}
     M = {}

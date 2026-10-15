@@ -63,6 +63,12 @@ def main() -> None:
         M, reg = pl.load_registered(cfg)
         if reg["data_hash"] != D["data_hash"]:
             print("note: processed data changed since the models were trained (expected after a data refresh)")
+        trained_with, here = reg.get("library_versions"), pl.library_versions()
+        if trained_with is None:
+            print("note: the registry does not record library versions; run `python run_pipeline.py all` to record them")
+        elif trained_with != here:
+            print(f"warning: models were trained with {trained_with} but this environment has {here}. "
+                  "Saved models are tied to these versions: run `python run_pipeline.py all` to retrain locally.")
         live = pl.score_live(cfg, D, M)
         sc = {"live": live, "replay": json.loads((out / "replay_2015_2018.json").read_text()), "latest_season": D["latest_season"]}
         metrics["monitoring"] = run_monitoring(cfg, D, metrics["backtest"], live, metrics["drivers"])
