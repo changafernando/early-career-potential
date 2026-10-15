@@ -220,6 +220,60 @@ def fig_architecture(path: Path):
     _save(fig, path)
 
 
+def fig_business_case(bc: dict, path: Path):
+    """Errors in the extension decision (model vs draft order) and payback at illustrative prices."""
+    di, pb, c = bc["decision_impact"], bc["payback"], bc["costs"]
+    fig, (a, b) = plt.subplots(1, 2, figsize=(7.0, 2.9), gridspec_kw={"width_ratios": [1, 1.25], "wspace": 0.38})
+    cats = ["Missed contributors", "False flags"]
+    m = [di["model"]["missed"], di["model"]["false_flags"]]
+    d = [di["draft_order"]["missed"], di["draft_order"]["false_flags"]]
+    y = np.arange(len(cats))
+    a.barh(y - 0.19, m, 0.36, color=BLUE, label="Model")
+    a.barh(y + 0.19, d, 0.36, color=ORANGE, label="Draft order")
+    for yi, v in zip(y - 0.19, m):
+        a.text(v + 0.8, yi, str(v), va="center", fontsize=8, color=INK2)
+    for yi, v in zip(y + 0.19, d):
+        a.text(v + 0.8, yi, str(v), va="center", fontsize=8, color=INK2)
+    a.set_yticks(y, cats)
+    a.invert_yaxis()
+    a.set_xlim(0, max(d) * 1.25)
+    a.grid(axis="y", visible=False)
+    a.set_xlabel(f"Players (of {di['n']} extension decisions)")
+    a.set_title("(a) Mistakes at the 0.25 threshold")
+    a.legend(loc="upper right", fontsize=8)
+    a.text(0.98, 0.70, f"Error cost per decision\nmodel ${di['model']['error_cost_per_decision'] / 1e3:,.0f}k\n"
+           f"draft order ${di['draft_order']['error_cost_per_decision'] / 1e3:,.0f}k", transform=a.transAxes,
+           ha="right", va="center", fontsize=7.5, color=INK2)
+    yrs = c["horizon_years"]
+    t = np.linspace(0, yrs, 61)
+    cost = (c["one_off"] + c["annual_total"] * t) / 1e3
+    s, (lo, hi) = di["saving_per_decision"], di["saving_per_decision_90ci"]
+    k = pb["benefit_per_year"] / s if s else 1
+    b.fill_between(t, lo * k * t / 1e3, hi * k * t / 1e3, color=BLUE, alpha=0.12, lw=0, label="90% interval")
+    for row in pb["sensitivity"]:
+        cm = row["cost_missed_contributor"]
+        main = abs(cm - di["cost_missed_contributor"]) < 1
+        b.plot(t, row["saving_per_decision"] * k * t / 1e3, color=BLUE, lw=2.2 if main else 1.0,
+               ls="-" if main else "--", alpha=1 if main else 0.7,
+               label="Avoided error cost" if main else None)
+        b.annotate(f"miss = ${cm / 1e6:.0f}M", (yrs, row["saving_per_decision"] * k * yrs / 1e3), xytext=(4, 0),
+                   textcoords="offset points", va="center", fontsize=7.5, color=BLUE if main else INK2)
+    b.plot(t, cost, color=GREY, lw=2, label="Cumulative cost")
+    if pb["breakeven_years"]:
+        be = pb["breakeven_years"]
+        yb = (c["one_off"] + c["annual_total"] * be) / 1e3
+        b.plot([be, be], [0, yb], color=GREY, lw=0.8, ls=":")
+        b.plot([be], [yb], "o", color=INK, ms=4, zorder=5)
+        b.annotate(f"payback {be:.1f} yrs", (be, yb), xytext=(7, -10), textcoords="offset points",
+                   fontsize=7.5, color=INK)
+    b.set_xlim(0, yrs)
+    b.set_xticks(range(yrs + 1), [f"Year {i}" for i in range(yrs + 1)])
+    b.set_ylabel("Cumulative USD (thousands)")
+    b.set_title("(b) Avoided error cost vs cost (illustrative)")
+    b.legend(loc="upper left", fontsize=7.5)
+    _save(fig, path)
+
+
 def build_figures(cfg: dict, D: dict, metrics: dict):
     from .features import PLAIN_NAMES
 
@@ -234,6 +288,8 @@ def build_figures(cfg: dict, D: dict, metrics: dict):
     fig_drivers(metrics["drivers"], PLAIN_NAMES, fdir / "fig6_drivers.png")
     fig_drift(metrics["monitoring"], fdir / "fig7_drift.png")
     fig_architecture(fdir / "fig8_architecture.png")
+    if "business_case" in metrics:
+        fig_business_case(metrics["business_case"], fdir / "fig9_business_case.png")
 
 
 # ------------------------------------------------------------------------------------------- briefs

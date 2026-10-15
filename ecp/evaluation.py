@@ -41,13 +41,13 @@ def bootstrap_metrics(y, p, p_ref=None, n: int = 2000, seed: int = 42) -> dict:
         draws["ece"].append(ece(y[i], p[i]))
         if p_ref is not None:
             diff.append(draws["auc"][-1] - roc_auc_score(y[i], np.asarray(p_ref)[i]))
-    out = {k: dict(est=round(est[k], 4), lo=round(float(np.percentile(v, 2.5)), 4), hi=round(float(np.percentile(v, 97.5)), 4))
+    out = {k: dict(est=round(est[k], 6), lo=round(float(np.percentile(v, 2.5)), 6), hi=round(float(np.percentile(v, 97.5)), 6))
            for k, v in draws.items()}
-    out["mean_pred"], out["observed"], out["n"], out["positives"] = round(est["mean_pred"], 4), round(est["observed"], 4), int(len(y)), int(y.sum())
+    out["mean_pred"], out["observed"], out["n"], out["positives"] = round(est["mean_pred"], 6), round(est["observed"], 6), int(len(y)), int(y.sum())
     if p_ref is not None:
-        out["auc_gain_vs_reference"] = dict(est=round(est["auc"] - roc_auc_score(y, p_ref), 4),
-                                            lo=round(float(np.percentile(diff, 2.5)), 4), hi=round(float(np.percentile(diff, 97.5)), 4),
-                                            share_of_resamples_positive=round(float(np.mean(np.array(diff) > 0)), 4))
+        out["auc_gain_vs_reference"] = dict(est=round(est["auc"] - roc_auc_score(y, p_ref), 6),
+                                            lo=round(float(np.percentile(diff, 2.5)), 6), hi=round(float(np.percentile(diff, 97.5)), 6),
+                                            share_of_resamples_positive=round(float(np.mean(np.array(diff) > 0)), 6))
     return out
 
 

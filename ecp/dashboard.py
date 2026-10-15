@@ -31,6 +31,8 @@ def _payload(cfg: dict, metrics: dict, sc: dict) -> dict:
         "drivers": dict(list(metrics["drivers"]["champion_mean_abs_logodds"].items())[:10]),
         "monitoring": {k: metrics["monitoring"][k] for k in ["checks", "data_drift_by_class", "base_rate_by_class", "league_by_season", "psi_levels"]},
         "live": sc["live"], "replay": sc["replay"],
+        "business_case": metrics.get("business_case"), "release_gates": metrics.get("release_gates", []),
+        "model_comparison": metrics.get("model_comparison", []),
     }
 
 
@@ -94,7 +96,7 @@ input[type=range]{width:260px}.theme{float:right;margin-top:-26px}
 <nav id="nav"></nav></header>
 <main>
 <section id="overview"></section><section id="watchlist"></section><section id="brief"></section><section id="replay"></section>
-<section id="threshold"></section><section id="evidence"></section><section id="monitoring"></section><section id="about"></section>
+<section id="threshold"></section><section id="business"></section><section id="evidence"></section><section id="monitoring"></section><section id="about"></section>
 </main><div id="tip"></div>
 <script>
 const D=__DATA__;
@@ -102,9 +104,9 @@ const $=s=>document.querySelector(s), fmt=(v,d=0)=>v==null||isNaN(v)?'—':(+v).
 const ord=n=>n+((n%100>=10&&n%100<=20)?'th':({1:'st',2:'nd',3:'rd'}[n%10]||'th'));
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const store={get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
-const TABS=[['overview','Overview'],['watchlist','Watchlist'],['brief','Player brief'],['replay','Replay 2015-18'],['threshold','Threshold explorer'],['evidence','Model evidence'],['monitoring','Monitoring'],['about','About & governance']];
+const TABS=[['overview','Overview'],['watchlist','Watchlist'],['brief','Player brief'],['replay','Replay 2015-18'],['threshold','Threshold explorer'],['business','Business case'],['evidence','Model evidence'],['monitoring','Monitoring'],['about','About & governance']];
 let current=null;
-function show(id){document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.id===id));store.set('ecp_tab',id);if(id==='evidence')evidence();if(id==='monitoring')monitoring();}
+function show(id){document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id===id));document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('on',b.dataset.id===id));store.set('ecp_tab',id);if(id==='evidence')evidence();if(id==='monitoring')monitoring();if(id==='business')business();}
 $('#nav').innerHTML=TABS.map(([id,l])=>`<button data-id="${id}">${l}</button>`).join('');
 $('#nav').onclick=e=>{if(e.target.dataset.id)show(e.target.dataset.id)};
 $('#theme').onclick=()=>{const r=document.documentElement;const dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;r.dataset.theme=dark?'light':'dark';store.set('ecp_theme',r.dataset.theme);drawAll();};
@@ -212,7 +214,10 @@ el.innerHTML=`<div class="grid g2"><div class="card"><h3>Accuracy by seasons of 
 <div class="card"><h3>Calibration: does 40% mean 40%?</h3><div id="c-cal"></div><p class="muted">Each dot is a band of predictions; the dashed diagonal is perfect calibration.</p></div>
 <div class="card"><h3>What drives scores (average influence)</h3><div id="c-drv"></div></div>
 <div class="card"><h3>Late picks the model found</h3><p class="ink2">${D.late_picks.flagged_at_threshold} of ${D.late_picks.count} second-round or undrafted contributors were flagged after three seasons; non-contributing late picks averaged ${pct(D.late_picks.late_pick_non_contributors_mean_p)}.</p>
-<table><tr><th>Player</th><th>Pick</th><th>Score</th></tr>${D.late_picks.players.map(p=>`<tr><td>${esc(p.name)}</td><td>${p.pick>60?'Undrafted':p.pick}</td><td>${pct(p.p)}</td></tr>`).join('')}</table></div><div class="card" style="grid-column:1/-1"><h3>Fairness audit (2015-18, threshold ${D.threshold.toFixed(2)})</h3><div style="overflow-x:auto"><table><tr><th>Group</th><th>n</th><th>Contributors</th><th>AUC</th><th>Predicted</th><th>Observed</th><th>Missed</th><th>False flags</th></tr>
+<table><tr><th>Player</th><th>Pick</th><th>Score</th></tr>${D.late_picks.players.map(p=>`<tr><td>${esc(p.name)}</td><td>${p.pick>60?'Undrafted':p.pick}</td><td>${pct(p.p)}</td></tr>`).join('')}</table></div>${D.model_comparison.length?`<div class="card" style="grid-column:1/-1"><h3>Model comparison: accuracy, calibration and complexity (2015-18, three seasons)</h3><div style="overflow-x:auto"><table><tr><th>Model</th><th>Role</th><th>Calibration</th><th>Validation Brier</th><th>Test AUC</th><th>Test Brier</th><th>Calibration error</th><th>Size</th><th>Explanation</th></tr>
+${D.model_comparison.map(r=>`<tr><td>${esc(r.model)}</td><td>${esc(r.role)}</td><td>${esc(r.calibration)}</td><td>${r.val_brier==null?'—':fmt(r.val_brier,4)}</td><td>${fmt(r.test_auc,3)}</td><td>${fmt(r.test_brier,4)}</td><td>${fmt(r.test_ece,3)}</td><td>${r.parameters==null?'—':r.parameters.toLocaleString()+' '+esc(r.parameter_unit)}${r.file_kb?` · ${r.file_kb} KB`:''}</td><td class="ink2">${esc(r.explanation)}</td></tr>`).join('')}</table></div>
+<p class="muted">The three learners are within 0.003 Brier and 0.006 AUC of each other on the test classes, so the champion was chosen on validation Brier and simplicity: tens of coefficients instead of thousands of tree nodes.</p></div>`:''}
+<div class="card" style="grid-column:1/-1"><h3>Fairness audit (2015-18, threshold ${D.threshold.toFixed(2)})</h3><div style="overflow-x:auto"><table><tr><th>Group</th><th>n</th><th>Contributors</th><th>AUC</th><th>Predicted</th><th>Observed</th><th>Missed</th><th>False flags</th></tr>
 ${D.audit.filter(r=>r.group!=='Unknown').map(r=>`<tr style="${r.judged?'':'color:var(--muted)'}"><td>${esc(r.group)}</td><td>${r.n}</td><td>${r.contributors}</td><td>${fmt(r.auc,2)}</td><td>${pct(r.mean_pred)}</td><td>${pct(r.observed)}</td><td>${pct(r.miss_rate)}</td><td>${pct(r.false_flag_rate)}</td></tr>`).join('')}</table></div>
 <p class="muted">Grey rows are too small to judge. Origin is audited but never used as a model input.</p></div>
 </div>`;
@@ -226,7 +231,8 @@ s+=`<line x1="${xs(0)}" y1="${ys(0)}" x2="${xs(1)}" y2="${ys(1)}" stroke="${G}" 
 
 // ------------------------------------------------------------------ monitoring
 function monitoring(){const el=$('#monitoring');const M=D.monitoring;const lg=M.league_by_season.filter(r=>r.season>=1996);const br=Object.entries(M.base_rate_by_class);const B=css('--blue');
-el.innerHTML=`<div class="card"><h3>Health checks (detect → understand → adapt)</h3><table><tr><th>Check</th><th>Value</th><th>Status</th><th>Action in the runbook</th></tr>
+el.innerHTML=`${D.release_gates.length?`<div class="card" style="margin-bottom:14px"><h3>Release gates (Model Review Board sign-off)</h3><table><tr><th>Gate</th><th>Rule</th><th>Value</th><th>Status</th><th>If not passed</th></tr>
+${D.release_gates.map(g=>`<tr><td>${esc(g.gate)}</td><td class="ink2">${esc(g.rule)}</td><td>${esc(g.value)}</td><td>${statusChip(g.status==='PASS'?'GREEN':g.status==='WATCH'?'AMBER':'RED').replace(/GREEN|AMBER|RED/,g.status)}</td><td class="ink2">${esc(g.if_failed)}</td></tr>`).join('')}</table></div>`:''}<div class="card"><h3>Health checks (detect → understand → adapt)</h3><table><tr><th>Check</th><th>Value</th><th>Status</th><th>Action in the runbook</th></tr>
 ${M.checks.map(c=>`<tr><td>${esc(c.check)}</td><td>${typeof c.value==='number'?fmt(c.value,3):esc(c.value)}</td><td>${statusChip(c.status)}</td><td class="ink2">${esc(c.action)}</td></tr>`).join('')}</table></div>
 <div class="grid g2" style="margin-top:14px"><div class="card"><h3>League three-point share of shots</h3><div id="m-3p"></div></div><div class="card"><h3>Contributor rate by debut class</h3><div id="m-br"></div></div>
 <div class="card" style="grid-column:1/-1"><h3>Feature drift by debut class (population stability index, first-season features)</h3><div style="overflow-x:auto"><table><tr><th>Class</th><th>n</th>${Object.keys(M.data_drift_by_class[0]).filter(k=>k.startsWith('psi_')).map(k=>`<th>${esc((D.plain[k.slice(4)]||k.slice(4)))}</th>`).join('')}</tr>
@@ -246,7 +252,37 @@ function about(){const cc=D.construct_comparison;$('#about').innerHTML=`<div cla
 <div class="card"><h3>Model</h3><p class="ink2">Champion: ${esc(D.selection.champion.model)} with ${esc(D.selection.champion.calibration)} calibration. Challenger: ${esc(D.selection.challenger.model)}. Selected on the 2011-14 validation classes by average Brier score across 1, 2 and 3 seasons of evidence; tested once on 2015-18. Full details: docs/model_card.md.</p>
 <p class="muted">Browser storage holds only your theme, filters, threshold slider and decision log on this device. Export the log for the official record.</p></div></div>`}
 
-function drawAll(){overview();listView('watchlist',D.live,false);listView('replay',D.replay,true);renderBrief();threshold();evidence();monitoring();about();}
+
+// ------------------------------------------------------------------ business case
+const usd=v=>v==null?'—':(Math.abs(v)>=1e6?(v<0?'-':'')+'$'+(Math.abs(v)/1e6).toFixed(2)+'M':(v<0?'-':'')+'$'+Math.round(Math.abs(v)/1e3)+'k');
+function business(){const el=$('#business');const B=D.business_case;if(!B){el.innerHTML='<div class="card">Run the pipeline to build the business case.</div>';return}
+const C=B.costs,I=B.decision_impact,Y=B.payback,K=B.capacity;const base=I.cost_missed_contributor;
+el.innerHTML=`<div class="note" style="margin-bottom:14px"><b>Illustrative assumptions.</b> Prices are placeholders in config.yaml (USD) for finance to replace; the error counts come from the 2015-18 backtest. ${esc(Y.baseline_caveat)}</div>
+<div class="grid g4" id="bizk"></div>
+<div class="card" style="margin-top:14px"><h3>Try your own price of a mistake</h3><div class="controls"><label>Cost of missing a future contributor: <b id="cmv"></b></label><input type="range" id="cm" min="0.5" max="8" step="0.5"><label>Extension decisions a year <select id="dpy"><option>1</option><option>2</option><option>3</option></select></label></div>
+<p class="muted">A false flag is priced at the miss cost ÷ the cost ratio (${D.cost_ratio}), the same trade-off that sets the ${D.threshold.toFixed(2)} threshold.</p></div>
+<div class="grid g2" style="margin-top:14px"><div class="card"><h3>What the project costs</h3><table><tr><th>One-off (build)</th><th></th></tr>${Object.entries(C.delivery).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${usd(v)}</td></tr>`).join('')}<tr><td><b>Total one-off</b></td><td><b>${usd(C.one_off)}</b></td></tr>
+<tr><th>Each year after hand-over</th><th></th></tr>${Object.entries(C.annual).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${usd(v)}</td></tr>`).join('')}<tr><td><b>Total per year</b></td><td><b>${usd(C.annual_total)}</b></td></tr>
+<tr><td><b>Total over ${C.horizon_years} years</b></td><td><b>${usd(C.total_over_horizon)}</b></td></tr></table></div>
+<div class="card"><h3>What mistakes cost in the extension decision</h3><p class="ink2">${esc(I.population)}: ${I.n} players, ${I.contributors} became contributors. Threshold ${I.threshold}.</p>
+<table><tr><th></th><th>Model</th><th>Draft order</th></tr><tr><td>Contributors caught</td><td>${I.model.caught}</td><td>${I.draft_order.caught}</td></tr><tr><td>Contributors missed (false negatives)</td><td>${I.model.missed}</td><td>${I.draft_order.missed}</td></tr>
+<tr><td>False flags (false positives)</td><td>${I.model.false_flags}</td><td>${I.draft_order.false_flags}</td></tr><tr><td>Error cost per decision</td><td><b>${usd(I.model.error_cost_per_decision)}</b></td><td>${usd(I.draft_order.error_cost_per_decision)}</td></tr></table>
+<p class="muted">Missed: ${I.missed_examples.map(x=>esc(x.name)+' ('+pct(x.p)+')').join(', ')}. Highest false flags: ${I.false_flag_examples.slice(0,4).map(x=>esc(x.name)+' ('+pct(x.p)+')').join(', ')}. ${I.false_flags_that_meet_volume_definition.length} of the false flags (${I.false_flags_that_meet_volume_definition.map(esc).join(', ')}) meet the volume definition, so some "errors" are about how success is defined.</p></div>
+<div class="card"><h3>Payback</h3><div id="biz-chart"></div><p class="muted">Cumulative cost (grey) against cumulative avoided error cost (blue).</p></div>
+<div class="card"><h3>Running it: analyst capacity</h3><table><tr><th>Task</th><th>Hours a year</th><th>Who</th></tr>${K.tasks.map(t=>`<tr><td>${esc(t.task)}</td><td>${t.hours}</td><td>${esc(t.who)}</td></tr>`).join('')}</table>
+<p class="muted">Analyst load ${K.analyst_hours} hours a year (${K.analyst_fte_needed} FTE) against ${Math.round(K.analyst_hours_allocated)} hours allocated; the headroom funds v1.1 work.</p></div></div>`;
+const cm=$('#cm'),dpy=$('#dpy');cm.value=store.get('ecp_cm',base/1e6);dpy.value=store.get('ecp_dpy',1);
+const upd=()=>{const m=+cm.value*1e6,n=+dpy.value;store.set('ecp_cm',+cm.value);store.set('ecp_dpy',n);$('#cmv').textContent=usd(m);
+const save=I.saving_per_decision*m/base,lo=I.saving_per_decision_90ci[0]*m/base,hi=I.saving_per_decision_90ci[1]*m/base,yr=save*n,net=yr-C.annual_total,be=net>0?C.one_off/net:null,yrs=C.horizon_years,tot=yr*yrs-C.total_over_horizon;
+$('#bizk').innerHTML=`<div class="card"><div class="muted">Avoided error cost per extension decision</div><div class="kpi">${usd(save)}</div><div class="muted">90% range ${usd(lo)} to ${usd(hi)}</div></div>
+<div class="card"><div class="muted">Total cost over ${yrs} years</div><div class="kpi">${usd(C.total_over_horizon)}</div><div class="muted">${usd(C.one_off)} build + ${usd(C.annual_total)} a year</div></div>
+<div class="card"><div class="muted">Payback</div><div class="kpi">${be==null?'never':be.toFixed(1)+' yrs'}</div><div class="muted">${(C.total_over_horizon/save).toFixed(1)} decisions cover the ${yrs}-year cost</div></div>
+<div class="card"><div class="muted">Net over ${yrs} years</div><div class="kpi">${usd(tot)}</div><div class="muted">90% range ${usd(lo*n*yrs-C.total_over_horizon)} to ${usd(hi*n*yrs-C.total_over_horizon)}</div></div>`;
+const xs=[0,1,2,3],cc=xs.map(t=>t===0?C.one_off:C.one_off+C.annual_total*t),bb=xs.map(t=>yr*t),mx=Math.max(...cc,...bb)/1e6;
+lineChart('#biz-chart',[{name:'Cumulative cost',color:css('--muted'),dots:1,x:xs,y:cc.map(v=>v/1e6)},{name:'Avoided error cost',color:css('--blue'),dots:1,x:xs,y:bb.map(v=>v/1e6)}],{x0:-0.1,x1:3.1,y0:0,y1:Math.ceil(mx*10)/10||1,xt:xs,yt:[0,mx/2,mx].map(v=>+v.toFixed(2)),xl:v=>'Year '+v,yl:v=>'$'+v+'M',tipx:v=>'Year '+v,tipy:v=>'$'+v.toFixed(2)+'M',h:200});};
+cm.oninput=upd;dpy.onchange=upd;upd();}
+
+function drawAll(){overview();listView('watchlist',D.live,false);listView('replay',D.replay,true);renderBrief();threshold();business();evidence();monitoring();about();}
 drawAll();show(store.get('ecp_tab','overview')==='brief'?'overview':store.get('ecp_tab','overview'));
 let rz;addEventListener('resize',()=>{clearTimeout(rz);rz=setTimeout(()=>{evidence();monitoring()},200)});
 </script></body></html>

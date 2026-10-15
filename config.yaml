@@ -57,3 +57,27 @@ monitoring:
   # PSI alarm levels are learned from history (75th / 95th percentile of class-vs-history PSI),
   # see ecp/monitoring.py. The textbook 0.10 / 0.25 cut-offs raise false alarms on ~100-player classes.
   calibration_gap_act: 0.05   # |mean predicted - observed| that triggers recalibration
+
+# Release gates: every new model version must pass these before the Model Review Board can approve it.
+release_gates:
+  min_auc_gain_vs_draft: 0.05       # point estimate; the 95% interval must also stay above 0
+  max_calibration_gap: 0.05         # |mean predicted - observed| overall, 2015-18 style holdout
+  subgroup_gap_watch: 0.05          # judged subgroup calibration gap: above this = WATCH (report + review band)
+  subgroup_gap_fail: 0.08           # above this = FAIL (recalibrate or block release)
+  max_miss_rate_excess: 0.15        # judged subgroup miss rate minus overall miss rate at the threshold
+  max_challenger_disagreement: 0.20 # share of live players where champion and challenger differ by >= 0.15
+
+# Business case. ILLUSTRATIVE ASSUMPTIONS (USD) - finance replaces them with the franchise's own figures.
+business_case:
+  consultant_day_rate: 1600          # blended external rate
+  consultant_person_weeks: 30        # Assessment 2 resourcing plan (2.5 FTE x 12 weeks)
+  post_handover_support_days: 10     # three months of light-touch support
+  internal_person_weeks: 13.4        # analyst, product owner, scouting panel, coach, IT (A2 staffing plan)
+  internal_cost_per_week: 2500       # loaded internal staff cost
+  analyst_salary_loaded: 130000      # franchise analyst, fully loaded
+  analyst_bau_fte: 0.3               # business-as-usual share of the analyst
+  governance_per_year: 15000         # Model Review Board, steering and scout review time
+  platform_per_year: 5000            # storage, hosting, contingency (models run on a laptop in minutes)
+  horizon_years: 3
+  cost_missed_contributor: 3000000   # lost or overpaid contributor; a false flag then costs this / cost_ratio
+  extension_decisions_per_year: 1    # first-round picks reaching the rookie-scale extension decision

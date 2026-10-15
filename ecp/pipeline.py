@@ -83,8 +83,8 @@ def backtest(cfg: dict, D: dict, sel: dict) -> dict:
     r = cfg["decision"]["cost_ratio"]
     thr = 1 / (1 + r)
     res = {"construct": cfg["construct"]["active"], "train_classes": cfg["split"]["train"][0], "test_classes": cfg["split"]["test"],
-           "n_train": int(tr.sum()), "n_test": int(te.sum()), "base_rate_train": round(float(coh.y[tr].mean()), 4),
-           "base_rate_test": round(float(coh.y[te].mean()), 4), "positives_test": int(coh.y[te].sum()),
+           "n_train": int(tr.sum()), "n_test": int(te.sum()), "base_rate_train": round(float(coh.y[tr].mean()), 6),
+           "base_rate_test": round(float(coh.y[te].mean()), 6), "positives_test": int(coh.y[te].sum()),
            "decision_threshold": round(thr, 3), "horizons": {}}
     preds = []
     yte = coh.y[te].astype(int)
@@ -107,8 +107,8 @@ def backtest(cfg: dict, D: dict, sel: dict) -> dict:
         hres["extension_population"] = {"n": int(dec.sum()), "positives": int(yte[dec].sum()),
                                         "champion": ev.point_metrics(yte[dec], p[dec]), "draft": ev.point_metrics(yte[dec], pb[dec])}
         hres["six_season_survivors"] = {"n": int(surv.sum()), "positives": int(yte[surv].sum()),
-                                        "champion_auc": round(float(ev.roc_auc_score(yte[surv], p[surv])), 4),
-                                        "draft_auc": round(float(ev.roc_auc_score(yte[surv], pb[surv])), 4)}
+                                        "champion_auc": round(float(ev.roc_auc_score(yte[surv], p[surv])), 6),
+                                        "draft_auc": round(float(ev.roc_auc_score(yte[surv], pb[surv])), 6)}
         hres["cost_thresholds"] = ev.cost_threshold_table(yte, p).to_dict("records")
         hres["cost_thresholds_draft"] = ev.cost_threshold_table(yte, pb).to_dict("records")
         hres["shortlists"] = {f"top_{int(s * 100)}pct": {"model": ev.shortlist(yte, p, coh.debut[te], s),
@@ -167,9 +167,9 @@ def construct_comparison(cfg: dict, D: dict, sel: dict) -> dict:
         b = fit_baseline(X[lab], y[lab].astype(int), tr[lab])
         p = m.predict_proba(X[te])[:, 1]
         pb = b.predict_proba(X.loc[te, BASELINE_FEATURES])[:, 1]
-        out[c] = {"base_rate_all": round(float(y[lab].mean()), 4), "base_rate_test": round(float(y[te].mean()), 4),
-                  "model": {k: round(v, 4) for k, v in ev.point_metrics(y[te].astype(int), p).items()},
-                  "draft_auc": round(float(ev.roc_auc_score(y[te].astype(int), pb)), 4)}
+        out[c] = {"base_rate_all": round(float(y[lab].mean()), 6), "base_rate_test": round(float(y[te].mean()), 6),
+                  "model": {k: round(v, 6) for k, v in ev.point_metrics(y[te].astype(int), p).items()},
+                  "draft_auc": round(float(ev.roc_auc_score(y[te].astype(int), pb)), 6)}
     both = coh[lab]
     out["agreement"] = {"both": int(((both.y_volume == 1) & (both.y_rate == 1)).sum()),
                         "volume_only": int(((both.y_volume == 1) & (both.y_rate == 0)).sum()),

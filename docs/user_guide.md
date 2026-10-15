@@ -24,6 +24,13 @@ Use the **Threshold explorer** tab to see what other cost ratios would do.
 
 A flag means *look closely*, not *extend*. A player below the threshold can still be extended. Record why.
 
+## The business case tab
+
+It prices the model's mistakes in the extension decision. A missed contributor costs the amount on the slider;
+a false flag costs that amount divided by the cost ratio. The counts of mistakes come from the 2015-18 replay.
+The prices are placeholders until finance supplies real ones, and the comparison is with draft order, not
+with your scouts. Read the payback as the most the model could add, not a promise.
+
 ## Using a brief in a meeting
 
 1. **Score and status.** Where does he sit against the threshold and within his class?

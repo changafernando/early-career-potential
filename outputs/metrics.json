@@ -85,99 +85,99 @@
     ],
     "n_train": 1333,
     "n_test": 385,
-    "base_rate_train": 0.1523,
-    "base_rate_test": 0.1195,
+    "base_rate_train": 0.152288,
+    "base_rate_test": 0.119481,
     "positives_test": 46,
     "decision_threshold": 0.25,
     "horizons": {
       "1": {
         "champion": {
           "auc": {
-            "est": 0.895,
-            "lo": 0.8383,
-            "hi": 0.9441
+            "est": 0.895024,
+            "lo": 0.838263,
+            "hi": 0.944063
           },
           "pr_auc": {
-            "est": 0.643,
-            "lo": 0.4951,
-            "hi": 0.7783
+            "est": 0.643028,
+            "lo": 0.495056,
+            "hi": 0.778259
           },
           "brier": {
-            "est": 0.0663,
-            "lo": 0.0493,
-            "hi": 0.0853
+            "est": 0.066346,
+            "lo": 0.049272,
+            "hi": 0.085285
           },
           "ece": {
-            "est": 0.0209,
-            "lo": 0.0192,
-            "hi": 0.0547
+            "est": 0.020939,
+            "lo": 0.019232,
+            "hi": 0.054652
           },
-          "mean_pred": 0.132,
-          "observed": 0.1195,
+          "mean_pred": 0.131955,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.0609,
-            "lo": 0.0207,
-            "hi": 0.1048,
+            "est": 0.060857,
+            "lo": 0.020743,
+            "hi": 0.104826,
             "share_of_resamples_positive": 0.9975
           }
         },
         "challenger": {
           "auc": {
-            "est": 0.8959,
-            "lo": 0.8467,
-            "hi": 0.9416
+            "est": 0.895922,
+            "lo": 0.846729,
+            "hi": 0.941598
           },
           "pr_auc": {
-            "est": 0.6497,
-            "lo": 0.5027,
-            "hi": 0.7859
+            "est": 0.649725,
+            "lo": 0.502742,
+            "hi": 0.785935
           },
           "brier": {
-            "est": 0.0647,
-            "lo": 0.0482,
-            "hi": 0.0832
+            "est": 0.064744,
+            "lo": 0.048189,
+            "hi": 0.083195
           },
           "ece": {
-            "est": 0.0296,
-            "lo": 0.0218,
-            "hi": 0.0596
+            "est": 0.029558,
+            "lo": 0.021754,
+            "hi": 0.059618
           },
-          "mean_pred": 0.1281,
-          "observed": 0.1195,
+          "mean_pred": 0.128087,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.0618,
-            "lo": 0.0207,
-            "hi": 0.1084,
+            "est": 0.061755,
+            "lo": 0.020677,
+            "hi": 0.108352,
             "share_of_resamples_positive": 0.998
           }
         },
         "draft_baseline": {
           "auc": {
-            "est": 0.8342,
-            "lo": 0.7694,
-            "hi": 0.8935
+            "est": 0.834167,
+            "lo": 0.769381,
+            "hi": 0.89348
           },
           "pr_auc": {
-            "est": 0.4358,
-            "lo": 0.3081,
-            "hi": 0.5913
+            "est": 0.435826,
+            "lo": 0.30814,
+            "hi": 0.591316
           },
           "brier": {
-            "est": 0.084,
-            "lo": 0.0664,
-            "hi": 0.104
+            "est": 0.083994,
+            "lo": 0.06645,
+            "hi": 0.103992
           },
           "ece": {
-            "est": 0.0229,
-            "lo": 0.0219,
-            "hi": 0.0617
+            "est": 0.022885,
+            "lo": 0.021941,
+            "hi": 0.061728
           },
-          "mean_pred": 0.1201,
-          "observed": 0.1195,
+          "mean_pred": 0.12007,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46
         },
@@ -204,8 +204,8 @@
         "six_season_survivors": {
           "n": 154,
           "positives": 46,
-          "champion_auc": 0.8076,
-          "draft_auc": 0.7125
+          "champion_auc": 0.807568,
+          "draft_auc": 0.71246
         },
         "cost_thresholds": [
           {
@@ -425,91 +425,91 @@
       "2": {
         "champion": {
           "auc": {
-            "est": 0.9467,
-            "lo": 0.9194,
-            "hi": 0.9708
+            "est": 0.94671,
+            "lo": 0.91944,
+            "hi": 0.970767
           },
           "pr_auc": {
-            "est": 0.7395,
-            "lo": 0.608,
-            "hi": 0.8502
+            "est": 0.739532,
+            "lo": 0.608018,
+            "hi": 0.850207
           },
           "brier": {
-            "est": 0.0547,
-            "lo": 0.0404,
-            "hi": 0.071
+            "est": 0.054708,
+            "lo": 0.040401,
+            "hi": 0.071004
           },
           "ece": {
-            "est": 0.017,
-            "lo": 0.014,
-            "hi": 0.048
+            "est": 0.017039,
+            "lo": 0.013971,
+            "hi": 0.048028
           },
-          "mean_pred": 0.1316,
-          "observed": 0.1195,
+          "mean_pred": 0.131637,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.1125,
-            "lo": 0.0669,
-            "hi": 0.1623,
+            "est": 0.112543,
+            "lo": 0.066862,
+            "hi": 0.162256,
             "share_of_resamples_positive": 1.0
           }
         },
         "challenger": {
           "auc": {
-            "est": 0.9428,
-            "lo": 0.9146,
-            "hi": 0.9663
+            "est": 0.942799,
+            "lo": 0.914633,
+            "hi": 0.966275
           },
           "pr_auc": {
-            "est": 0.6969,
-            "lo": 0.5549,
-            "hi": 0.8355
+            "est": 0.696858,
+            "lo": 0.554933,
+            "hi": 0.835512
           },
           "brier": {
-            "est": 0.0558,
-            "lo": 0.0416,
-            "hi": 0.0718
+            "est": 0.055834,
+            "lo": 0.041596,
+            "hi": 0.071769
           },
           "ece": {
-            "est": 0.0161,
-            "lo": 0.0131,
-            "hi": 0.045
+            "est": 0.01606,
+            "lo": 0.013135,
+            "hi": 0.045019
           },
-          "mean_pred": 0.1259,
-          "observed": 0.1195,
+          "mean_pred": 0.125922,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.1086,
-            "lo": 0.0602,
-            "hi": 0.1605,
+            "est": 0.108632,
+            "lo": 0.060239,
+            "hi": 0.160456,
             "share_of_resamples_positive": 1.0
           }
         },
         "draft_baseline": {
           "auc": {
-            "est": 0.8342,
-            "lo": 0.7694,
-            "hi": 0.8935
+            "est": 0.834167,
+            "lo": 0.769381,
+            "hi": 0.89348
           },
           "pr_auc": {
-            "est": 0.4358,
-            "lo": 0.3081,
-            "hi": 0.5913
+            "est": 0.435826,
+            "lo": 0.30814,
+            "hi": 0.591316
           },
           "brier": {
-            "est": 0.084,
-            "lo": 0.0664,
-            "hi": 0.104
+            "est": 0.083994,
+            "lo": 0.06645,
+            "hi": 0.103992
           },
           "ece": {
-            "est": 0.0229,
-            "lo": 0.0219,
-            "hi": 0.0617
+            "est": 0.022885,
+            "lo": 0.021941,
+            "hi": 0.061728
           },
-          "mean_pred": 0.1201,
-          "observed": 0.1195,
+          "mean_pred": 0.12007,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46
         },
@@ -536,8 +536,8 @@
         "six_season_survivors": {
           "n": 154,
           "positives": 46,
-          "champion_auc": 0.871,
-          "draft_auc": 0.7125
+          "champion_auc": 0.870974,
+          "draft_auc": 0.71246
         },
         "cost_thresholds": [
           {
@@ -757,91 +757,91 @@
       "3": {
         "champion": {
           "auc": {
-            "est": 0.9595,
-            "lo": 0.9367,
-            "hi": 0.9781
+            "est": 0.959472,
+            "lo": 0.93675,
+            "hi": 0.978116
           },
           "pr_auc": {
-            "est": 0.7594,
-            "lo": 0.6286,
-            "hi": 0.8746
+            "est": 0.759427,
+            "lo": 0.62857,
+            "hi": 0.874607
           },
           "brier": {
-            "est": 0.0502,
-            "lo": 0.0363,
-            "hi": 0.0655
+            "est": 0.050239,
+            "lo": 0.036269,
+            "hi": 0.065511
           },
           "ece": {
-            "est": 0.014,
-            "lo": 0.0138,
-            "hi": 0.0452
+            "est": 0.014042,
+            "lo": 0.013823,
+            "hi": 0.045155
           },
-          "mean_pred": 0.1319,
-          "observed": 0.1195,
+          "mean_pred": 0.131923,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.1253,
-            "lo": 0.075,
-            "hi": 0.1794,
+            "est": 0.125305,
+            "lo": 0.075007,
+            "hi": 0.179421,
             "share_of_resamples_positive": 1.0
           }
         },
         "challenger": {
           "auc": {
-            "est": 0.954,
-            "lo": 0.9252,
-            "hi": 0.9774
+            "est": 0.954021,
+            "lo": 0.925154,
+            "hi": 0.977405
           },
           "pr_auc": {
-            "est": 0.7631,
-            "lo": 0.6267,
-            "hi": 0.8833
+            "est": 0.763074,
+            "lo": 0.626669,
+            "hi": 0.88327
           },
           "brier": {
-            "est": 0.0498,
-            "lo": 0.0368,
-            "hi": 0.0642
+            "est": 0.049756,
+            "lo": 0.036796,
+            "hi": 0.064226
           },
           "ece": {
-            "est": 0.0226,
-            "lo": 0.0138,
-            "hi": 0.0462
+            "est": 0.022571,
+            "lo": 0.013792,
+            "hi": 0.046176
           },
-          "mean_pred": 0.1256,
-          "observed": 0.1195,
+          "mean_pred": 0.125645,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46,
           "auc_gain_vs_reference": {
-            "est": 0.1199,
-            "lo": 0.0695,
-            "hi": 0.1753,
+            "est": 0.119854,
+            "lo": 0.069474,
+            "hi": 0.17533,
             "share_of_resamples_positive": 1.0
           }
         },
         "draft_baseline": {
           "auc": {
-            "est": 0.8342,
-            "lo": 0.7694,
-            "hi": 0.8935
+            "est": 0.834167,
+            "lo": 0.769381,
+            "hi": 0.89348
           },
           "pr_auc": {
-            "est": 0.4358,
-            "lo": 0.3081,
-            "hi": 0.5913
+            "est": 0.435826,
+            "lo": 0.30814,
+            "hi": 0.591316
           },
           "brier": {
-            "est": 0.084,
-            "lo": 0.0664,
-            "hi": 0.104
+            "est": 0.083994,
+            "lo": 0.06645,
+            "hi": 0.103992
           },
           "ece": {
-            "est": 0.0229,
-            "lo": 0.0219,
-            "hi": 0.0617
+            "est": 0.022885,
+            "lo": 0.021941,
+            "hi": 0.061728
           },
-          "mean_pred": 0.1201,
-          "observed": 0.1195,
+          "mean_pred": 0.12007,
+          "observed": 0.119481,
           "n": 385,
           "positives": 46
         },
@@ -868,8 +868,8 @@
         "six_season_survivors": {
           "n": 154,
           "positives": 46,
-          "champion_auc": 0.8877,
-          "draft_auc": 0.7125
+          "champion_auc": 0.887681,
+          "draft_auc": 0.71246
         },
         "cost_thresholds": [
           {
@@ -1419,30 +1419,30 @@
     ],
     "construct_comparison": {
       "volume": {
-        "base_rate_all": 0.1659,
-        "base_rate_test": 0.1351,
+        "base_rate_all": 0.165891,
+        "base_rate_test": 0.135065,
         "model": {
-          "auc": 0.954,
-          "pr_auc": 0.7663,
-          "brier": 0.0571,
-          "ece": 0.0234,
-          "mean_pred": 0.1473,
-          "observed": 0.1351
+          "auc": 0.954031,
+          "pr_auc": 0.766308,
+          "brier": 0.057146,
+          "ece": 0.023375,
+          "mean_pred": 0.147307,
+          "observed": 0.135065
         },
-        "draft_auc": 0.8455
+        "draft_auc": 0.845519
       },
       "rate": {
-        "base_rate_all": 0.1449,
-        "base_rate_test": 0.1195,
+        "base_rate_all": 0.144936,
+        "base_rate_test": 0.119481,
         "model": {
-          "auc": 0.9595,
-          "pr_auc": 0.7594,
-          "brier": 0.0502,
-          "ece": 0.014,
-          "mean_pred": 0.1319,
-          "observed": 0.1195
+          "auc": 0.959472,
+          "pr_auc": 0.759427,
+          "brier": 0.050239,
+          "ece": 0.014042,
+          "mean_pred": 0.131923,
+          "observed": 0.119481
         },
-        "draft_auc": 0.8342
+        "draft_auc": 0.834167
       },
       "agreement": {
         "both": 217,
@@ -2062,6 +2062,319 @@
         "pace": 101.3075
       }
     ]
+  },
+  "model_comparison": [
+    {
+      "model": "Logistic regression",
+      "calibration": "sigmoid",
+      "role": "Champion",
+      "val_brier": 0.075,
+      "val_auc": 0.92,
+      "test_auc": 0.959,
+      "test_brier": 0.0502,
+      "test_ece": 0.014,
+      "test_calibration_gap": 0.012,
+      "fit_seconds": 0.1,
+      "explanation": "Exact additive contributions (readable coefficients)",
+      "parameters": 54,
+      "parameter_unit": "coefficients",
+      "file_kb": 3.1
+    },
+    {
+      "model": "Random forest",
+      "calibration": "none",
+      "role": "Challenger",
+      "val_brier": 0.077,
+      "val_auc": 0.895,
+      "test_auc": 0.954,
+      "test_brier": 0.0498,
+      "test_ece": 0.023,
+      "test_calibration_gap": 0.006,
+      "fit_seconds": 0.8,
+      "explanation": "TreeSHAP over 400 trees (exact, but spread over thousands of splits)",
+      "parameters": 34200,
+      "parameter_unit": "tree nodes",
+      "file_kb": 697.2
+    },
+    {
+      "model": "Gradient boosting",
+      "calibration": "sigmoid",
+      "role": "Not selected",
+      "val_brier": 0.0775,
+      "val_auc": 0.899,
+      "test_auc": 0.953,
+      "test_brier": 0.0482,
+      "test_ece": 0.016,
+      "test_calibration_gap": 0.013,
+      "fit_seconds": 6.7,
+      "explanation": "TreeSHAP over 250 sequential trees",
+      "parameters": 3516,
+      "parameter_unit": "tree nodes",
+      "file_kb": 97.2
+    },
+    {
+      "model": "Draft order only",
+      "calibration": "none",
+      "role": "Baseline",
+      "val_brier": null,
+      "val_auc": null,
+      "test_auc": 0.834,
+      "test_brier": 0.084,
+      "test_ece": 0.023,
+      "test_calibration_gap": 0.001,
+      "fit_seconds": null,
+      "explanation": "Draft slot only",
+      "parameters": 3,
+      "parameter_unit": "coefficients",
+      "file_kb": null
+    }
+  ],
+  "release_gates": [
+    {
+      "gate": "Beats draft order",
+      "rule": "AUC gain >= 0.05 and 95% CI above 0",
+      "value": "+0.125 (CI 0.075 to 0.179)",
+      "status": "PASS",
+      "if_failed": "Block release; return to design (features or outcome definition)"
+    },
+    {
+      "gate": "Calibrated overall",
+      "rule": "|predicted - observed| <= 0.05",
+      "value": "+0.012",
+      "status": "PASS",
+      "if_failed": "Recalibrate on the newest labelled classes; re-test before release"
+    },
+    {
+      "gate": "Calibrated for every judged subgroup",
+      "rule": "|gap| <= 0.05 pass; <= 0.08 watch; above = fail",
+      "value": "worst: Late 1st (15-30) +0.0504",
+      "status": "WATCH",
+      "if_failed": "WATCH: report to the Model Review Board and add a scout review band. FAIL: recalibrate by group or block release"
+    },
+    {
+      "gate": "No group missed far more often",
+      "rule": "subgroup miss rate - overall (11%) <= 0.15",
+      "value": "worst: 2nd round / undrafted +0.141",
+      "status": "PASS",
+      "if_failed": "Mandatory scout review for that group between 0.10 and the threshold; test a position-relative outcome definition"
+    },
+    {
+      "gate": "Champion and challenger agree",
+      "rule": "share of live players >= 0.15 apart <= 0.2",
+      "value": "5.6%",
+      "status": "PASS",
+      "if_failed": "Analyst reviews every disagreeing player; investigate before release"
+    }
+  ],
+  "business_case": {
+    "assumptions_note": "Illustrative USD assumptions in config.yaml; error counts from the 2015-18 backtest.",
+    "costs": {
+      "delivery": {
+        "External consultants (build, 12 weeks)": 240000,
+        "Post-handover support": 16000,
+        "Franchise staff time during the build": 33500.0
+      },
+      "annual": {
+        "Franchise analyst (business as usual)": 39000.0,
+        "Governance and scout review time": 15000,
+        "Platform and contingency": 5000
+      },
+      "one_off": 289500.0,
+      "annual_total": 59000.0,
+      "horizon_years": 3,
+      "total_over_horizon": 466500.0
+    },
+    "decision_impact": {
+      "population": "First-round picks from the 2015-18 classes still in the league after three seasons",
+      "n": 111,
+      "contributors": 33,
+      "threshold": 0.25,
+      "cost_missed_contributor": 3000000,
+      "cost_false_flag": 1000000,
+      "model": {
+        "caught": 31,
+        "missed": 2,
+        "false_flags": 20,
+        "correctly_passed": 58,
+        "error_cost": 26000000.0,
+        "error_cost_per_decision": 234234.23423423423
+      },
+      "draft_order": {
+        "caught": 27,
+        "missed": 6,
+        "false_flags": 42,
+        "correctly_passed": 36,
+        "error_cost": 60000000.0,
+        "error_cost_per_decision": 540540.5405405406
+      },
+      "saving_per_decision": 306306.3063063064,
+      "saving_per_decision_90ci": [
+        180180.18018018018,
+        450450.4504504505
+      ],
+      "false_flag_examples": [
+        {
+          "name": "Ben Simmons",
+          "pick": 1,
+          "p": 0.95,
+          "volume_contributor": false
+        },
+        {
+          "name": "Robert Williams III",
+          "pick": 27,
+          "p": 0.92,
+          "volume_contributor": false
+        },
+        {
+          "name": "Rondae Hollis-Jefferson",
+          "pick": 23,
+          "p": 0.68,
+          "volume_contributor": false
+        },
+        {
+          "name": "Willie Cauley-Stein",
+          "pick": 6,
+          "p": 0.6,
+          "volume_contributor": false
+        },
+        {
+          "name": "Mo Bamba",
+          "pick": 6,
+          "p": 0.56,
+          "volume_contributor": false
+        },
+        {
+          "name": "Trey Lyles",
+          "pick": 12,
+          "p": 0.5,
+          "volume_contributor": false
+        },
+        {
+          "name": "Tony Bradley",
+          "pick": 28,
+          "p": 0.48,
+          "volume_contributor": false
+        },
+        {
+          "name": "Larry Nance Jr.",
+          "pick": 27,
+          "p": 0.45,
+          "volume_contributor": false
+        }
+      ],
+      "false_flags_that_meet_volume_definition": [
+        "Buddy Hield",
+        "Derrick White",
+        "Mikal Bridges"
+      ],
+      "missed_examples": [
+        {
+          "name": "Moritz Wagner",
+          "pick": 25,
+          "p": 0.12
+        },
+        {
+          "name": "Malik Monk",
+          "pick": 11,
+          "p": 0.18
+        }
+      ]
+    },
+    "payback": {
+      "benefit_per_year": 306306.3063063064,
+      "cumulative_cost": [
+        348500.0,
+        407500.0,
+        466500.0
+      ],
+      "cumulative_benefit": [
+        306306.3063063064,
+        612612.6126126128,
+        918918.9189189192
+      ],
+      "net_over_horizon": 452418.91891891917,
+      "breakeven_years": 1.1706130924192193,
+      "breakeven_decisions": 1.5229852941176467,
+      "net_over_horizon_90ci": [
+        74040.54054054059,
+        884851.3513513515
+      ],
+      "cost_of_one_season_delay": 306306.3063063064,
+      "sensitivity": [
+        {
+          "cost_missed_contributor": 1000000,
+          "saving_per_decision": 102102.10210210213,
+          "breakeven_years": 6.7166097679927494,
+          "net_over_horizon": -160193.6936936936
+        },
+        {
+          "cost_missed_contributor": 3000000,
+          "saving_per_decision": 306306.3063063064,
+          "breakeven_years": 1.1706130924192193,
+          "net_over_horizon": 452418.91891891917
+        },
+        {
+          "cost_missed_contributor": 5000000,
+          "saving_per_decision": 510510.51051051065,
+          "breakeven_years": 0.6411810871748483,
+          "net_over_horizon": 1065031.5315315318
+        }
+      ],
+      "baseline_caveat": "Compared with draft order. Scouts add information that draft order lacks, so this is the most the model could add until the scout blind review (E3) measures the real baseline."
+    },
+    "capacity": {
+      "tasks": [
+        {
+          "task": "Check the nightly/weekly scoring run",
+          "hours": 10,
+          "who": "Analyst"
+        },
+        {
+          "task": "Monthly monitoring review and minutes",
+          "hours": 20,
+          "who": "Analyst"
+        },
+        {
+          "task": "Briefs before the trade deadline and the draft",
+          "hours": 20,
+          "who": "Analyst"
+        },
+        {
+          "task": "Extension-window briefs (about 15 flagged players)",
+          "hours": 15,
+          "who": "Analyst"
+        },
+        {
+          "task": "Off-season retrain, tests and release pack",
+          "hours": 24,
+          "who": "Analyst"
+        },
+        {
+          "task": "Model Review Board papers (quarterly)",
+          "hours": 16,
+          "who": "Analyst"
+        },
+        {
+          "task": "Season-end review of overrides against outcomes",
+          "hours": 8,
+          "who": "Analyst"
+        },
+        {
+          "task": "Questions from scouts and coaches",
+          "hours": 40,
+          "who": "Analyst"
+        },
+        {
+          "task": "Monthly watchlist review (3 scouts x 1 hour)",
+          "hours": 30,
+          "who": "Scouting panel"
+        }
+      ],
+      "analyst_hours": 153,
+      "analyst_fte_needed": 0.09,
+      "analyst_hours_allocated": 495.0,
+      "headroom_hours": 342.0
+    }
   },
   "latest_season": 2025
 }

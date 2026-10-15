@@ -60,13 +60,30 @@ positions. **Excluded:** country of origin (audit only) and the games-started fl
 |---|---|---|---|---|---|
 | 1 season | 0.895 (0.838–0.944) | 0.64 | 0.066 | 0.834 | +0.061 (0.021–0.105) |
 | 2 seasons | 0.947 (0.919–0.971) | 0.74 | 0.055 | 0.834 | +0.113 (0.067–0.162) |
-| 3 seasons | 0.960 (0.937–0.978) | 0.76 | 0.050 | 0.834 | +0.125 (0.075–0.179) |
+| 3 seasons | 0.959 (0.937–0.978) | 0.76 | 0.050 | 0.834 | +0.125 (0.075–0.179) |
 
 * **Calibration (h = 3):** mean prediction 13.2% against 11.9% observed. Scores of 0.5 and above match outcomes closely (0.60 → 0.57; 0.88 → 0.88).
 * **Extension-decision group** (still in the league in year 3, n = 232): AUC 0.94 against 0.78 for draft order; PR-AUC 0.77 against 0.46.
 * **Harder comparison** (players with six or more seasons, the population used by Milošević et al. 2026, n = 154): AUC 0.89 against 0.71 for draft order. The headline AUC is higher partly because players who wash out early are easy to rank.
 * **At the 3:1 cost ratio (threshold 0.25):** 41 of 46 contributors caught, 29 false flags. Draft order catches 27 with 46 false flags.
-* **Construct comparison (h = 3):** rate AUC 0.960, Brier 0.050, calibration error 0.014; volume AUC 0.954, Brier 0.057, calibration error 0.023.
+* **Construct comparison (h = 3):** rate AUC 0.959, Brier 0.050, calibration error 0.014; volume AUC 0.954, Brier 0.057, calibration error 0.023.
+
+## 5b. Model comparison and release gates
+
+The three learners score within 0.006 AUC and 0.003 Brier of each other on the test classes. The champion
+was chosen on validation Brier and on simplicity (`outputs/model_comparison_h3.csv`):
+
+| Model | Calibration | Validation Brier | Test AUC | Test Brier | Calibration error | Size |
+|---|---|---|---|---|---|---|
+| Logistic regression (champion) | Platt | 0.0750 | 0.959 | 0.050 | 0.014 | 54 coefficients, 3 KB |
+| Random forest (challenger) | none | 0.0770 | 0.954 | 0.050 | 0.023 | 34,200 tree nodes, 697 KB |
+| Gradient boosting | Platt | 0.0775 | 0.953 | 0.048 | 0.016 | 3,516 tree nodes, 97 KB |
+| Draft order only | none | — | 0.834 | 0.084 | 0.023 | 3 coefficients |
+
+Release gates for v1.0.0 (`config.yaml` → `release_gates`, results in `metrics.json`): beats draft order PASS
+(+0.125, CI 0.075–0.179); calibrated overall PASS (+0.012); calibrated by subgroup **WATCH** (late first-round
+picks +0.0504, so they get a scout review band and are reported to the Model Review Board); no group missed far
+more often PASS (worst: second round / undrafted, +0.141 against 0.15); champion–challenger agreement PASS (5.6%).
 
 ## 6. Fairness audit (h = 3, threshold 0.25; full table in `outputs/subgroup_audit_h3.csv`)
 

@@ -16,9 +16,12 @@
 | Explanations | Global SHAP | Per-player drivers and five historical comparables in every brief | Scouts need to interrogate a score |
 | Fairness | Position AUC | Calibration gap, miss rate and false-flag rate by position, draft tier, origin and height | Responsible deployment |
 | Monitoring | Planned | Implemented: field integrity, PSI with empirical alarm levels, calibration, base rate, champion–challenger | Sustainability after hand-over |
+| Release gates | Proposed stop/go criteria | Five quantified gates with corrective actions, checked on every run | A2 feedback (C4): quantitative thresholds and contingencies |
+| Model comparison | AUC and Brier by model | Accuracy, calibration error and complexity (parameters, file size, fit time, explanation) | A2 feedback (C3): compare calibration and complexity where accuracy is similar |
+| Business case | Benefits register, no costs | Build and running costs, error cost per extension decision vs draft order, payback with 90% range, sensitivity, analyst capacity | A2 feedback (C2, C4, C5): investment summary and financial consequences |
 | Delivery | Scripts | Package, CLI (`ingest`, `score`, `all`, `report`), registry, dashboard, briefs, tests, docs | Usable and maintainable by the franchise |
 
-**Headline result (2015-18 test classes, three seasons of evidence):** AUC 0.960 (95% CI 0.937–0.978)
+**Headline result (2015-18 test classes, three seasons of evidence):** AUC 0.959 (95% CI 0.937–0.978)
 against 0.834 for draft order; Brier 0.050; 41 of 46 contributors caught at the 0.25 threshold.
 (v0.1 reported AUC 0.952 on the volume construct.)
 

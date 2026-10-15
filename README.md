@@ -17,12 +17,12 @@ make the decisions.
 |---|---|---|
 | Reproducible pipeline | `run_pipeline.py`, `ecp/` | Raw box scores to features, model selection, backtest, training, scoring, monitoring |
 | Registered models | `models/` | Champion (logistic regression, Platt-calibrated), challenger (random forest), uncertainty ensemble, `registry.json` |
-| Interactive dashboard | `dashboard/ecp_dashboard.html` | Watchlist, player briefs, replay of 2015-18, threshold explorer, model evidence, monitoring, governance |
+| Interactive dashboard | `dashboard/ecp_dashboard.html` | Watchlist, player briefs, replay of 2015-18, threshold explorer, business case, model evidence, release gates and monitoring, governance |
 | Decision briefs | `outputs/briefs/` | One-page printable briefs (live extension-window class and historical replays) |
-| Results | `outputs/` | `metrics.json`, model-selection tables, backtest predictions, fairness audit, drift report, figures |
+| Results | `outputs/` | `metrics.json` (incl. business case and release gates), model-selection and model-comparison tables, backtest predictions, fairness audit, drift report, figures |
 | Walkthrough notebook | `notebooks/walkthrough.ipynb` (+ `.html`) | The build and evaluation story, step by step, with outputs |
 | Documentation | `docs/` | Model card, runbook, data dictionary, user guide, evaluation protocol, changelog |
-| Tests | `tests/` | 17 unit and integration tests (leakage, construct logic, thresholds, output rules) |
+| Tests | `tests/` | 20 unit and integration tests (leakage, construct logic, thresholds, output rules) |
 
 ## Quick start
 
@@ -32,7 +32,7 @@ Requires Python 3.10 or later.
 pip install -r requirements.txt
 python run_pipeline.py all        # about 3 minutes on a laptop: select, backtest, train, score, monitor, build dashboard
 open dashboard/ecp_dashboard.html # or double-click it; it works offline in any modern browser
-python -m pytest -q               # 17 tests
+python -m pytest -q               # 20 tests
 ```
 
 The processed data ships in `data/processed/`, so the raw dataset is **not** needed to run the model.
@@ -93,7 +93,11 @@ least 99.7% of bootstrap resamples at every horizon. The full results are in `ou
 5. **Score & explain** (`ecp/explain.py`). Each player gets a probability, an 80% range, the challenger's
    view, his top drivers up and down, five comparables and a status. Under 500 minutes the status is
    *Insufficient evidence*.
-6. **Monitor** (`ecp/monitoring.py`). Checks field integrity, feature drift against empirical alarm
+6. **Release gates and business case** (`ecp/release.py`, `ecp/business_case.py`). Five quantified gates
+   (beats draft order, calibrated overall and by subgroup, no group missed far more often, champion and challenger
+   agree), each with a corrective action, plus a model comparison on accuracy, calibration and complexity, and the
+   cost and payback of the decisions the model supports.
+7. **Monitor** (`ecp/monitoring.py`). Checks field integrity, feature drift against empirical alarm
    levels, calibration, base-rate drift and champion–challenger disagreement, each with a runbook action.
 
 ## Business choices live in `config.yaml`
@@ -104,6 +108,8 @@ least 99.7% of bootstrap resamples at every horizon. The full results are in `ou
 | `decision.cost_ratio` | 3 (missing a contributor costs 3x a wasted offer, so the threshold is 0.25) | Steering committee, with finance |
 | `decision.evidence_min_minutes` | 500 | Model Review Board |
 | `split`, `horizons`, `cohort` | Forward-chaining by debut class | Head of Analytics |
+| `release_gates` | AUC gain ≥ 0.05; calibration gap ≤ 0.05; subgroup gap watch 0.05 / fail 0.08; miss-rate excess ≤ 0.15 | Model Review Board |
+| `business_case` | Illustrative USD assumptions (day rate, staff costs, cost of a missed contributor) | Finance |
 
 Change a value and run `python run_pipeline.py all`. Every model, metric, brief and dashboard view updates.
 
@@ -115,6 +121,9 @@ Change a value and run `python run_pipeline.py all`. Every model, metric, brief 
   (an override requires a reason). The log stays in your browser and can be exported. Print to PDF for meetings.
 * **Replay 2015-18**: the same view for classes whose outcomes are now known. Use it to build trust and to train new users.
 * **Threshold explorer**: move the cost ratio to see contributors caught, missed and false flags.
+* **Business case**: build and running costs, error cost per extension decision (model vs draft order), payback,
+  and analyst capacity. All prices are illustrative assumptions in `config.yaml` → `business_case`; move the
+  slider to price a missed contributor differently.
 * **Model evidence**, **Monitoring**, **About & governance**: the technical case, health checks and decision rights.
 
 ## Data and data-quality notes
@@ -147,7 +156,8 @@ early-career-potential/
 ├── requirements.txt
 ├── run_pipeline.py         command-line entry point
 ├── ecp/                    the package: ingest, seasons, constructs, features, models,
-│                           evaluation, explain, pipeline, monitoring, reporting, dashboard
+│                           evaluation, explain, pipeline, monitoring, release, business_case,
+│                           reporting, dashboard
 ├── data/processed/         processed inputs (ships with the repo) + ingest_report.json
 ├── models/                 registered models + registry.json
 ├── outputs/                metrics, tables, figures/, briefs/

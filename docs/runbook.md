@@ -35,7 +35,8 @@ detect, the analyst investigates and documents the cause, and the off-season ret
    year's and `rows_team_id_unresolved` is 0.
 2. In `config.yaml`, add one year to `cohort.last_labelled_debut` and to every `split` boundary, and set a new `version`.
 3. `python run_pipeline.py all`, then `python -m pytest -q` (all tests must pass).
-4. Compare the new `outputs/metrics.json` with the previous release. The model must still beat draft order
+4. Check the release gates (dashboard → Monitoring, or `metrics.json` → `release_gates`). Any FAIL blocks the
+   release; a WATCH goes to the Model Review Board with its corrective action. Then compare the new `outputs/metrics.json` with the previous release. The model must still beat draft order
    (the AUC-gain interval stays above 0) and calibration must stay within 0.05.
 5. Update `docs/model_card.md` and `docs/CHANGELOG.md`, and take both to the Model Review Board.
 6. **Rollback:** keep the previous release folder (`models/`, `outputs/`, `config.yaml`) with its version
@@ -58,10 +59,19 @@ the cost ratio.
 | `score` refuses to load a model (hash mismatch) | Treat as a security incident: do not bypass. Restore the model files from the release folder and tell the Head of Analytics |
 | Suspected bias against a group | Model Review Board can suspend use immediately. Re-run the subgroup audit and document the outcome |
 
+## Resource contingencies
+
+| If… | Then… | Cost or delay |
+|---|---|---|
+| The franchise analyst is unavailable | A BI developer trained at hand-over runs `score` from the runbook; retraining waits for the analyst or one week of consultant support | About one consultant week |
+| The scouting panel cannot meet | The blind review runs with a minimum of two scouts; the gate moves by two weeks | Two-week slip |
+| The pipeline fails during the extension window | Restore the previous release folder (minutes); briefs are printed before each meeting; decisions fall back to today's process | Analyst hours; no worse than today |
+| The project slips a season | The next extension window is decided without the model | Forgone avoided error cost, about one season's benefit (see Business case) |
+
 ## Hand-over checklist (consultant → franchise)
 
 - [ ] Analyst has run `ingest`, `score` and `all` unassisted and explained each monitoring check
 - [ ] Analyst can change the construct and cost ratio and explain the effect using the Threshold explorer
 - [ ] Model card, runbook and data dictionary reviewed together
 - [ ] Previous-release folder convention agreed; first rollback rehearsed
-- [ ] Three months of support scheduled
+- [ ] Ten post-handover support days scheduled across the first three months

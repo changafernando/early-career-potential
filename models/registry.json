@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "created": "2026-10-09",
+  "created": "2026-10-14",
   "construct": "rate",
   "construct_description": "A rotation season (at least 1,000 minutes, scaled for shortened seasons) whose Game Score per 100 possessions ranks in the top third of rotation players that season",
   "training_classes": [

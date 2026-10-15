@@ -40,14 +40,22 @@ def main() -> None:
         print(json.dumps(run_ingest(cfg["paths"]["raw_dir"], cfg["paths"]["processed_dir"], cfg["data"]["first_season"]), indent=2))
         return
 
+    import pandas as pd
+
     from ecp import pipeline as pl
+    from ecp.business_case import build_business_case
     from ecp.monitoring import run_monitoring
+    from ecp.release import model_comparison, release_gates
     from ecp.reporting import build_figures, write_briefs
     from ecp.dashboard import build_dashboard
 
     t0 = time.time()
     out = cfg["paths"]["outputs_dir"]
     out.mkdir(parents=True, exist_ok=True)
+
+    def h3_predictions():
+        P = pd.read_csv(out / "backtest_predictions.csv")
+        return P[P.horizon == 3].set_index("personId")
 
     if a.step == "score":
         metrics = json.loads((out / "metrics.json").read_text())
@@ -58,11 +66,15 @@ def main() -> None:
         live = pl.score_live(cfg, D, M)
         sc = {"live": live, "replay": json.loads((out / "replay_2015_2018.json").read_text()), "latest_season": D["latest_season"]}
         metrics["monitoring"] = run_monitoring(cfg, D, metrics["backtest"], live, metrics["drivers"])
+        metrics["release_gates"] = release_gates(cfg, D, metrics["backtest"], h3_predictions(), live)
+        metrics["business_case"] = build_business_case(cfg, D, h3_predictions())
         metrics["latest_season"] = D["latest_season"]
         pl._json(metrics, out / "metrics.json")
         write_briefs(cfg, sc, metrics)
         build_dashboard(cfg, metrics, sc)
         flagged = sum(r["status"] == "Flag for review" for r in live)
+        for gt in metrics["release_gates"]:
+            print(f"  gate [{gt['status']:5}] {gt['gate']}: {gt['value']}")
         print(f"scored {len(live)} active young players with model v{reg['version']} ({flagged} flagged) in {time.time() - t0:.1f}s")
         for c in metrics["monitoring"]["checks"]:
             print(f"  [{c['status']:5}] {c['check']}: {c['value']}")
@@ -72,6 +84,9 @@ def main() -> None:
         metrics = json.loads((out / "metrics.json").read_text())
         sc = {"live": json.loads((out / "watchlist_current.json").read_text()),
               "replay": json.loads((out / "replay_2015_2018.json").read_text()), "latest_season": metrics["latest_season"]}
+        metrics["business_case"] = build_business_case(cfg, pl.prepare(cfg), h3_predictions())
+        pl._json(metrics, out / "metrics.json")
+        metrics = json.loads((out / "metrics.json").read_text())
         build_figures(cfg, None, metrics)
         write_briefs(cfg, sc, metrics)
         build_dashboard(cfg, metrics, sc)
@@ -96,8 +111,13 @@ def main() -> None:
     drivers = pl.drivers_summary(cfg, D, M)
     step("6/8 running drift monitoring")
     mon = run_monitoring(cfg, D, bt, sc["live"], drivers)
+    step("    model comparison, release gates and business case")
+    comparison = model_comparison(cfg, D, sel)
+    gates = release_gates(cfg, D, bt, h3_predictions(), sc["live"])
+    business = build_business_case(cfg, D, h3_predictions())
     metrics = {"version": cfg["version"], "construct": cfg["construct"]["active"], "selection": sel,
-               "backtest": bt, "drivers": drivers, "monitoring": mon, "latest_season": sc["latest_season"]}
+               "backtest": bt, "drivers": drivers, "monitoring": mon, "model_comparison": comparison,
+               "release_gates": gates, "business_case": business, "latest_season": sc["latest_season"]}
     pl._json(metrics, out / "metrics.json")
     metrics = json.loads((out / "metrics.json").read_text())   # same JSON types as the saved file
     step("7/8 drawing figures and writing decision briefs")
